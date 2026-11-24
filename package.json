@@ -11,7 +11,8 @@
     "stills": "node scripts/render-stills.mjs",
     "render": "node scripts/render-episode.mjs",
     "typecheck": "tsc --noEmit",
-    "lines": "node scripts/list-lines.mjs"
+    "lines": "node scripts/list-lines.mjs",
+    "beats": "python3 scripts/beats.py"
   },
   "type": "module",
   "dependencies": {

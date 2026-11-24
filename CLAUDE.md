@@ -89,6 +89,7 @@ scripts/import-voices.mjs  voice download/convert/lip-sync data  (npm run voices
 scripts/list-lines.mjs     dialogue list + cost estimate  (npm run lines -- epXX)
 scripts/render-stills.mjs  check frames + contact sheet  (npm run stills -- <id>)
 scripts/render-episode.mjs final MP4  (npm run render -- <id>)
+scripts/beats.py           beat/onset times + frame numbers of any audio  (npm run beats -- public/music/theme.wav --out x.json)
 ```
 
 - World coords: 1920×1080, ground line ≈ y 860–900. Actors' `x,y` = feet. Default adult ≈ 470 px tall.
@@ -135,4 +136,6 @@ scripts/render-episode.mjs final MP4  (npm run render -- <id>)
 - In the cloud container Remotion can't download its own browser; `scripts/lib/browser.mjs` uses the pre-installed
   headless Chrome under `/opt/pw-browsers` when present (on the owner's computer Remotion downloads its own).
 - Contact sheets need a system `ffmpeg` (the Remotion one has no `tile` filter); skipped gracefully if missing.
+- Tools: Playwright + headless Chrome (`/opt/pw-browsers`) and system FFmpeg come pre-installed in the cloud container;
+  Python beat detection needs `pip3 install -r requirements.txt` (librosa) – run it (and `npm install`) in each fresh container.
 - ElevenLabs plan: Starter, 80,017 credits/month. ep01 used ≈ 11.4k credits (158 lines); ≈ 54.9k left after ep01 (2026-11-24).
