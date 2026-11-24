@@ -37,7 +37,7 @@ console.log('mastering audio to -14 LUFS...');
 const target = 'I=-14:TP=-1.5:LRA=11';
 const log = ffmpegCapture(['-i', outputLocation, '-vn', '-af', `loudnorm=${target}:print_format=json`, '-f', 'null', '-']);
 const m = JSON.parse(log.slice(log.lastIndexOf('{'), log.lastIndexOf('}') + 1));
-const second = `loudnorm=${target}:measured_I=${m.input_i}:measured_TP=${m.input_tp}:measured_LRA=${m.input_lra}:measured_thresh=${m.input_thresh}:offset=${m.target_offset}:linear=true`;
+const second = `loudnorm=${target}:measured_I=${m.input_i}:measured_TP=${m.input_tp}:measured_LRA=${m.input_lra}:measured_thresh=${m.input_thresh}:offset=${m.target_offset}:linear=false`;
 ffmpeg(['-i', outputLocation, '-c:v', 'copy', '-af', second, '-ar', '48000', '-c:a', 'aac', '-b:a', '192k', '-movflags', '+faststart', finalLocation]);
 fs.rmSync(outputLocation);
 console.log(`done: ${finalLocation}  (input loudness was ${m.input_i} LUFS)`);
