@@ -8,6 +8,7 @@ import {ShortOverlay} from './components/ShortOverlay';
 import {EPISODES} from './episodes/registry';
 import {SHORTS} from './shorts';
 import {CAST} from './cast';
+import {Test3D, test3dDuration} from './three/Test3D';
 
 const ShortComp: React.FC<{episodeId: string; from: number; hook?: string}> = ({episodeId, from, hook}) => (
   <ClipPlayer episodeId={episodeId} from={from}>
@@ -35,6 +36,7 @@ export const Root: React.FC = () => (
         height={1920}
       />
     ))}
+    <Composition id="Test3D" component={Test3D} durationInFrames={test3dDuration()} fps={FPS} width={1920} height={1080} />
     {Object.keys(CAST)
       .filter((who) => CAST[who].look)
       .map((who) => (

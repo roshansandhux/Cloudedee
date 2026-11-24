@@ -15,18 +15,25 @@
   },
   "type": "module",
   "dependencies": {
+    "@react-three/drei": "^10.7.6",
+    "@react-three/fiber": "^9.3.0",
+    "@react-three/postprocessing": "^3.0.4",
     "@remotion/bundler": "^4.0.546",
     "@remotion/cli": "^4.0.546",
     "@remotion/fonts": "^4.0.546",
     "@remotion/media-utils": "^4.0.546",
     "@remotion/renderer": "^4.0.546",
+    "@remotion/three": "^4.0.546",
+    "postprocessing": "^6.37.8",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
-    "remotion": "^4.0.546"
+    "remotion": "^4.0.546",
+    "three": "^0.180.0"
   },
   "devDependencies": {
     "@fontsource/fredoka": "^5.2.8",
     "@types/react": "^19.2.2",
+    "@types/three": "^0.180.0",
     "typescript": "^5.9.3"
   }
 }
