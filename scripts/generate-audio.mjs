@@ -402,6 +402,190 @@ music.silly = () => {
   return sequence({bpm: 126, bars: 8}, ev, {reverb: 0.12});
 };
 
+// ---------- ZOMBIE & ACTION SFX (added ep01) ----------
+/** Formant "voice": glottal pulse through two vowel formants – used for groans and roars. */
+function voice(sec, pitch, f1, f2, opts = {}) {
+  const src = osc(sec, pitch, 'saw');
+  const breath = noiseBuf(sec).map((v) => v * (opts.breath ?? 0.25));
+  for (let i = 0; i < src.length; i++) src[i] = src[i] * 0.8 + breath[i];
+  const a = bandpass(Float32Array.from(src), f1, 5);
+  const b = bandpass(Float32Array.from(src), f2, 6);
+  const out = buf(sec);
+  for (let i = 0; i < out.length; i++) out[i] = a[i] + b[i] * 0.6 + src[i] * 0.05;
+  return warm(lowpass(out, opts.lp ?? 2600), 2.2);
+}
+const groan = (len, base, f1, f2, wob) => () =>
+  env(voice(len, (t) => base * (1 + 0.18 * Math.sin((Math.PI * t) / len) - 0.12 * (t / len)) * (1 + 0.03 * Math.sin(TAU * wob * t)) * (1 + 0.04 * noise()), (t) => f1 + 120 * Math.sin((Math.PI * t) / len), f2), adsr(0.15, 0.3, 0.8, 0.45));
+sfx.groan1 = groan(1.6, 95, 620, 1080, 5.5);
+sfx.groan2 = groan(1.9, 82, 700, 1150, 4);
+sfx.groan3 = groan(1.3, 120, 520, 900, 7);
+sfx.groanCrowd = () => {
+  const x = buf(4.5);
+  for (let i = 0; i < 9; i++) mix(x, groan(1.4 + rnd() * 1.2, 70 + rnd() * 60, 500 + rnd() * 250, 900 + rnd() * 400, 3 + rnd() * 5)(), rnd() * 2.4, 0.5);
+  return lowpass(x, 2000);
+};
+sfx.roar = () => {
+  const len = 2.6;
+  const v = voice(len, (t) => 55 * (1 + 0.3 * Math.sin((Math.PI * t) / len)) * (1 + 0.08 * Math.sin(TAU * 13 * t)), 450, 800, {breath: 0.7, lp: 1800});
+  const sub = osc(len, (t) => 38 + 10 * Math.sin((Math.PI * t) / len));
+  return env(mix(v, sub, 0, 0.6), adsr(0.25, 0.4, 0.85, 0.8));
+};
+sfx.explosion = () => {
+  const x = lowpass(env(noiseBuf(3.2), (t) => (t < 0.02 ? t / 0.02 : Math.exp(-t * 1.6))), (t) => 4000 * Math.exp(-t * 2.5) + 120);
+  mix(x, env(osc(1.2, (t) => 70 * Math.exp(-t * 3) + 28), expDecay(2.5)), 0, 1.4);
+  for (let t = 0.2; t < 2.4; t += 0.04 + rnd() * 0.12) mix(x, highpass(env(noiseBuf(0.03), expDecay(120)), 1500), t, 0.3 * Math.exp(-t));
+  return warm(x, 2.5);
+};
+sfx.punch = () => mix(lowpass(env(noiseBuf(0.15), expDecay(40)), 2500), env(osc(0.2, (t) => 160 * Math.exp(-t * 18) + 60), expDecay(16)), 0, 1);
+sfx.flame = () => {
+  const x = noiseBuf(2.2);
+  lowpass(x, (t) => 600 + 1800 * Math.sin((Math.PI * t) / 2.2));
+  for (let t = 0; t < 2; t += 0.03 + rnd() * 0.06) mix(x, highpass(env(noiseBuf(0.02), expDecay(150)), 2000), t, 0.3);
+  return env(x, adsr(0.15, 0.3, 0.8, 0.6));
+};
+sfx.squelch = () => {
+  const x = noiseBuf(0.6);
+  bandpass(x, (t) => 300 + 500 * Math.abs(Math.sin(TAU * 3 * t)), 6);
+  return mix(env(x, adsr(0.02, 0.1, 0.6, 0.2)), env(osc(0.5, (t) => 120 + 80 * Math.sin(TAU * 6 * t)), expDecay(5)), 0, 0.6);
+};
+sfx.bite = () => {
+  const x = buf(0.4);
+  [0, 0.06, 0.11].forEach((t) => mix(x, bandpass(env(noiseBuf(0.06), expDecay(70)), 1800, 1.5), t, 1));
+  return x;
+};
+sfx.rcCar = () => env(lowpass(osc(2.2, (t) => 140 + 30 * Math.sin(TAU * 3 * t), 'saw'), 1600), adsr(0.1, 0.2, 0.8, 0.3));
+sfx.static = () => env(highpass(noiseBuf(1.4), 800), adsr(0.01, 0.1, 0.7, 0.2));
+sfx.buzz = () => {
+  const x = buf(2);
+  [120, 240, 360, 480].forEach((f, i) => mix(x, osc(2, f, 'square'), 0, 0.12 / (i + 1)));
+  for (let t = 0; t < 2; t += 0.15 + rnd() * 0.3) mix(x, highpass(env(noiseBuf(0.05), expDecay(80)), 3000), t, 0.4);
+  return lowpass(x, 3000);
+};
+sfx.alarm = () => {
+  const x = buf(2.6);
+  for (let i = 0; i < 4; i++) mix(x, env(lowpass(osc(0.6, (t) => 600 + 300 * (t / 0.6), 'saw'), 2500), adsr(0.02, 0.1, 0.8, 0.1)), i * 0.65, 0.4);
+  return x;
+};
+sfx.riser = () => {
+  const len = 2.2;
+  const x = noiseBuf(len);
+  bandpass(x, (t) => 300 + 4000 * (t / len) ** 2, 3);
+  return env(mix(x, osc(len, (t) => 150 * Math.pow(6, t / len), 'saw'), 0, 0.12), (t) => (t / len) ** 2);
+};
+sfx.gameOver = () => {
+  const x = buf(1.6);
+  [67, 64, 60, 55, 48].forEach((n, i) => mix(x, env(osc(0.3, midi(n), 'square'), adsr(0.005, 0.05, 0.7, 0.05)), i * 0.22, 0.4));
+  return x;
+};
+sfx.pew = () => env(osc(0.25, (t) => 1600 * Math.exp(-t * 12) + 300, 'square'), expDecay(12));
+sfx.beep = () => env(osc(0.18, 1046), adsr(0.005, 0.02, 0.8, 0.03));
+sfx.rumbleBig = () => lowpass(env(mix(noiseBuf(3.5), osc(3.5, (t) => 32 + 6 * Math.sin(t * 5)), 0, 0.8), adsr(0.6, 0.5, 0.8, 1.2)), 220);
+sfx.slam = () => mix(sfx.thud(), lowpass(env(noiseBuf(0.25), expDecay(25)), 1800), 0, 0.6);
+sfx.crunch = () => {
+  const x = buf(0.7);
+  for (let t = 0; t < 0.55; t += 0.025 + rnd() * 0.03) mix(x, bandpass(env(noiseBuf(0.03), expDecay(140)), 1200 + rnd() * 2500, 2), t, 0.6);
+  return x;
+};
+
+// ---------- ep01 MUSIC ----------
+// Funny orchestral: pizzicato strings, bassoon-ish reed, glockenspiel, oom-pah.
+const reed = (n, len) => env(lowpass(mix(osc(len, (t) => midi(n) * (1 + 0.006 * Math.sin(TAU * 5.5 * t)), 'square'), osc(len, midi(n) * 2, 'saw'), 0, 0.3), 1300), adsr(0.04, 0.1, 0.75, 0.08));
+const glock = (n) => env(mix(osc(1.2, midi(n)), osc(1.2, midi(n) * 2.76), 0, 0.25), expDecay(4));
+music.orchestral = () => {
+  const ev = [];
+  const roots = [48, 53, 55, 48, 45, 50, 55, 48];
+  roots.forEach((r, bar) => {
+    ev.push([bar * 4, () => pluck(midi(r - 12), 0.5, 0.25, 0.995), 0.5]);
+    ev.push([bar * 4 + 2, () => pluck(midi(r - 5), 0.5, 0.25, 0.995), 0.45]);
+    [1, 3].forEach((b) => ev.push([bar * 4 + b, () => mix(mix(pluck(midi(r + 4), 0.3, 0.4), pluck(midi(r + 7), 0.3, 0.4)), pluck(midi(r + 12), 0.3, 0.4)), 0.18]));
+  });
+  const mel = [[0, 64, 1], [1, 65, 0.5], [1.5, 67, 0.5], [2, 72, 1.5], [4, 71, 0.5], [4.5, 69, 0.5], [5, 67, 1], [6, 65, 2], [8, 64, 0.5], [8.5, 62, 0.5], [9, 60, 1], [10, 62, 0.5], [10.5, 64, 0.5], [11, 65, 1], [12, 67, 3], [16, 69, 1], [17, 67, 0.5], [17.5, 65, 0.5], [18, 64, 2], [20, 62, 1], [21, 64, 0.5], [21.5, 65, 0.5], [22, 67, 2], [24, 72, 0.5], [24.5, 71, 0.5], [25, 69, 0.5], [25.5, 67, 0.5], [26, 65, 1], [27, 64, 1], [28, 60, 3]];
+  mel.forEach(([b, n, d]) => ev.push([b, (beat) => reed(n - 12, d * beat * 0.95), 0.22]));
+  [3, 7, 11, 15, 19, 23, 27, 31].forEach((b, i) => ev.push([b + 0.5, () => glock(84 + [0, 4, 7, 4, 2, 5, 7, 12][i]), 0.1]));
+  return sequence({bpm: 112, bars: 8}, ev, {reverb: 0.25});
+};
+// Dramatic action: string ostinato, brass stabs, taiko.
+music.action = () => {
+  const ev = [];
+  const k = drumKit();
+  const roots = [45, 45, 41, 43, 45, 45, 48, 44];
+  const taiko = () => mix(env(osc(0.6, (t) => 90 * Math.exp(-t * 6) + 50), expDecay(6)), lowpass(env(noiseBuf(0.1), expDecay(40)), 600), 0, 0.5);
+  roots.forEach((r, bar) => {
+    for (let s = 0; s < 16; s++) {
+      const n = r + (s % 4 === 2 ? 7 : s % 4 === 3 ? 12 : 0);
+      ev.push([bar * 4 + s * 0.25, () => env(lowpass(mix(osc(0.14, midi(n - 12), 'saw'), osc(0.14, midi(n - 12) * 1.004, 'saw')), 1400), adsr(0.005, 0.04, 0.5, 0.03)), 0.2]);
+    }
+    [0, 1.5, 3].forEach((b) => ev.push([bar * 4 + b, taiko, 0.55]));
+    ev.push([bar * 4 + 2, k.snare, 0.25]);
+    if (bar % 2 === 1)
+      [[0, r + 12], [0.75, r + 15], [1.5, r + 19]].forEach(([b, n]) =>
+        ev.push([bar * 4 + 2 + b, () => env(lowpass(mix(mix(osc(0.5, midi(n), 'saw'), osc(0.5, midi(n) * 1.006, 'saw')), osc(0.5, midi(n + 7), 'saw'), 0, 0.5), (t) => 3500 * Math.exp(-t * 5) + 600), adsr(0.01, 0.15, 0.5, 0.1)), 0.14]),
+      );
+    if (bar === 7) ev.push([bar * 4, sfx.riser, 0.25]);
+  });
+  return sequence({bpm: 140, bars: 8}, ev, {reverb: 0.15});
+};
+// Eerie lab: drone + theremin + bubbly plinks.
+music.lab = () => {
+  const ev = [];
+  for (let bar = 0; bar < 8; bar++) {
+    ev.push([bar * 4, (b) => lowpass(env(mix(osc(b * 4, midi(33), 'saw'), osc(b * 4, midi(40) * 1.003, 'saw'), 0, 0.6), adsr(1, 0.5, 0.8, 1)), 500), 0.22]);
+    const th = [76, 75, 79, 74, 76, 72, 71, 75][bar];
+    ev.push([bar * 4 + 1, (b) => env(osc(b * 2.5, (t) => midi(th) * (1 + 0.012 * Math.sin(TAU * 6 * t)) * (t < 0.3 ? 0.97 + 0.1 * t : 1)), adsr(0.4, 0.3, 0.7, 0.6)), 0.08]);
+    for (let p = 0; p < 3; p++) ev.push([bar * 4 + rnd() * 4, () => env(osc(0.3, (t) => 600 + 900 * t + rnd() * 400), expDecay(14)), 0.05]);
+  }
+  return sequence({bpm: 70, bars: 8}, ev, {reverb: 0.4});
+};
+// Victory fanfare loop: brass chords + timpani.
+music.victory = () => {
+  const ev = [];
+  const brass = (n, len) => env(lowpass(mix(osc(len, midi(n), 'saw'), osc(len, midi(n) * 1.005, 'saw')), (t) => 1200 + 1600 * Math.min(1, t * 6)), adsr(0.03, 0.2, 0.7, 0.15));
+  const chords = [[60, 64, 67], [65, 69, 72], [67, 71, 74], [60, 64, 67], [57, 60, 64], [65, 69, 72], [67, 71, 74], [72, 76, 79]];
+  chords.forEach((ch, bar) => {
+    ch.forEach((n) => ev.push([bar * 4, (b) => brass(n - 12, b * 1.6), 0.09]));
+    ch.forEach((n) => ev.push([bar * 4 + 2, (b) => brass(n - 12, b * 1.6), 0.08]));
+    ev.push([bar * 4, () => env(osc(0.8, (t) => midi(ch[0] - 24) * (1 + 0.1 * Math.exp(-t * 20))), expDecay(4)), 0.5]);
+    ev.push([bar * 4 + 3.5, () => env(osc(0.4, midi(ch[0] - 24)), expDecay(8)), 0.3]);
+  });
+  [[0, 72], [1, 76], [1.5, 79], [2, 84], [8, 77], [9, 81], [10, 84], [16, 79], [17, 83], [18, 86], [24, 84], [26, 88], [28, 84]].forEach(([b, n]) => ev.push([b, (beat) => brass(n - 12, beat * 0.9), 0.12]));
+  return sequence({bpm: 104, bars: 8}, ev, {reverb: 0.25});
+};
+// 8-bit chiptune for the in-game TV.
+music.chiptune = () => {
+  const ev = [];
+  const sq = (n, len, shape = 'square') => env(osc(len, midi(n), shape), adsr(0.003, 0.03, 0.6, 0.02));
+  const bass = [45, 45, 48, 43];
+  for (let bar = 0; bar < 8; bar++) {
+    for (let s = 0; s < 8; s++) ev.push([bar * 4 + s * 0.5, () => sq(bass[bar % 4] - 12 + (s % 2) * 12, 0.2, 'tri'), 0.3]);
+    const arp = [69, 72, 76, 81];
+    for (let s = 0; s < 16; s++) ev.push([bar * 4 + s * 0.25, () => sq(arp[s % 4] + (bar % 4 === 2 ? 3 : 0), 0.1), 0.06]);
+  }
+  return sequence({bpm: 150, bars: 8}, ev);
+};
+// Terrible supermarket muzak: electric piano bossa.
+music.muzak = () => {
+  const ev = [];
+  const ep = (n, len) => {
+    const out = buf(len);
+    let ph = 0;
+    for (let i = 0; i < out.length; i++) {
+      const t = i / SR;
+      ph += midi(n) / SR;
+      out[i] = Math.sin(TAU * ph + 1.4 * Math.exp(-t * 6) * Math.sin(TAU * ph * 2)) * Math.exp(-t * 2.2);
+    }
+    return out;
+  };
+  const prog = [[62, 65, 69, 72], [55, 59, 62, 65], [60, 64, 67, 71], [57, 60, 64, 67]];
+  for (let bar = 0; bar < 8; bar++) {
+    const ch = prog[bar % 4];
+    [0, 1.5, 3].forEach((b) => ch.forEach((n) => ev.push([bar * 4 + b, () => ep(n, 1.2), 0.05])));
+    ev.push([bar * 4, () => env(osc(0.8, midi(ch[0] - 24), 'sine'), expDecay(3)), 0.35]);
+    ev.push([bar * 4 + 2.5, () => env(osc(0.6, midi(ch[0] - 17), 'sine'), expDecay(3)), 0.3]);
+    [0.5, 1, 2, 2.5, 3.5].forEach((b) => ev.push([bar * 4 + b, () => highpass(env(noiseBuf(0.05), expDecay(80)), 5000), 0.08]));
+  }
+  return sequence({bpm: 100, bars: 8}, ev, {reverb: 0.2});
+};
+
 // ---------- write everything ----------
 const lib = {sfx: {}, music: {}};
 for (const [group, table] of [['sfx', sfx], ['music', music]]) {

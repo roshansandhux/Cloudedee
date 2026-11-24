@@ -16,7 +16,21 @@ if (!ep) {
   process.exit(1);
 }
 const epDir = path.join('episodes', ep);
-const downloads = JSON.parse(fs.readFileSync(path.join(epDir, 'downloads.json'), 'utf8'));
+const dlFile = path.join(epDir, 'downloads.json');
+const downloads = fs.existsSync(dlFile) ? JSON.parse(fs.readFileSync(dlFile, 'utf8')) : {};
+// Optional: urls.txt (one ElevenLabs content_url per line) + sessions.json ({lineId: session_id}).
+// The session id is part of each content_url, so URLs can be pasted in any order.
+const urlsFile = path.join(epDir, 'urls.txt');
+const sessFile = path.join(epDir, 'sessions.json');
+if (fs.existsSync(urlsFile) && fs.existsSync(sessFile)) {
+  const bySession = Object.fromEntries(Object.entries(JSON.parse(fs.readFileSync(sessFile, 'utf8'))).map(([id, s]) => [s, id]));
+  for (const url of fs.readFileSync(urlsFile, 'utf8').split(/\s+/).filter(Boolean)) {
+    const m = url.match(/content_generation\/([^/]+)\//);
+    const id = m && bySession[m[1]];
+    if (id && !downloads[id]) downloads[id] = url;
+    else if (!id) console.warn(`no line for url ${url.slice(0, 90)}...`);
+  }
+}
 const rawDir = path.join(epDir, 'raw');
 const outDir = path.join('public', 'voices', ep);
 const manifestFile = path.join('src', 'generated', 'voices', `${ep}.json`);
@@ -65,6 +79,7 @@ function trimInfo(data, sr) {
 
 for (const [id, url] of Object.entries(downloads)) {
   if (!url) continue;
+  if (manifest[id] && fs.existsSync(path.join(outDir, `${id}.wav`))) continue; // already imported
   const raw = path.join(rawDir, `${id}.mp3`);
   const wav = path.join(outDir, `${id}.wav`);
   if (!fs.existsSync(raw)) {

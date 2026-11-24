@@ -1,0 +1,1424 @@
+[
+  {
+    "id": "n01",
+    "who": "narrator",
+    "voice": "Oliver - Warm British Narrator",
+    "voice_id": "lo1O1Dz1Tu4FWVEPaxuT",
+    "text": "[warm, wry] This is Dex, Benny and Milo. Combined age: seventy-one. Combined jobs: zero.",
+    "chars": 88,
+    "hasAudio": true
+  },
+  {
+    "id": "n02",
+    "who": "narrator",
+    "voice": "Oliver - Warm British Narrator",
+    "voice_id": "lo1O1Dz1Tu4FWVEPaxuT",
+    "text": "[warm, wry] It is four in the morning, and they are nineteen hours into a video game marathon.",
+    "chars": 94,
+    "hasAudio": true
+  },
+  {
+    "id": "d01",
+    "who": "dex",
+    "voice": "Zane - Dynamic and Expressive",
+    "voice_id": "GSvNDZsT0i8NKI79rH7K",
+    "text": "[intense, focused] Left flank. Benny, left flank! Your OTHER left!",
+    "chars": 66,
+    "hasAudio": true
+  },
+  {
+    "id": "b01",
+    "who": "benny",
+    "voice": "Quibble - Silly & Wacky",
+    "voice_id": "Pc8v3DjQV7T6YEsmz5IE",
+    "text": "[mouth full, panicking] I can't shoot and eat at the same time, Dex! I'm not a machine!",
+    "chars": 87,
+    "hasAudio": true
+  },
+  {
+    "id": "m01",
+    "who": "milo",
+    "voice": "Timmy - Anxious Nerd",
+    "voice_id": "mrQhZWGbb2k9qWJb5qeA",
+    "text": "[nervous, fast] Guys, statistically, if a real zombie apocalypse ever happened, we would last eleven minutes.",
+    "chars": 109,
+    "hasAudio": true
+  },
+  {
+    "id": "d02",
+    "who": "dex",
+    "voice": "Zane - Dynamic and Expressive",
+    "voice_id": "GSvNDZsT0i8NKI79rH7K",
+    "text": "[sarcastic] Milo. We have nine thousand hours of zombie experience. We'd be legends.",
+    "chars": 84,
+    "hasAudio": true
+  },
+  {
+    "id": "b02",
+    "who": "benny",
+    "voice": "Quibble - Silly & Wacky",
+    "voice_id": "Pc8v3DjQV7T6YEsmz5IE",
+    "text": "[proud] I'd last twelve minutes. I have snacks.",
+    "chars": 47,
+    "hasAudio": true
+  },
+  {
+    "id": "m02",
+    "who": "milo",
+    "voice": "Timmy - Anxious Nerd",
+    "voice_id": "mrQhZWGbb2k9qWJb5qeA",
+    "text": "[deadpan] We died. Again. To the tutorial zombie.",
+    "chars": 49,
+    "hasAudio": true
+  },
+  {
+    "id": "d03",
+    "who": "dex",
+    "voice": "Zane - Dynamic and Expressive",
+    "voice_id": "GSvNDZsT0i8NKI79rH7K",
+    "text": "[yawning, waving it off] One more round. Then sleep. Then... job interview at nine.",
+    "chars": 83,
+    "hasAudio": true
+  },
+  {
+    "id": "n03",
+    "who": "narrator",
+    "voice": "Oliver - Warm British Narrator",
+    "voice_id": "lo1O1Dz1Tu4FWVEPaxuT",
+    "text": "[dry] They did not play one more round. They played eleven.",
+    "chars": 59,
+    "hasAudio": true
+  },
+  {
+    "id": "n04",
+    "who": "narrator",
+    "voice": "Oliver - Warm British Narrator",
+    "voice_id": "lo1O1Dz1Tu4FWVEPaxuT",
+    "text": "[warm] The next afternoon.",
+    "chars": 26,
+    "hasAudio": true
+  },
+  {
+    "id": "b03",
+    "who": "benny",
+    "voice": "Quibble - Silly & Wacky",
+    "voice_id": "Pc8v3DjQV7T6YEsmz5IE",
+    "text": "[groggy, waking up] Mmh... is it breakfast? Or lunch? Is it... brunch?",
+    "chars": 70,
+    "hasAudio": true
+  },
+  {
+    "id": "d04",
+    "who": "dex",
+    "voice": "Zane - Dynamic and Expressive",
+    "voice_id": "GSvNDZsT0i8NKI79rH7K",
+    "text": "[waking, then suspicious] Wait. What time is it?",
+    "chars": 48,
+    "hasAudio": true
+  },
+  {
+    "id": "m03",
+    "who": "milo",
+    "voice": "Timmy - Anxious Nerd",
+    "voice_id": "mrQhZWGbb2k9qWJb5qeA",
+    "text": "[reading phone, nervous] Two forty-seven. P.M.",
+    "chars": 46,
+    "hasAudio": true
+  },
+  {
+    "id": "d05",
+    "who": "dex",
+    "voice": "Zane - Dynamic and Expressive",
+    "voice_id": "GSvNDZsT0i8NKI79rH7K",
+    "text": "[flat, defeated] The interview was at nine. A.M.",
+    "chars": 48,
+    "hasAudio": true
+  },
+  {
+    "id": "b04",
+    "who": "benny",
+    "voice": "Quibble - Silly & Wacky",
+    "voice_id": "Pc8v3DjQV7T6YEsmz5IE",
+    "text": "[supportive] Hey, look on the bright side. You can't get rejected if you never show up!",
+    "chars": 87,
+    "hasAudio": true
+  },
+  {
+    "id": "d06",
+    "who": "dex",
+    "voice": "Zane - Dynamic and Expressive",
+    "voice_id": "GSvNDZsT0i8NKI79rH7K",
+    "text": "[sarcastic] Thank you, Benny. Very inspiring. Put it on a mug.",
+    "chars": 62,
+    "hasAudio": true
+  },
+  {
+    "id": "m04",
+    "who": "milo",
+    "voice": "Timmy - Anxious Nerd",
+    "voice_id": "mrQhZWGbb2k9qWJb5qeA",
+    "text": "[uneasy] Does anyone else notice it's really quiet? No cars. No sirens. No Mrs. Petrovic yelling at her parrot.",
+    "chars": 111,
+    "hasAudio": true
+  },
+  {
+    "id": "b05",
+    "who": "benny",
+    "voice": "Quibble - Silly & Wacky",
+    "voice_id": "Pc8v3DjQV7T6YEsmz5IE",
+    "text": "[cheerful] Maybe everyone took a day off. Like us. Every day.",
+    "chars": 61,
+    "hasAudio": true
+  },
+  {
+    "id": "a01",
+    "who": "anchor",
+    "voice": "Robert - American standard broadcaster",
+    "voice_id": "tNIuvXGG5RnGdTbvfnPR",
+    "text": "[urgent, professional] Breaking news. Officials urge residents to stay indoors. Do not, I repeat, do NOT eat the bread.",
+    "chars": 119,
+    "hasAudio": true
+  },
+  {
+    "id": "a02",
+    "who": "anchor",
+    "voice": "Robert - American standard broadcaster",
+    "voice_id": "tNIuvXGG5RnGdTbvfnPR",
+    "text": "[slowly losing it, groaning] The bread... is so... soft... uuuurgh.",
+    "chars": 67,
+    "hasAudio": true
+  },
+  {
+    "id": "m05",
+    "who": "milo",
+    "voice": "Timmy - Anxious Nerd",
+    "voice_id": "mrQhZWGbb2k9qWJb5qeA",
+    "text": "[very quietly] Did the news guy just turn into a zombie? On live TV?",
+    "chars": 68,
+    "hasAudio": true
+  },
+  {
+    "id": "d07",
+    "who": "dex",
+    "voice": "Zane - Dynamic and Expressive",
+    "voice_id": "GSvNDZsT0i8NKI79rH7K",
+    "text": "[skeptical] Relax. It's probably a commercial. For very aggressive bread.",
+    "chars": 73,
+    "hasAudio": true
+  },
+  {
+    "id": "b06",
+    "who": "benny",
+    "voice": "Quibble - Silly & Wacky",
+    "voice_id": "Pc8v3DjQV7T6YEsmz5IE",
+    "text": "[shrieking] ZOMBIES! Real ones! With LEGS!",
+    "chars": 42,
+    "hasAudio": true
+  },
+  {
+    "id": "m06",
+    "who": "milo",
+    "voice": "Timmy - Anxious Nerd",
+    "voice_id": "mrQhZWGbb2k9qWJb5qeA",
+    "text": "[hyperventilating] Eleven minutes! I SAID eleven minutes!",
+    "chars": 57,
+    "hasAudio": true
+  },
+  {
+    "id": "d08",
+    "who": "dex",
+    "voice": "Zane - Dynamic and Expressive",
+    "voice_id": "GSvNDZsT0i8NKI79rH7K",
+    "text": "[calm, smug] Gentlemen. We have trained our whole lives for this moment.",
+    "chars": 72,
+    "hasAudio": true
+  },
+  {
+    "id": "b07",
+    "who": "benny",
+    "voice": "Quibble - Silly & Wacky",
+    "voice_id": "Pc8v3DjQV7T6YEsmz5IE",
+    "text": "[confused] We've trained our whole lives for sitting down.",
+    "chars": 58,
+    "hasAudio": true
+  },
+  {
+    "id": "d09",
+    "who": "dex",
+    "voice": "Zane - Dynamic and Expressive",
+    "voice_id": "GSvNDZsT0i8NKI79rH7K",
+    "text": "[confident] Exactly. And now... we stand up.",
+    "chars": 44,
+    "hasAudio": true
+  },
+  {
+    "id": "b08",
+    "who": "benny",
+    "voice": "Quibble - Silly & Wacky",
+    "voice_id": "Pc8v3DjQV7T6YEsmz5IE",
+    "text": "[tragic, quiet] The fridge contains... one olive. And a ketchup bottle that's mostly air.",
+    "chars": 89,
+    "hasAudio": true
+  },
+  {
+    "id": "m07",
+    "who": "milo",
+    "voice": "Timmy - Anxious Nerd",
+    "voice_id": "mrQhZWGbb2k9qWJb5qeA",
+    "text": "[thinking aloud, fast] Okay. Okay. We need food, water and a plan. I made a spreadsheet.",
+    "chars": 88,
+    "hasAudio": true
+  },
+  {
+    "id": "d10",
+    "who": "dex",
+    "voice": "Zane - Dynamic and Expressive",
+    "voice_id": "GSvNDZsT0i8NKI79rH7K",
+    "text": "[sarcastic] When did you make a spreadsheet?",
+    "chars": 44,
+    "hasAudio": true
+  },
+  {
+    "id": "m08",
+    "who": "milo",
+    "voice": "Timmy - Anxious Nerd",
+    "voice_id": "mrQhZWGbb2k9qWJb5qeA",
+    "text": "[defensive] Just now! Panic makes me productive. Column A: things that can kill us. It's... all the columns.",
+    "chars": 108,
+    "hasAudio": true
+  },
+  {
+    "id": "d11",
+    "who": "dex",
+    "voice": "Zane - Dynamic and Expressive",
+    "voice_id": "GSvNDZsT0i8NKI79rH7K",
+    "text": "[leader voice] Listen up. The supermarket is three blocks away. We go in, grab supplies, come back. Like a raid.",
+    "chars": 112,
+    "hasAudio": true
+  },
+  {
+    "id": "b09",
+    "who": "benny",
+    "voice": "Quibble - Silly & Wacky",
+    "voice_id": "Pc8v3DjQV7T6YEsmz5IE",
+    "text": "[excited] Like a raid! Do I get to be the tank?",
+    "chars": 47,
+    "hasAudio": true
+  },
+  {
+    "id": "d12",
+    "who": "dex",
+    "voice": "Zane - Dynamic and Expressive",
+    "voice_id": "GSvNDZsT0i8NKI79rH7K",
+    "text": "[deadpan] Benny, you were born the tank.",
+    "chars": 40,
+    "hasAudio": true
+  },
+  {
+    "id": "b10",
+    "who": "benny",
+    "voice": "Quibble - Silly & Wacky",
+    "voice_id": "Pc8v3DjQV7T6YEsmz5IE",
+    "text": "[delighted] I'll take it!",
+    "chars": 25,
+    "hasAudio": true
+  },
+  {
+    "id": "n05",
+    "who": "narrator",
+    "voice": "Oliver - Warm British Narrator",
+    "voice_id": "lo1O1Dz1Tu4FWVEPaxuT",
+    "text": "[dry, amused] And so, our heroes prepared for battle, with whatever they could find.",
+    "chars": 84,
+    "hasAudio": true
+  },
+  {
+    "id": "m09",
+    "who": "milo",
+    "voice": "Timmy - Anxious Nerd",
+    "voice_id": "mrQhZWGbb2k9qWJb5qeA",
+    "text": "[proud, nasal] Colander helmet. Lightweight, breathable, and it drains pasta.",
+    "chars": 77,
+    "hasAudio": true
+  },
+  {
+    "id": "b11",
+    "who": "benny",
+    "voice": "Quibble - Silly & Wacky",
+    "voice_id": "Pc8v3DjQV7T6YEsmz5IE",
+    "text": "[muffled, proud] Couch cushion armor! Plus five defense, minus ten dignity!",
+    "chars": 75,
+    "hasAudio": true
+  },
+  {
+    "id": "d13",
+    "who": "dex",
+    "voice": "Zane - Dynamic and Expressive",
+    "voice_id": "GSvNDZsT0i8NKI79rH7K",
+    "text": "[dramatic, heroic] And I have... the Flipper of Destiny.",
+    "chars": 56,
+    "hasAudio": true
+  },
+  {
+    "id": "m10",
+    "who": "milo",
+    "voice": "Timmy - Anxious Nerd",
+    "voice_id": "mrQhZWGbb2k9qWJb5qeA",
+    "text": "[flat] That's a broom with a spatula taped to it.",
+    "chars": 49,
+    "hasAudio": true
+  },
+  {
+    "id": "d14",
+    "who": "dex",
+    "voice": "Zane - Dynamic and Expressive",
+    "voice_id": "GSvNDZsT0i8NKI79rH7K",
+    "text": "[offended] It's a legendary weapon, Milo. Read the lore.",
+    "chars": 56,
+    "hasAudio": true
+  },
+  {
+    "id": "n06",
+    "who": "narrator",
+    "voice": "Oliver - Warm British Narrator",
+    "voice_id": "lo1O1Dz1Tu4FWVEPaxuT",
+    "text": "[ominous, warm] Outside, the city had changed. Smoke hung in the air. Cars lay upside down. And everywhere... they shuffled.",
+    "chars": 124,
+    "hasAudio": true
+  },
+  {
+    "id": "m11",
+    "who": "milo",
+    "voice": "Timmy - Anxious Nerd",
+    "voice_id": "mrQhZWGbb2k9qWJb5qeA",
+    "text": "[whispering, terrified] Okay. Everybody crouch. In every game, crouching makes you invisible.",
+    "chars": 93,
+    "hasAudio": true
+  },
+  {
+    "id": "b12",
+    "who": "benny",
+    "voice": "Quibble - Silly & Wacky",
+    "voice_id": "Pc8v3DjQV7T6YEsmz5IE",
+    "text": "[whispering] That's not how real life works, Milo.",
+    "chars": 50,
+    "hasAudio": true
+  },
+  {
+    "id": "b13",
+    "who": "benny",
+    "voice": "Quibble - Silly & Wacky",
+    "voice_id": "Pc8v3DjQV7T6YEsmz5IE",
+    "text": "[whispering, amazed] ...Oh. It totally IS how real life works.",
+    "chars": 62,
+    "hasAudio": true
+  },
+  {
+    "id": "d15",
+    "who": "dex",
+    "voice": "Zane - Dynamic and Expressive",
+    "voice_id": "GSvNDZsT0i8NKI79rH7K",
+    "text": "[whispering, focused] Stay in cover. No sudden moves. No noise.",
+    "chars": 63,
+    "hasAudio": true
+  },
+  {
+    "id": "b14",
+    "who": "benny",
+    "voice": "Quibble - Silly & Wacky",
+    "voice_id": "Pc8v3DjQV7T6YEsmz5IE",
+    "text": "[tiny voice] ...my bad.",
+    "chars": 23,
+    "hasAudio": true
+  },
+  {
+    "id": "d16",
+    "who": "dex",
+    "voice": "Zane - Dynamic and Expressive",
+    "voice_id": "GSvNDZsT0i8NKI79rH7K",
+    "text": "[yelling] RUN!",
+    "chars": 14,
+    "hasAudio": true
+  },
+  {
+    "id": "m12",
+    "who": "milo",
+    "voice": "Timmy - Anxious Nerd",
+    "voice_id": "mrQhZWGbb2k9qWJb5qeA",
+    "text": "[running, panicking] Kite them! Kite them in a circle, like the boss in level four!",
+    "chars": 83,
+    "hasAudio": true
+  },
+  {
+    "id": "d17",
+    "who": "dex",
+    "voice": "Zane - Dynamic and Expressive",
+    "voice_id": "GSvNDZsT0i8NKI79rH7K",
+    "text": "[running, sarcastic] Great idea, Milo! Let's just run in circles forever!",
+    "chars": 73,
+    "hasAudio": true
+  },
+  {
+    "id": "b15",
+    "who": "benny",
+    "voice": "Quibble - Silly & Wacky",
+    "voice_id": "Pc8v3DjQV7T6YEsmz5IE",
+    "text": "[running, out of breath] Guys... I have a cramp... in my... entire body!",
+    "chars": 72,
+    "hasAudio": true
+  },
+  {
+    "id": "d18",
+    "who": "dex",
+    "voice": "Zane - Dynamic and Expressive",
+    "voice_id": "GSvNDZsT0i8NKI79rH7K",
+    "text": "[shouting] The supermarket! Go, go, go!",
+    "chars": 39,
+    "hasAudio": true
+  },
+  {
+    "id": "n07",
+    "who": "narrator",
+    "voice": "Oliver - Warm British Narrator",
+    "voice_id": "lo1O1Dz1Tu4FWVEPaxuT",
+    "text": "[wry] The Mega Saver Supermarket. Abandoned, half-looted, and still playing its terrible music.",
+    "chars": 95,
+    "hasAudio": true
+  },
+  {
+    "id": "b16",
+    "who": "benny",
+    "voice": "Quibble - Silly & Wacky",
+    "voice_id": "Pc8v3DjQV7T6YEsmz5IE",
+    "text": "[reverent whisper, emotional] Look at it, guys. Aisle seven. Snacks. It's... beautiful.",
+    "chars": 87,
+    "hasAudio": true
+  },
+  {
+    "id": "m13",
+    "who": "milo",
+    "voice": "Timmy - Anxious Nerd",
+    "voice_id": "mrQhZWGbb2k9qWJb5qeA",
+    "text": "[nervous, checking list] Canned beans, water, batteries, bandages.",
+    "chars": 66,
+    "hasAudio": true
+  },
+  {
+    "id": "b17",
+    "who": "benny",
+    "voice": "Quibble - Silly & Wacky",
+    "voice_id": "Pc8v3DjQV7T6YEsmz5IE",
+    "text": "[ecstatic, ignoring him] Cheese puffs, chocolate milk, cheese puffs, gummy worms... and cheese puffs.",
+    "chars": 101,
+    "hasAudio": true
+  },
+  {
+    "id": "d19",
+    "who": "dex",
+    "voice": "Zane - Dynamic and Expressive",
+    "voice_id": "GSvNDZsT0i8NKI79rH7K",
+    "text": "[dry] Benny, that's not survival food. That's a birthday party.",
+    "chars": 63,
+    "hasAudio": true
+  },
+  {
+    "id": "b18",
+    "who": "benny",
+    "voice": "Quibble - Silly & Wacky",
+    "voice_id": "Pc8v3DjQV7T6YEsmz5IE",
+    "text": "[firm] Survival IS a party, Dex. If you're doing it right.",
+    "chars": 58,
+    "hasAudio": true
+  },
+  {
+    "id": "m14",
+    "who": "milo",
+    "voice": "Timmy - Anxious Nerd",
+    "voice_id": "mrQhZWGbb2k9qWJb5qeA",
+    "text": "[whisper-screaming] Cashier! Zombie cashier! At register three!",
+    "chars": 63,
+    "hasAudio": true
+  },
+  {
+    "id": "d20",
+    "who": "dex",
+    "voice": "Zane - Dynamic and Expressive",
+    "voice_id": "GSvNDZsT0i8NKI79rH7K",
+    "text": "[calm, sarcastic] Relax. Look at him. He's still on his lunch break.",
+    "chars": 68,
+    "hasAudio": true
+  },
+  {
+    "id": "d21",
+    "who": "dex",
+    "voice": "Zane - Dynamic and Expressive",
+    "voice_id": "GSvNDZsT0i8NKI79rH7K",
+    "text": "[triumphant] Critical hit!",
+    "chars": 26,
+    "hasAudio": true
+  },
+  {
+    "id": "m15",
+    "who": "milo",
+    "voice": "Timmy - Anxious Nerd",
+    "voice_id": "mrQhZWGbb2k9qWJb5qeA",
+    "text": "[horrified] Dex! That's a baguette! The news said don't touch the bread!",
+    "chars": 72,
+    "hasAudio": true
+  },
+  {
+    "id": "d22",
+    "who": "dex",
+    "voice": "Zane - Dynamic and Expressive",
+    "voice_id": "GSvNDZsT0i8NKI79rH7K",
+    "text": "[pause, then dropping it] ...The news said don't EAT the bread. Different thing. Probably.",
+    "chars": 90,
+    "hasAudio": true
+  },
+  {
+    "id": "b19",
+    "who": "benny",
+    "voice": "Quibble - Silly & Wacky",
+    "voice_id": "Pc8v3DjQV7T6YEsmz5IE",
+    "text": "[gasping] The last bag. Family size. Extreme Flamin' Cheese. It's calling to me.",
+    "chars": 80,
+    "hasAudio": true
+  },
+  {
+    "id": "m16",
+    "who": "milo",
+    "voice": "Timmy - Anxious Nerd",
+    "voice_id": "mrQhZWGbb2k9qWJb5qeA",
+    "text": "[warning] Benny, wait! That's exactly how people die in horror movies!",
+    "chars": 70,
+    "hasAudio": true
+  },
+  {
+    "id": "b20",
+    "who": "benny",
+    "voice": "Quibble - Silly & Wacky",
+    "voice_id": "Pc8v3DjQV7T6YEsmz5IE",
+    "text": "[determined] Then I'll die doing what I love. Snacking.",
+    "chars": 55,
+    "hasAudio": true
+  },
+  {
+    "id": "b21",
+    "who": "benny",
+    "voice": "Quibble - Silly & Wacky",
+    "voice_id": "Pc8v3DjQV7T6YEsmz5IE",
+    "text": "[screaming] OW! He BIT me! He bit my snacking arm!",
+    "chars": 50,
+    "hasAudio": true
+  },
+  {
+    "id": "m17",
+    "who": "milo",
+    "voice": "Timmy - Anxious Nerd",
+    "voice_id": "mrQhZWGbb2k9qWJb5qeA",
+    "text": "[panicked, rapid] Okay, okay, the bite. In every movie, once you're bitten, you have about... ninety seconds.",
+    "chars": 109,
+    "hasAudio": true
+  },
+  {
+    "id": "b22",
+    "who": "benny",
+    "voice": "Quibble - Silly & Wacky",
+    "voice_id": "Pc8v3DjQV7T6YEsmz5IE",
+    "text": "[dramatic, tearful] Guys... if I don't make it... I want you to know... I'm the one who ate your birthday cake, Milo.",
+    "chars": 117,
+    "hasAudio": true
+  },
+  {
+    "id": "m18",
+    "who": "milo",
+    "voice": "Timmy - Anxious Nerd",
+    "voice_id": "mrQhZWGbb2k9qWJb5qeA",
+    "text": "[outraged] I KNEW IT!",
+    "chars": 21,
+    "hasAudio": true
+  },
+  {
+    "id": "b23",
+    "who": "benny",
+    "voice": "Quibble - Silly & Wacky",
+    "voice_id": "Pc8v3DjQV7T6YEsmz5IE",
+    "text": "[weakly] And Dex... I used your toothbrush. To clean the controller.",
+    "chars": 68,
+    "hasAudio": true
+  },
+  {
+    "id": "d23",
+    "who": "dex",
+    "voice": "Zane - Dynamic and Expressive",
+    "voice_id": "GSvNDZsT0i8NKI79rH7K",
+    "text": "[disgusted, then flat] ...Okay. You can go now. Peacefully.",
+    "chars": 59,
+    "hasAudio": true
+  },
+  {
+    "id": "b24",
+    "who": "benny",
+    "voice": "Quibble - Silly & Wacky",
+    "voice_id": "Pc8v3DjQV7T6YEsmz5IE",
+    "text": "[normal again, confused] ...Hey. Why is everyone staring at me?",
+    "chars": 63,
+    "hasAudio": true
+  },
+  {
+    "id": "m19",
+    "who": "milo",
+    "voice": "Timmy - Anxious Nerd",
+    "voice_id": "mrQhZWGbb2k9qWJb5qeA",
+    "text": "[confused, scientific] You're green. Your heartbeat is... slow. But you're talking?",
+    "chars": 83,
+    "hasAudio": true
+  },
+  {
+    "id": "b25",
+    "who": "benny",
+    "voice": "Quibble - Silly & Wacky",
+    "voice_id": "Pc8v3DjQV7T6YEsmz5IE",
+    "text": "[thinking] Huh. I do feel kinda weird. Do I want brains? ...No. I want nachos. Is that normal?",
+    "chars": 94,
+    "hasAudio": true
+  },
+  {
+    "id": "d24",
+    "who": "dex",
+    "voice": "Zane - Dynamic and Expressive",
+    "voice_id": "GSvNDZsT0i8NKI79rH7K",
+    "text": "[relieved, sarcastic] For you? That's the most normal thing you've ever said.",
+    "chars": 77,
+    "hasAudio": true
+  },
+  {
+    "id": "m20",
+    "who": "milo",
+    "voice": "Timmy - Anxious Nerd",
+    "voice_id": "mrQhZWGbb2k9qWJb5qeA",
+    "text": "[excited, nerdy] Wait. Wait! You're immune! Partially! You're a zombie with your personality still installed!",
+    "chars": 109,
+    "hasAudio": true
+  },
+  {
+    "id": "b26",
+    "who": "benny",
+    "voice": "Quibble - Silly & Wacky",
+    "voice_id": "Pc8v3DjQV7T6YEsmz5IE",
+    "text": "[proud] So I'm like a hybrid. A zombie-plus. Benny two-point-oh!",
+    "chars": 64,
+    "hasAudio": true
+  },
+  {
+    "id": "n08",
+    "who": "narrator",
+    "voice": "Oliver - Warm British Narrator",
+    "voice_id": "lo1O1Dz1Tu4FWVEPaxuT",
+    "text": "[warm, amused] Benny had been bitten. Benny had turned. And yet, somehow, Benny was still... extremely Benny.",
+    "chars": 109,
+    "hasAudio": true
+  },
+  {
+    "id": "d25",
+    "who": "dex",
+    "voice": "Zane - Dynamic and Expressive",
+    "voice_id": "GSvNDZsT0i8NKI79rH7K",
+    "text": "[squinting] Look at them. They're all walking the same way. Like they're following something.",
+    "chars": 93,
+    "hasAudio": true
+  },
+  {
+    "id": "b27",
+    "who": "benny",
+    "voice": "Quibble - Silly & Wacky",
+    "voice_id": "Pc8v3DjQV7T6YEsmz5IE",
+    "text": "[surprised] Whoa. I can understand them! They're saying... 'brains'... no, wait... 'brunch'.",
+    "chars": 92,
+    "hasAudio": true
+  },
+  {
+    "id": "m21",
+    "who": "milo",
+    "voice": "Timmy - Anxious Nerd",
+    "voice_id": "mrQhZWGbb2k9qWJb5qeA",
+    "text": "[skeptical] They're saying brunch?",
+    "chars": 34,
+    "hasAudio": true
+  },
+  {
+    "id": "b28",
+    "who": "benny",
+    "voice": "Quibble - Silly & Wacky",
+    "voice_id": "Pc8v3DjQV7T6YEsmz5IE",
+    "text": "[listening, translating] No, sorry, it's... 'The Mother calls. Feed the Mother.' Also, they're out of oat milk.",
+    "chars": 111,
+    "hasAudio": true
+  },
+  {
+    "id": "d26",
+    "who": "dex",
+    "voice": "Zane - Dynamic and Expressive",
+    "voice_id": "GSvNDZsT0i8NKI79rH7K",
+    "text": "[serious] Who's the Mother?",
+    "chars": 27,
+    "hasAudio": true
+  },
+  {
+    "id": "m22",
+    "who": "milo",
+    "voice": "Timmy - Anxious Nerd",
+    "voice_id": "mrQhZWGbb2k9qWJb5qeA",
+    "text": "[gasping, realization] Guys. Mama Mozza's Pizzeria. Free sourdough samples, three days ago. Everybody in the city ate one.",
+    "chars": 122,
+    "hasAudio": true
+  },
+  {
+    "id": "d27",
+    "who": "dex",
+    "voice": "Zane - Dynamic and Expressive",
+    "voice_id": "GSvNDZsT0i8NKI79rH7K",
+    "text": "[realizing] And we didn't... because we haven't left the apartment in three days.",
+    "chars": 81,
+    "hasAudio": true
+  },
+  {
+    "id": "b29",
+    "who": "benny",
+    "voice": "Quibble - Silly & Wacky",
+    "voice_id": "Pc8v3DjQV7T6YEsmz5IE",
+    "text": "[proud] Our laziness... saved our lives.",
+    "chars": 40,
+    "hasAudio": true
+  },
+  {
+    "id": "m24",
+    "who": "milo",
+    "voice": "Timmy - Anxious Nerd",
+    "voice_id": "mrQhZWGbb2k9qWJb5qeA",
+    "text": "[determined, voice cracking] If the infection came from the bread, the source is at that pizzeria. We stop the source, we stop the zombies.",
+    "chars": 139,
+    "hasAudio": true
+  },
+  {
+    "id": "d28",
+    "who": "dex",
+    "voice": "Zane - Dynamic and Expressive",
+    "voice_id": "GSvNDZsT0i8NKI79rH7K",
+    "text": "[leader, determined] Then we go tonight. Party of three. One of us slightly dead.",
+    "chars": 81,
+    "hasAudio": true
+  },
+  {
+    "id": "b30",
+    "who": "benny",
+    "voice": "Quibble - Silly & Wacky",
+    "voice_id": "Pc8v3DjQV7T6YEsmz5IE",
+    "text": "[cheerful] Let's gooo!",
+    "chars": 22,
+    "hasAudio": true
+  },
+  {
+    "id": "n09",
+    "who": "narrator",
+    "voice": "Oliver - Warm British Narrator",
+    "voice_id": "lo1O1Dz1Tu4FWVEPaxuT",
+    "text": "[ominous, low] Night fell. And the streets belonged to the dead.",
+    "chars": 64,
+    "hasAudio": true
+  },
+  {
+    "id": "b31",
+    "who": "benny",
+    "voice": "Quibble - Silly & Wacky",
+    "voice_id": "Pc8v3DjQV7T6YEsmz5IE",
+    "text": "[whispering, coaching] Okay. Just act like me. Arms out. Slow walk. Dead eyes. Think about Mondays.",
+    "chars": 99,
+    "hasAudio": true
+  },
+  {
+    "id": "m25",
+    "who": "milo",
+    "voice": "Timmy - Anxious Nerd",
+    "voice_id": "mrQhZWGbb2k9qWJb5qeA",
+    "text": "[stiff, robotic] Uuurgh. I am a zombie. Beep boop. I enjoy... decay.",
+    "chars": 68,
+    "hasAudio": true
+  },
+  {
+    "id": "d29",
+    "who": "dex",
+    "voice": "Zane - Dynamic and Expressive",
+    "voice_id": "GSvNDZsT0i8NKI79rH7K",
+    "text": "[whispering] Milo, you sound like a robot. A sad robot.",
+    "chars": 55,
+    "hasAudio": true
+  },
+  {
+    "id": "m26",
+    "who": "milo",
+    "voice": "Timmy - Anxious Nerd",
+    "voice_id": "mrQhZWGbb2k9qWJb5qeA",
+    "text": "[whispering, stressed] I've never been cool under pressure! Or under any other condition!",
+    "chars": 89,
+    "hasAudio": true
+  },
+  {
+    "id": "b32",
+    "who": "benny",
+    "voice": "Quibble - Silly & Wacky",
+    "voice_id": "Pc8v3DjQV7T6YEsmz5IE",
+    "text": "[fake zombie voice, friendly] Uuurgh, hey buddy. These two are with me. Fresh off the bus. Real... dead.",
+    "chars": 104,
+    "hasAudio": true
+  },
+  {
+    "id": "d30",
+    "who": "dex",
+    "voice": "Zane - Dynamic and Expressive",
+    "voice_id": "GSvNDZsT0i8NKI79rH7K",
+    "text": "[relieved whisper] Benny... that was actually amazing.",
+    "chars": 54,
+    "hasAudio": true
+  },
+  {
+    "id": "b33",
+    "who": "benny",
+    "voice": "Quibble - Silly & Wacky",
+    "voice_id": "Pc8v3DjQV7T6YEsmz5IE",
+    "text": "[delighted whisper] Thank you! I've been practising my whole life. Mostly on Mondays.",
+    "chars": 85,
+    "hasAudio": true
+  },
+  {
+    "id": "m27",
+    "who": "milo",
+    "voice": "Timmy - Anxious Nerd",
+    "voice_id": "mrQhZWGbb2k9qWJb5qeA",
+    "text": "[whispering, awed] There it is. Mama Mozza's.",
+    "chars": 45,
+    "hasAudio": true
+  },
+  {
+    "id": "d31",
+    "who": "dex",
+    "voice": "Zane - Dynamic and Expressive",
+    "voice_id": "GSvNDZsT0i8NKI79rH7K",
+    "text": "[dry] Wow. Real subtle. A glowing green pizzeria. Nothing evil about that.",
+    "chars": 74,
+    "hasAudio": true
+  },
+  {
+    "id": "b34",
+    "who": "benny",
+    "voice": "Quibble - Silly & Wacky",
+    "voice_id": "Pc8v3DjQV7T6YEsmz5IE",
+    "text": "[sniffing, dreamy] Oh, it smells like pepperoni in here. I could cry. Should I cry? I'm crying.",
+    "chars": 95,
+    "hasAudio": true
+  },
+  {
+    "id": "m28",
+    "who": "milo",
+    "voice": "Timmy - Anxious Nerd",
+    "voice_id": "mrQhZWGbb2k9qWJb5qeA",
+    "text": "[nervous] Focus! Look for anything weird. Hidden doors, strange wires, a big glowing sign that says 'evil lab'...",
+    "chars": 113,
+    "hasAudio": true
+  },
+  {
+    "id": "d32",
+    "who": "dex",
+    "voice": "Zane - Dynamic and Expressive",
+    "voice_id": "GSvNDZsT0i8NKI79rH7K",
+    "text": "[deadpan] ...or that.",
+    "chars": 21,
+    "hasAudio": true
+  },
+  {
+    "id": "b35",
+    "who": "benny",
+    "voice": "Quibble - Silly & Wacky",
+    "voice_id": "Pc8v3DjQV7T6YEsmz5IE",
+    "text": "[whispering, thrilled] A secret lab under a pizzeria. This is the best day of my life. And I died today.",
+    "chars": 104,
+    "hasAudio": true
+  },
+  {
+    "id": "n10",
+    "who": "narrator",
+    "voice": "Oliver - Warm British Narrator",
+    "voice_id": "lo1O1Dz1Tu4FWVEPaxuT",
+    "text": "[hushed] Beneath the pizzeria lay a secret laboratory. And it was very, very green.",
+    "chars": 83,
+    "hasAudio": true
+  },
+  {
+    "id": "m29",
+    "who": "milo",
+    "voice": "Timmy - Anxious Nerd",
+    "voice_id": "mrQhZWGbb2k9qWJb5qeA",
+    "text": "[awed, nerdy] Bio-reactors... fermentation tanks... this is a world-class yeast lab!",
+    "chars": 84,
+    "hasAudio": true
+  },
+  {
+    "id": "d33",
+    "who": "dex",
+    "voice": "Zane - Dynamic and Expressive",
+    "voice_id": "GSvNDZsT0i8NKI79rH7K",
+    "text": "[sarcastic] Milo, you're the only person alive who'd say 'world-class yeast lab' with that much excitement.",
+    "chars": 107,
+    "hasAudio": true
+  },
+  {
+    "id": "c01",
+    "who": "crumb",
+    "voice": "Ilona - Calm & Confident",
+    "voice_id": "SDm2FQORi7Hju7z9CyTa",
+    "text": "[proud, eccentric] Video log, day one. I am Doctor Ingrid Crumb: scientist, baker, and owner of Mama Mozza's Pizzeria.",
+    "chars": 118,
+    "hasAudio": true
+  },
+  {
+    "id": "c02",
+    "who": "crumb",
+    "voice": "Ilona - Calm & Confident",
+    "voice_id": "SDm2FQORi7Hju7z9CyTa",
+    "text": "[excited] I have created the perfect sourdough starter. I call her... The Mother. She will end world hunger forever!",
+    "chars": 116,
+    "hasAudio": true
+  },
+  {
+    "id": "c03",
+    "who": "crumb",
+    "voice": "Ilona - Calm & Confident",
+    "voice_id": "SDm2FQORi7Hju7z9CyTa",
+    "text": "[slightly worried] Day nine. The Mother is growing quickly. She has learned to open the fridge. And to say 'more'.",
+    "chars": 114,
+    "hasAudio": true
+  },
+  {
+    "id": "c04",
+    "who": "crumb",
+    "voice": "Ilona - Calm & Confident",
+    "voice_id": "SDm2FQORi7Hju7z9CyTa",
+    "text": "[worried, whispering] Day twelve. Anyone who eats her bread becomes part of her. She controls them. Like a giant, fluffy queen bee.",
+    "chars": 131,
+    "hasAudio": true
+  },
+  {
+    "id": "c05",
+    "who": "crumb",
+    "voice": "Ilona - Calm & Confident",
+    "voice_id": "SDm2FQORi7Hju7z9CyTa",
+    "text": "[panicking] Day thirteen. I made one tiny mistake. I tasted a sample. Uuuurrrgh...",
+    "chars": 82,
+    "hasAudio": true
+  },
+  {
+    "id": "b36",
+    "who": "benny",
+    "voice": "Quibble - Silly & Wacky",
+    "voice_id": "Pc8v3DjQV7T6YEsmz5IE",
+    "text": "[horrified, then impressed] She tasted her own sample! ...Honestly? Respect.",
+    "chars": 76,
+    "hasAudio": true
+  },
+  {
+    "id": "x01",
+    "who": "mother",
+    "voice": "Valko - Slow and dark",
+    "voice_id": "90npM2sASZ9XVsdUuUF0",
+    "text": "[slow, deep, menacing] Who dares... enter... my proofing chamber?",
+    "chars": 65,
+    "hasAudio": true
+  },
+  {
+    "id": "m30",
+    "who": "milo",
+    "voice": "Timmy - Anxious Nerd",
+    "voice_id": "mrQhZWGbb2k9qWJb5qeA",
+    "text": "[tiny squeak] It talks. The bread talks.",
+    "chars": 40,
+    "hasAudio": true
+  },
+  {
+    "id": "x02",
+    "who": "mother",
+    "voice": "Valko - Slow and dark",
+    "voice_id": "90npM2sASZ9XVsdUuUF0",
+    "text": "[booming, slow] I am... THE MOTHER. Every slice of this city is mine. Every crumb obeys me.",
+    "chars": 91,
+    "hasAudio": true
+  },
+  {
+    "id": "d34",
+    "who": "dex",
+    "voice": "Zane - Dynamic and Expressive",
+    "voice_id": "GSvNDZsT0i8NKI79rH7K",
+    "text": "[sarcastic, nervous] Cool. Cool. Love what you've done with the place. Very... moist.",
+    "chars": 85,
+    "hasAudio": true
+  },
+  {
+    "id": "x03",
+    "who": "mother",
+    "voice": "Valko - Slow and dark",
+    "voice_id": "90npM2sASZ9XVsdUuUF0",
+    "text": "[menacing, hypnotic] And you... little green one. You carry my spores. Come... to... Mother.",
+    "chars": 92,
+    "hasAudio": true
+  },
+  {
+    "id": "b37",
+    "who": "benny",
+    "voice": "Quibble - Silly & Wacky",
+    "voice_id": "Pc8v3DjQV7T6YEsmz5IE",
+    "text": "[fighting it, strained] My legs! My legs are doing a thing! I didn't tell them to do a thing!",
+    "chars": 93,
+    "hasAudio": true
+  },
+  {
+    "id": "d35",
+    "who": "dex",
+    "voice": "Zane - Dynamic and Expressive",
+    "voice_id": "GSvNDZsT0i8NKI79rH7K",
+    "text": "[urgent] Benny! Fight it! Think about something you love more than bread!",
+    "chars": 73,
+    "hasAudio": true
+  },
+  {
+    "id": "b38",
+    "who": "benny",
+    "voice": "Quibble - Silly & Wacky",
+    "voice_id": "Pc8v3DjQV7T6YEsmz5IE",
+    "text": "[straining, then breaking free] Something I love... more than bread... NACHOS!",
+    "chars": 78,
+    "hasAudio": true
+  },
+  {
+    "id": "x04",
+    "who": "mother",
+    "voice": "Valko - Slow and dark",
+    "voice_id": "90npM2sASZ9XVsdUuUF0",
+    "text": "[furious roar] IMPOSSIBLE! My children... SEIZE THEM!",
+    "chars": 53,
+    "hasAudio": true
+  },
+  {
+    "id": "m31",
+    "who": "milo",
+    "voice": "Timmy - Anxious Nerd",
+    "voice_id": "mrQhZWGbb2k9qWJb5qeA",
+    "text": "[rapid, analytical] Okay, boss battle! Every boss has a pattern! Tentacle, tentacle, roar, then a weak spot!",
+    "chars": 108,
+    "hasAudio": true
+  },
+  {
+    "id": "d36",
+    "who": "dex",
+    "voice": "Zane - Dynamic and Expressive",
+    "voice_id": "GSvNDZsT0i8NKI79rH7K",
+    "text": "[shouting, swinging] What's the weak spot?!",
+    "chars": 43,
+    "hasAudio": true
+  },
+  {
+    "id": "m32",
+    "who": "milo",
+    "voice": "Timmy - Anxious Nerd",
+    "voice_id": "mrQhZWGbb2k9qWJb5qeA",
+    "text": "[panicking] I don't know! It's a giant sourdough! The crust? Its feelings?",
+    "chars": 74,
+    "hasAudio": true
+  },
+  {
+    "id": "d37",
+    "who": "dex",
+    "voice": "Zane - Dynamic and Expressive",
+    "voice_id": "GSvNDZsT0i8NKI79rH7K",
+    "text": "[shouting] Dodge roll!",
+    "chars": 22,
+    "hasAudio": true
+  },
+  {
+    "id": "b39",
+    "who": "benny",
+    "voice": "Quibble - Silly & Wacky",
+    "voice_id": "Pc8v3DjQV7T6YEsmz5IE",
+    "text": "[battle cry] Couch cushion... BODY SLAM!",
+    "chars": 40,
+    "hasAudio": true
+  },
+  {
+    "id": "m33",
+    "who": "milo",
+    "voice": "Timmy - Anxious Nerd",
+    "voice_id": "mrQhZWGbb2k9qWJb5qeA",
+    "text": "[triumphant] Decoy! Remote-control car with a pepperoni on top! Kiting strategy!",
+    "chars": 80,
+    "hasAudio": true
+  },
+  {
+    "id": "x05",
+    "who": "mother",
+    "voice": "Valko - Slow and dark",
+    "voice_id": "90npM2sASZ9XVsdUuUF0",
+    "text": "[thunderous] ENOUGH!",
+    "chars": 20,
+    "hasAudio": true
+  },
+  {
+    "id": "d38",
+    "who": "dex",
+    "voice": "Zane - Dynamic and Expressive",
+    "voice_id": "GSvNDZsT0i8NKI79rH7K",
+    "text": "[yelling] Retreat! Up the stairs! Back to the kitchen!",
+    "chars": 54,
+    "hasAudio": true
+  },
+  {
+    "id": "n11",
+    "who": "narrator",
+    "voice": "Oliver - Warm British Narrator",
+    "voice_id": "lo1O1Dz1Tu4FWVEPaxuT",
+    "text": "[dramatic] Cornered in the kitchen, with the Mother rising through the floorboards, our heroes had one option left.",
+    "chars": 115,
+    "hasAudio": true
+  },
+  {
+    "id": "d39",
+    "who": "dex",
+    "voice": "Zane - Dynamic and Expressive",
+    "voice_id": "GSvNDZsT0i8NKI79rH7K",
+    "text": "[desperate] Milo! Ideas! Any ideas!",
+    "chars": 35,
+    "hasAudio": true
+  },
+  {
+    "id": "m34",
+    "who": "milo",
+    "voice": "Timmy - Anxious Nerd",
+    "voice_id": "mrQhZWGbb2k9qWJb5qeA",
+    "text": "[spiraling] I have forty ideas and they all end with us as croutons!",
+    "chars": 68,
+    "hasAudio": true
+  },
+  {
+    "id": "b40",
+    "who": "benny",
+    "voice": "Quibble - Silly & Wacky",
+    "voice_id": "Pc8v3DjQV7T6YEsmz5IE",
+    "text": "[calm, oddly serene] Guys. If this is the end... I'm not going out hungry. I'm making one last pizza.",
+    "chars": 101,
+    "hasAudio": true
+  },
+  {
+    "id": "d40",
+    "who": "dex",
+    "voice": "Zane - Dynamic and Expressive",
+    "voice_id": "GSvNDZsT0i8NKI79rH7K",
+    "text": "[disbelief] You're cooking? NOW?!",
+    "chars": 33,
+    "hasAudio": true
+  },
+  {
+    "id": "b41",
+    "who": "benny",
+    "voice": "Quibble - Silly & Wacky",
+    "voice_id": "Pc8v3DjQV7T6YEsmz5IE",
+    "text": "[determined] A man's gotta eat, Dex. Even a slightly dead one.",
+    "chars": 62,
+    "hasAudio": true
+  },
+  {
+    "id": "b42",
+    "who": "benny",
+    "voice": "Quibble - Silly & Wacky",
+    "voice_id": "Pc8v3DjQV7T6YEsmz5IE",
+    "text": "[squinting at the dials] Bake... broil... extra crispy... ooh, 'Turbo Volcano Mode'? Sounds delicious.",
+    "chars": 102,
+    "hasAudio": true
+  },
+  {
+    "id": "m35",
+    "who": "milo",
+    "voice": "Timmy - Anxious Nerd",
+    "voice_id": "mrQhZWGbb2k9qWJb5qeA",
+    "text": "[reading the warning sign, alarmed] Benny, wait! The sign says: 'Never use Turbo Volcano. Oven vents directly into proofing chamber'!",
+    "chars": 133,
+    "hasAudio": true
+  },
+  {
+    "id": "b43",
+    "who": "benny",
+    "voice": "Quibble - Silly & Wacky",
+    "voice_id": "Pc8v3DjQV7T6YEsmz5IE",
+    "text": "[already pressing it] What?",
+    "chars": 27,
+    "hasAudio": true
+  },
+  {
+    "id": "x06",
+    "who": "mother",
+    "voice": "Valko - Slow and dark",
+    "voice_id": "90npM2sASZ9XVsdUuUF0",
+    "text": "[screaming, fading] No... NOOO! I'm rising... too fast... I'm... GOLDEN BROWN!",
+    "chars": 78,
+    "hasAudio": true
+  },
+  {
+    "id": "b44",
+    "who": "benny",
+    "voice": "Quibble - Silly & Wacky",
+    "voice_id": "Pc8v3DjQV7T6YEsmz5IE",
+    "text": "[small voice, covered in crumbs] ...So, uh. Did I do that?",
+    "chars": 58,
+    "hasAudio": true
+  },
+  {
+    "id": "m36",
+    "who": "milo",
+    "voice": "Timmy - Anxious Nerd",
+    "voice_id": "mrQhZWGbb2k9qWJb5qeA",
+    "text": "[stunned] You baked her. You baked the final boss.",
+    "chars": 50,
+    "hasAudio": true
+  },
+  {
+    "id": "d41",
+    "who": "dex",
+    "voice": "Zane - Dynamic and Expressive",
+    "voice_id": "GSvNDZsT0i8NKI79rH7K",
+    "text": "[deadpan, then grinning] Benny... that's the most useful thing you've ever done.",
+    "chars": 80,
+    "hasAudio": true
+  },
+  {
+    "id": "b45",
+    "who": "benny",
+    "voice": "Quibble - Silly & Wacky",
+    "voice_id": "Pc8v3DjQV7T6YEsmz5IE",
+    "text": "[proud] And the pizza's ready, too.",
+    "chars": 35,
+    "hasAudio": true
+  },
+  {
+    "id": "n12",
+    "who": "narrator",
+    "voice": "Oliver - Warm British Narrator",
+    "voice_id": "lo1O1Dz1Tu4FWVEPaxuT",
+    "text": "[warm] By sunrise, the spell was broken. All across the city, people woke up very confused... and slightly crusty.",
+    "chars": 114,
+    "hasAudio": true
+  },
+  {
+    "id": "a03",
+    "who": "anchor",
+    "voice": "Robert - American standard broadcaster",
+    "voice_id": "tNIuvXGG5RnGdTbvfnPR",
+    "text": "[confused, live in the street] Uh... good morning. I'm told I was a zombie. I'd like to apologise for all the groaning.",
+    "chars": 119,
+    "hasAudio": true
+  },
+  {
+    "id": "c06",
+    "who": "crumb",
+    "voice": "Ilona - Calm & Confident",
+    "voice_id": "SDm2FQORi7Hju7z9CyTa",
+    "text": "[sheepish, grateful] You three saved the city. And my pizzeria. Well, most of it. The oven is now a crater.",
+    "chars": 107,
+    "hasAudio": true
+  },
+  {
+    "id": "c07",
+    "who": "crumb",
+    "voice": "Ilona - Calm & Confident",
+    "voice_id": "SDm2FQORi7Hju7z9CyTa",
+    "text": "[warm, hopeful] I don't suppose... you boys are looking for jobs?",
+    "chars": 65,
+    "hasAudio": true
+  },
+  {
+    "id": "d42",
+    "who": "dex",
+    "voice": "Zane - Dynamic and Expressive",
+    "voice_id": "GSvNDZsT0i8NKI79rH7K",
+    "text": "[slowly, suspicious] Jobs. Like... with hours?",
+    "chars": 46,
+    "hasAudio": true
+  },
+  {
+    "id": "m37",
+    "who": "milo",
+    "voice": "Timmy - Anxious Nerd",
+    "voice_id": "mrQhZWGbb2k9qWJb5qeA",
+    "text": "[nervous] Would there be... a dress code?",
+    "chars": 41,
+    "hasAudio": true
+  },
+  {
+    "id": "b46",
+    "who": "benny",
+    "voice": "Quibble - Silly & Wacky",
+    "voice_id": "Pc8v3DjQV7T6YEsmz5IE",
+    "text": "[eager] Is there free pizza?",
+    "chars": 28,
+    "hasAudio": true
+  },
+  {
+    "id": "c08",
+    "who": "crumb",
+    "voice": "Ilona - Calm & Confident",
+    "voice_id": "SDm2FQORi7Hju7z9CyTa",
+    "text": "[cheerful] Unlimited pizza. NO sourdough.",
+    "chars": 41,
+    "hasAudio": true
+  },
+  {
+    "id": "b47",
+    "who": "benny",
+    "voice": "Quibble - Silly & Wacky",
+    "voice_id": "Pc8v3DjQV7T6YEsmz5IE",
+    "text": "[instantly] We're hired!",
+    "chars": 24,
+    "hasAudio": true
+  },
+  {
+    "id": "d43",
+    "who": "dex",
+    "voice": "Zane - Dynamic and Expressive",
+    "voice_id": "GSvNDZsT0i8NKI79rH7K",
+    "text": "[sarcastic smile] Great. Three friends, one job, and only a little bit undead. What could go wrong?",
+    "chars": 99,
+    "hasAudio": true
+  },
+  {
+    "id": "m38",
+    "who": "milo",
+    "voice": "Timmy - Anxious Nerd",
+    "voice_id": "mrQhZWGbb2k9qWJb5qeA",
+    "text": "[squinting] Benny... your left ear is still green.",
+    "chars": 50,
+    "hasAudio": true
+  },
+  {
+    "id": "b48",
+    "who": "benny",
+    "voice": "Quibble - Silly & Wacky",
+    "voice_id": "Pc8v3DjQV7T6YEsmz5IE",
+    "text": "[cheerful] Yeah. I think that's just my thing now.",
+    "chars": 50,
+    "hasAudio": true
+  },
+  {
+    "id": "n13",
+    "who": "narrator",
+    "voice": "Oliver - Warm British Narrator",
+    "voice_id": "lo1O1Dz1Tu4FWVEPaxuT",
+    "text": "[warm, wry] And so, three unemployed friends became three employed heroes. For about a week. But that... is another story.",
+    "chars": 122,
+    "hasAudio": true
+  }
+]

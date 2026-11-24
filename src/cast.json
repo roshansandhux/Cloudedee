@@ -9,12 +9,131 @@
     "name": "Test Puppet A",
     "voice": "(none - rig test only)",
     "voice_id": "",
-    "look": {"skin": "#ffd9b8", "body": "#4f9dde", "legs": "#3d4a6b", "shoes": "#e8553e", "hair": "tuft", "neck": "scarf", "neckColor": "#f6c945"}
+    "look": {
+      "skin": "#ffd9b8",
+      "body": "#4f9dde",
+      "legs": "#3d4a6b",
+      "shoes": "#e8553e",
+      "hair": "tuft",
+      "neck": "scarf",
+      "neckColor": "#f6c945"
+    }
   },
   "testB": {
     "name": "Test Puppet B",
     "voice": "(none - rig test only)",
     "voice_id": "",
-    "look": {"skin": "#c98e65", "body": "#e86a8f", "legs": "#5b4a8a", "shoes": "#2f2f3a", "hair": "bob", "hairColor": "#2c1b14", "outfit": "dress", "hat": "bow", "hatColor": "#f6c945", "size": 0.92}
+    "look": {
+      "skin": "#c98e65",
+      "body": "#e86a8f",
+      "legs": "#5b4a8a",
+      "shoes": "#2f2f3a",
+      "hair": "bob",
+      "hairColor": "#2c1b14",
+      "outfit": "dress",
+      "hat": "bow",
+      "hatColor": "#f6c945",
+      "size": 0.92
+    }
+  },
+  "dex": {
+    "name": "Dex",
+    "voice": "Zane - Dynamic and Expressive",
+    "voice_id": "GSvNDZsT0i8NKI79rH7K",
+    "note": "Skinny sarcastic leader, 23. Blue hoodie.",
+    "look": {
+      "skin": "#f1c6a0",
+      "body": "#3b7fd4",
+      "legs": "#3a3f55",
+      "shoes": "#f2f2f2",
+      "outfit": "hoodie",
+      "hair": "swoop",
+      "hairColor": "#3a2418",
+      "girth": 0.82,
+      "legLength": 1.12,
+      "head": 94
+    }
+  },
+  "benny": {
+    "name": "Benny",
+    "voice": "Quibble - Silly & Wacky",
+    "voice_id": "Pc8v3DjQV7T6YEsmz5IE",
+    "note": "Big, funny, food-obsessed, 22. Yellow tee. Bitten in ep01: partial zombie, personality intact.",
+    "look": {
+      "skin": "#d99a6c",
+      "body": "#f5c518",
+      "legs": "#5a6b8c",
+      "shoes": "#d9534f",
+      "hair": "curly",
+      "hairColor": "#2a1a12",
+      "girth": 1.55,
+      "legLength": 0.9,
+      "head": 104
+    }
+  },
+  "milo": {
+    "name": "Milo",
+    "voice": "Timmy - Anxious Nerd",
+    "voice_id": "mrQhZWGbb2k9qWJb5qeA",
+    "note": "Nervous genius, 21. Round glasses, green sweater. Makes spreadsheets when scared.",
+    "look": {
+      "skin": "#ffe0c4",
+      "body": "#5aa469",
+      "legs": "#7a6650",
+      "shoes": "#6b4a3a",
+      "neck": "collar",
+      "neckColor": "#ffffff",
+      "hair": "tuft",
+      "hairColor": "#c96a2b",
+      "glasses": true,
+      "freckles": true,
+      "girth": 0.9,
+      "size": 0.95,
+      "head": 96
+    }
+  },
+  "crumb": {
+    "name": "Dr. Crumb",
+    "voice": "Ilona - Calm & Confident",
+    "voice_id": "SDm2FQORi7Hju7z9CyTa",
+    "note": "Dr. Ingrid Crumb, baker-scientist, owner of Mama Mozza's Pizzeria. Created The Mother.",
+    "look": {
+      "skin": "#f3d2bd",
+      "body": "#f4f4f8",
+      "legs": "#6d5d8a",
+      "shoes": "#333344",
+      "outfit": "coat",
+      "hair": "bun",
+      "hairColor": "#d8d8e0",
+      "glasses": true,
+      "neck": "scarf",
+      "neckColor": "#d9534f",
+      "size": 0.9,
+      "head": 92
+    }
+  },
+  "mother": {
+    "name": "The Mother",
+    "voice": "Valko - Slow and dark",
+    "voice_id": "90npM2sASZ9XVsdUuUF0",
+    "note": "Giant sentient sourdough starter. Controls everyone who ate her bread. Baked in ep01."
+  },
+  "anchor": {
+    "name": "News Anchor",
+    "voice": "Robert - American standard broadcaster",
+    "voice_id": "tNIuvXGG5RnGdTbvfnPR",
+    "note": "Channel 6 anchor Chip Hartley. Zombified live on air, recovered.",
+    "look": {
+      "skin": "#e8b48f",
+      "body": "#2f3a56",
+      "legs": "#2f3a56",
+      "shoes": "#1d1d24",
+      "outfit": "coat",
+      "neck": "tie",
+      "neckColor": "#c0392b",
+      "hair": "swoop",
+      "hairColor": "#5a4030",
+      "head": 90
+    }
   }
 }

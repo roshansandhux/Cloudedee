@@ -123,6 +123,90 @@
     "gasp": {
       "file": "sfx/gasp.wav",
       "duration": 0.4
+    },
+    "groan1": {
+      "file": "sfx/groan1.wav",
+      "duration": 1.6
+    },
+    "groan2": {
+      "file": "sfx/groan2.wav",
+      "duration": 1.9
+    },
+    "groan3": {
+      "file": "sfx/groan3.wav",
+      "duration": 1.3
+    },
+    "groanCrowd": {
+      "file": "sfx/groanCrowd.wav",
+      "duration": 4.5
+    },
+    "roar": {
+      "file": "sfx/roar.wav",
+      "duration": 2.6
+    },
+    "explosion": {
+      "file": "sfx/explosion.wav",
+      "duration": 3.2
+    },
+    "punch": {
+      "file": "sfx/punch.wav",
+      "duration": 0.15
+    },
+    "flame": {
+      "file": "sfx/flame.wav",
+      "duration": 2.2
+    },
+    "squelch": {
+      "file": "sfx/squelch.wav",
+      "duration": 0.6
+    },
+    "bite": {
+      "file": "sfx/bite.wav",
+      "duration": 0.4
+    },
+    "rcCar": {
+      "file": "sfx/rcCar.wav",
+      "duration": 2.2
+    },
+    "static": {
+      "file": "sfx/static.wav",
+      "duration": 1.4
+    },
+    "buzz": {
+      "file": "sfx/buzz.wav",
+      "duration": 2
+    },
+    "alarm": {
+      "file": "sfx/alarm.wav",
+      "duration": 2.6
+    },
+    "riser": {
+      "file": "sfx/riser.wav",
+      "duration": 2.2
+    },
+    "gameOver": {
+      "file": "sfx/gameOver.wav",
+      "duration": 1.6
+    },
+    "pew": {
+      "file": "sfx/pew.wav",
+      "duration": 0.25
+    },
+    "beep": {
+      "file": "sfx/beep.wav",
+      "duration": 0.18
+    },
+    "rumbleBig": {
+      "file": "sfx/rumbleBig.wav",
+      "duration": 3.5
+    },
+    "slam": {
+      "file": "sfx/slam.wav",
+      "duration": 0.35
+    },
+    "crunch": {
+      "file": "sfx/crunch.wav",
+      "duration": 0.7
     }
   },
   "music": {
@@ -149,6 +233,30 @@
     "silly": {
       "file": "music/silly.wav",
       "duration": 15.238
+    },
+    "orchestral": {
+      "file": "music/orchestral.wav",
+      "duration": 17.143
+    },
+    "action": {
+      "file": "music/action.wav",
+      "duration": 13.714
+    },
+    "lab": {
+      "file": "music/lab.wav",
+      "duration": 27.429
+    },
+    "victory": {
+      "file": "music/victory.wav",
+      "duration": 18.462
+    },
+    "chiptune": {
+      "file": "music/chiptune.wav",
+      "duration": 12.8
+    },
+    "muzak": {
+      "file": "music/muzak.wav",
+      "duration": 19.2
     }
   }
 }
