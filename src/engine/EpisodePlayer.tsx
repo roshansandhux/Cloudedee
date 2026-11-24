@@ -49,7 +49,8 @@ export const AudioTracks: React.FC<{schedule: Schedule}> = ({schedule}) => {
             volume={(f) => {
               const len = m.to - m.from;
               const edge = Math.min(1, f / fade, (len - f) / fade);
-              return m.vol * Math.max(0, edge) * duck[Math.min(duck.length - 1, m.from + f)];
+              const d = duck[Math.max(0, Math.min(duck.length - 1, Math.floor(m.from + f)))] ?? 1;
+              return Math.max(0, m.vol * Math.max(0, edge) * d);
             }}
           />
         </Sequence>

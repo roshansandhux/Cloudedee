@@ -76,13 +76,17 @@ type StageProps = {
   /** for speakers not on stage: which side their bubble appears */
   offscreen?: Record<string, 1 | -1>;
   background?: string;
+  /** speech anchors for non-rig speakers (creature, TV, monitor): world point just above the "head" */
+  speakers?: Record<string, {x: number; y: number}>;
+  /** rim-light colour on characters (key light) */
+  rim?: string;
 };
 
-export const Stage: React.FC<StageProps> = ({set, cam = WIDE, vcam, actors = [], children, front, overlay, bubbles = true, offscreen = {}, background = '#000'}) => {
+export const Stage: React.FC<StageProps> = ({set, cam = WIDE, vcam, actors = [], children, front, overlay, bubbles = true, offscreen = {}, background = '#000', speakers = {}, rim}) => {
   const {width: W, height: H} = useVideoConfig();
   const sc = useScene();
   const portrait = H > W;
-  const c: Cam = portrait ? {...cam, zoom: cam.zoom * 1.5, y: cam.y + 70, ...vcam} : cam;
+  const c: Cam = portrait ? {...cam, zoom: Math.min(cam.zoom * 1.5, Math.max(cam.zoom, 2.5)), y: cam.y + 70 / Math.max(1, cam.zoom), ...vcam} : cam;
   const base = portrait ? W / 1080 : H / 1080;
   const z = c.zoom * base;
   const toScreen = (x: number, y: number) => {
@@ -115,6 +119,9 @@ export const Stage: React.FC<StageProps> = ({set, cam = WIDE, vcam, actors = [],
       const top = headTop(look) * (a.scale ?? 1) * (a.squash ?? 1);
       const p = toScreen(a.x, (a.y ?? GROUND) - top);
       if (p.x > -50 && p.x < W + 50 && p.y > -200 && p.y < H) head = {x: Math.max(60, Math.min(W - 60, p.x)), y: Math.max(safe.y0 + 40, p.y)};
+    } else if (speakers[l.who]) {
+      const p = toScreen(speakers[l.who].x, speakers[l.who].y);
+      if (p.x > -100 && p.x < W + 100 && p.y > -300 && p.y < H + 100) head = {x: Math.max(60, Math.min(W - 60, p.x)), y: Math.max(safe.y0 + 40, Math.min(H - 300, p.y))};
     }
     const prefer: 1 | -1 = a ? ((a.facing ?? 1) as 1 | -1) : offscreen[l.who] ?? 1;
     const layout = layoutBubble(l.text, head, safe, portrait, prefer, placed);
@@ -152,6 +159,7 @@ export const Stage: React.FC<StageProps> = ({set, cam = WIDE, vcam, actors = [],
                     eyesClosed={a.eyesClosed}
                     holding={a.holding}
                     sitting={a.sitting}
+                    rim={rim}
                   />
                 </g>
               );

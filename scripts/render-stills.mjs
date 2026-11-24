@@ -50,10 +50,12 @@ console.log(`\n${frames.length} stills in ${outDir}`);
 if (frames.length > 1) {
   // contact sheet needs a full ffmpeg (the one bundled with Remotion has no "tile" filter)
   const cols = composition.width >= composition.height ? 4 : 6;
-  const sheet = path.join(outDir, 'contact.jpg');
+  // long runs are split into several sheets of 6 rows so each stays readable
+  const rows = Math.min(6, Math.ceil(frames.length / cols));
+  const sheet = path.join(outDir, frames.length > cols * 6 ? 'contact-%02d.jpg' : 'contact.jpg');
   try {
-    execFileSync('ffmpeg', ['-hide_banner', '-loglevel', 'error', '-y', '-pattern_type', 'glob', '-i', path.join(outDir, 'f*.png'), '-vf', `scale=${composition.width >= composition.height ? 480 : 270}:-1,tile=${cols}x${Math.ceil(frames.length / cols)}:padding=6:color=white`, '-frames:v', '1', '-q:v', '3', sheet], {stdio: 'inherit'});
-    console.log(`contact sheet: ${sheet}`);
+    execFileSync('ffmpeg', ['-hide_banner', '-loglevel', 'error', '-y', '-pattern_type', 'glob', '-i', path.join(outDir, 'f*.png'), '-vf', `scale=${composition.width >= composition.height ? 480 : 270}:-1,tile=${cols}x${rows}:padding=6:color=white`, '-q:v', '3', sheet], {stdio: 'inherit'});
+    console.log(`contact sheet(s): ${sheet}`);
   } catch {
     console.log('(no system ffmpeg with "tile" filter – skipped contact sheet; the single frames are there)');
   }

@@ -23,7 +23,8 @@ export type Mood =
   | 'smug'
   | 'confused'
   | 'determined'
-  | 'sleepy';
+  | 'sleepy'
+  | 'scared';
 
 export type VoiceClip = {file: string; duration: number; lead?: number; tail?: number; env: number[]};
 export type VoiceManifest = Record<string, VoiceClip>;

@@ -47,6 +47,8 @@ export type CharacterProps = {
   /** draw a held prop in the front hand */
   holding?: React.ReactNode;
   sitting?: boolean;
+  /** rim light colour from the scene's key light */
+  rim?: string;
 };
 
 type V = [number, number];
@@ -79,6 +81,7 @@ const BROWS: Record<Mood, {b: V; f: V; lift: number}> = {
   confused: {b: [6, -2], f: [-8, -6], lift: -4},
   determined: {b: [7, -4], f: [7, -4], lift: 2},
   sleepy: {b: [2, 4], f: [2, 4], lift: 4},
+  scared: {b: [-12, 2], f: [-12, 2], lift: -14},
 };
 /** Mouth curvature per mood (+ smile / - frown) and a resting openness */
 const MOUTH: Record<Mood, {curve: number; open: number; width: number}> = {
@@ -92,6 +95,7 @@ const MOUTH: Record<Mood, {curve: number; open: number; width: number}> = {
   confused: {curve: -2, open: 0, width: 0.8},
   determined: {curve: -1, open: 0, width: 0.95},
   sleepy: {curve: 1, open: 0, width: 0.7},
+  scared: {curve: -6, open: 0.45, width: 0.95},
 };
 
 const lerp = (a: number, b: number, t: number) => a + (b - a) * t;
@@ -200,7 +204,7 @@ export const Character: React.FC<CharacterProps> = (p) => {
   const outfit = L.outfit ?? 'shirt';
   const brows = BROWS[mood];
   const mouth = MOUTH[mood];
-  const openAmt = Math.max(mouth.open, talk);
+  const openAmt = Math.max(mouth.open, talk, L.zombie ? 0.22 + 0.06 * Math.sin(f / 9) : 0);
   const pupil = p.look2 ?? {x: 0.35, y: 0};
 
   const legColor = L.legs;
@@ -216,7 +220,10 @@ export const Character: React.FC<CharacterProps> = (p) => {
   const drawArm = (a: (typeof arms)[number]) => (
     <g key={a.back ? 'ab' : 'af'}>
       <Noodle a={a.sh} c={a.c} b={a.h} w={armW} color={a.back ? shade(L.body, -0.1) : L.body} outline={o} />
-      {!a.back && p.holding ? <g transform={`translate(${a.h[0]} ${a.h[1]})`}>{p.holding}</g> : null}
+      {!a.back && L.bandage && (
+        <circle cx={(a.sh[0] + 2 * a.c[0] + a.h[0]) / 4} cy={(a.sh[1] + 2 * a.c[1] + a.h[1]) / 4} r={armW * 0.75} fill="#f6f2ea" stroke={o} strokeWidth={3} />
+      )}
+      {!a.back && p.holding ? <g transform={`translate(${a.h[0]} ${a.h[1]}) scale(${p.facing ?? 1} 1)`}>{p.holding}</g> : null}
       <circle cx={a.h[0]} cy={a.h[1]} r={a.pose === 'fist' ? 13 : 11.5} fill={a.back ? shade(L.skin, -0.08) : L.skin} stroke={o} strokeWidth={3.5} />
     </g>
   );
@@ -224,10 +231,11 @@ export const Character: React.FC<CharacterProps> = (p) => {
   // Torso path (bean shape; dress flares at the bottom)
   const flare = outfit === 'dress' ? 26 : outfit === 'coat' ? 10 : 0;
   const bottom = hipY + (outfit === 'dress' ? 30 : outfit === 'coat' ? 22 : 8);
+  const belly = Math.max(0, girth - 1) * 60;
   const torso = `M ${-bodyW + 6} ${neckY + 4}
-    Q ${-bodyW - 6} ${neckY + 40} ${-bodyW - flare} ${bottom}
-    Q 0 ${bottom + 12} ${bodyW + flare} ${bottom}
-    Q ${bodyW + 6} ${neckY + 40} ${bodyW - 6} ${neckY + 4}
+    Q ${-bodyW - 6 - belly * 0.6} ${neckY + 60} ${-bodyW - flare - belly * 0.2} ${bottom}
+    Q 0 ${bottom + 12 + belly * 0.5} ${bodyW + flare + belly * 0.2} ${bottom}
+    Q ${bodyW + 6 + belly} ${neckY + 70} ${bodyW - 6} ${neckY + 4}
     Q 0 ${neckY - 10} ${-bodyW + 6} ${neckY + 4} Z`;
 
   // Mouth geometry (head-local coords, facing right)
@@ -251,14 +259,27 @@ export const Character: React.FC<CharacterProps> = (p) => {
           strokeLinejoin="round"
         />
         {mh > 14 && <ellipse cx={mx} cy={my + mh * 0.75} rx={mw * 0.55} ry={mh * 0.22} fill="#e8707f" />}
+        {L.zombie && <rect x={mx - mw * 0.4} y={my - curve * 0.3 - 1} width={mw * 0.35} height={7} fill="#f4f0d8" stroke={o} strokeWidth={2} />}
       </g>
     );
 
   // Eyes
   const eyeY = -R * 0.06;
+  const wide = mood === 'scared' || mood === 'surprised';
   const eyes = [-1, 1].map((s) => {
     const ex = R * 0.2 + s * R * 0.3;
     const er = R * 0.105;
+    if (L.zombie || wide) {
+      // big whites with small pupils: terror (scared) or blank undead stare (zombie, mismatched)
+      const wr = er * (L.zombie ? (s < 0 ? 1.5 : 1.85) : mood === 'scared' ? 2.1 : 1.8);
+      const pr = er * (L.zombie ? 0.38 : 0.55);
+      return (
+        <g key={s} transform={`translate(${ex} ${eyeY}) scale(1 ${eyeOpen})`}>
+          <ellipse rx={wr} ry={wr * 1.12} fill="#fffdf5" stroke={o} strokeWidth={3.5} />
+          <circle cx={pupil.x * 3 + (L.zombie ? s * 2 : 0)} cy={pupil.y * 3 + (L.zombie ? 2 : 0)} r={pr} fill={o} />
+        </g>
+      );
+    }
     return (
       <g key={s} transform={`translate(${ex} ${eyeY}) scale(1 ${eyeOpen})`}>
         <ellipse cx={pupil.x * 4} cy={pupil.y * 4} rx={er} ry={er * 1.18} fill={o} />
@@ -266,6 +287,12 @@ export const Character: React.FC<CharacterProps> = (p) => {
       </g>
     );
   });
+  const bags =
+    L.zombie || L.eyeBags
+      ? [-1, 1].map((s) => (
+          <path key={`bag${s}`} d={`M ${R * 0.2 + s * R * 0.3 - R * 0.13} ${eyeY + R * 0.17} q ${R * 0.13} ${R * 0.09} ${R * 0.26} 0`} stroke={shade(L.skin, -0.35)} strokeWidth={4} fill="none" strokeLinecap="round" opacity={0.7} />
+        ))
+      : null;
   const browEls = [-1, 1].map((s) => {
     const ex = R * 0.2 + s * R * 0.3;
     const bw = R * 0.17;
@@ -398,6 +425,18 @@ export const Character: React.FC<CharacterProps> = (p) => {
             strokeLinejoin="round"
           />
         );
+      case 'colander':
+        return (
+          <g stroke={o} strokeWidth={4}>
+            <path d={`M ${-R * 0.98} ${-R * 0.42} Q ${-R} ${-R * 1.2} 0 ${-R * 1.18} Q ${R} ${-R * 1.2} ${R * 0.98} ${-R * 0.42} Z`} fill="#c9ced8" />
+            <path d={`M ${-R * 0.5} ${-R * 1.0} Q 0 ${-R * 1.12} ${R * 0.5} ${-R * 1.0}`} stroke="#ffffff" strokeWidth={6} fill="none" opacity={0.5} />
+            {[-0.55, -0.25, 0.05, 0.35, 0.62, -0.4, -0.08, 0.22, 0.5].map((x, i) => (
+              <circle key={i} cx={R * x} cy={-R * (i < 5 ? 0.62 : 0.88)} r={5} fill="#6b7280" strokeWidth={0} />
+            ))}
+            <rect x={-R * 1.22} y={-R * 0.6} width={R * 0.26} height={R * 0.12} rx={6} fill="#c9ced8" />
+            <rect x={R * 0.96} y={-R * 0.6} width={R * 0.26} height={R * 0.12} rx={6} fill="#c9ced8" />
+          </g>
+        );
       case 'headphones':
         return (
           <g stroke={o} strokeWidth={4}>
@@ -478,12 +517,13 @@ export const Character: React.FC<CharacterProps> = (p) => {
       <defs>
         <radialGradient id={`${g}-head`} cx="38%" cy="30%" r="75%">
           <stop offset="0%" stopColor={shade(L.skin, 0.08)} />
-          <stop offset="70%" stopColor={L.skin} />
-          <stop offset="100%" stopColor={shade(L.skin, -0.1)} />
+          <stop offset="55%" stopColor={L.skin} />
+          <stop offset="100%" stopColor={shade(L.skin, -0.2)} />
         </radialGradient>
         <linearGradient id={`${g}-body`} x1="0" y1="0" x2="1" y2="1">
-          <stop offset="0%" stopColor={shade(L.body, 0.07)} />
-          <stop offset="100%" stopColor={shade(L.body, -0.08)} />
+          <stop offset="0%" stopColor={shade(L.body, 0.1)} />
+          <stop offset="60%" stopColor={L.body} />
+          <stop offset="100%" stopColor={shade(L.body, -0.16)} />
         </linearGradient>
       </defs>
       {/* soft contact shadow */}
@@ -494,11 +534,34 @@ export const Character: React.FC<CharacterProps> = (p) => {
         {legs.filter((l) => !l.back).map(drawLeg)}
         <path d={torso} fill={`url(#${g}-body)`} stroke={o} strokeWidth={4} strokeLinejoin="round" />
         {outfitDetail()}
+        {/* ambient occlusion under the head */}
+        <ellipse cx={4} cy={neckY + 12} rx={bodyW * 0.75} ry={10} fill="#1a1025" opacity={0.16} />
+        {L.torn && (
+          <path d={`M ${-bodyW - flare + 4} ${bottom - 2} l 14 -14 l 10 12 l 12 -16 l 12 14 l 14 -12 l 10 14 l 14 -14 l 10 12 l 12 -10`} stroke={o} strokeWidth={3} fill="none" opacity={0.6} />
+        )}
+        {L.armor === 'cushions' && (
+          <g stroke={o} strokeWidth={4}>
+            <rect x={-bodyW - 10} y={neckY + 18} width={bodyW * 2 + 20} height={hipY - neckY - 12} rx={26} fill="#a8434f" />
+            <rect x={-bodyW - 4} y={neckY + 26} width={bodyW * 2 + 8} height={hipY - neckY - 28} rx={20} fill="none" stroke="#c45a66" strokeWidth={3} />
+            {[[-0.4, 0.35], [0.4, 0.35], [-0.4, 0.7], [0.4, 0.7]].map(([bx, by], i) => (
+              <circle key={i} cx={bx * bodyW} cy={neckY + 18 + by * (hipY - neckY - 12)} r={5} fill="#7a2b35" strokeWidth={2} />
+            ))}
+            <rect x={-bodyW - 14} y={neckY + 52} width={bodyW * 2 + 28} height={14} fill="#9aa0ab" opacity={0.95} />
+            <rect x={-bodyW - 14} y={hipY - 34} width={bodyW * 2 + 28} height={14} fill="#9aa0ab" opacity={0.95} />
+          </g>
+        )}
         {neck()}
         <g transform={`translate(${walking ? 3 : 0} ${headY}) rotate(${(walking ? Math.sin(phase) * 1.5 : breathe * 0.8) + (mood === 'confused' ? 7 : 0)})`}>
+          {(L.ears ?? true) && (
+            <g>
+              <ellipse cx={-R * 0.98} cy={R * 0.1} rx={R * 0.2} ry={R * 0.27} fill={L.earColor ?? L.skin} stroke={o} strokeWidth={4} />
+              <path d={`M ${-R * 1.04} ${R * 0.0} q ${-R * 0.07} ${R * 0.1} 0 ${R * 0.2}`} stroke={shade(L.earColor ?? L.skin, -0.25)} strokeWidth={3} fill="none" />
+            </g>
+          )}
           {hairBack()}
           <circle r={R} fill={`url(#${g}-head)`} stroke={o} strokeWidth={4.5} />
-          {/* soft shine */}
+          {/* rim light from the scene's key light + soft shine (stylised 3D look) */}
+          <path d={`M ${R * 0.55} ${-R * 0.72} A ${R * 0.98} ${R * 0.98} 0 0 1 ${R * 0.62} ${R * 0.68}`} stroke={p.rim ?? '#fff6dc'} strokeWidth={R * 0.09} fill="none" opacity={0.45} strokeLinecap="round" />
           <ellipse cx={-R * 0.38} cy={-R * 0.5} rx={R * 0.22} ry={R * 0.12} fill="#fff" opacity={0.22} transform={`rotate(-30 ${-R * 0.38} ${-R * 0.5})`} />
           {(L.blush ?? true) && (
             <>
@@ -508,8 +571,9 @@ export const Character: React.FC<CharacterProps> = (p) => {
           )}
           {L.freckles &&
             [-0.55, -0.45, 0.85, 0.95].map((x, i) => <circle key={i} cx={R * x} cy={R * (0.12 + (i % 2) * 0.07)} r={2.6} fill={shade(L.skin, -0.3)} />)}
+          {bags}
           {eyes}
-          {browEls}
+          {!L.zombie && browEls}
           {L.glasses && (
             <g stroke={o} strokeWidth={4} fill="rgba(255,255,255,0.18)">
               <circle cx={R * 0.2 - R * 0.3} cy={eyeY} r={R * 0.22} />
