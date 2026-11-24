@@ -2,8 +2,9 @@
 import type {EpisodeDef} from '../engine/episode';
 import {ep00} from './ep00';
 import {ep01} from './ep01';
+import {fin01} from './fin01';
 
-export const EPISODES: EpisodeDef[] = [ep00, ep01];
+export const EPISODES: EpisodeDef[] = [ep00, ep01, fin01];
 
 export const getEpisode = (id: string) => {
   const ep = EPISODES.find((e) => e.id === id);

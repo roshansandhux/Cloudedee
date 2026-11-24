@@ -135,5 +135,26 @@
       "hairColor": "#5a4030",
       "head": 90
     }
+  },
+  "finn": {
+    "name": "Finn",
+    "voice": "VALF - Child, Young, Playful & Sarcastic",
+    "voice_id": "loY1uopAz31XyhAEhNSa",
+    "note": "Finance explainer boy (fin01 sample). Bow tie, big ideas, empty piggy bank.",
+    "look": {
+      "skin": "#f3c49c",
+      "body": "#2fbf71",
+      "legs": "#34406b",
+      "shoes": "#f6c945",
+      "hair": "spiky",
+      "hairColor": "#3b2416",
+      "outfit": "shirt",
+      "neck": "bowtie",
+      "neckColor": "#e8553e",
+      "freckles": true,
+      "blush": true,
+      "size": 0.82,
+      "head": 110
+    }
   }
 }

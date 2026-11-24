@@ -31,6 +31,7 @@ Claude is writer, director, animator, editor and sound designer.
 | `crumb` | Dr. Ingrid Crumb – baker-scientist, owns Mama Mozza's | lab coat, white bun, glasses, red scarf | Ilona – Calm & Confident | `SDm2FQORi7Hju7z9CyTa` |
 | `mother` | The Mother – sentient sourdough starter (villain ep01) | giant dough blob, many eyes (`TheMother` in ep01/kit) | Valko – Slow and dark | `90npM2sASZ9XVsdUuUF0` |
 | `anchor` | Chip Hartley – Channel 6 news anchor | navy suit, red tie | Robert – American standard broadcaster | `tNIuvXGG5RnGdTbvfnPR` |
+| `finn` | Finn (≈14) – finance-explainer kid (fin01 sample, not series cast yet) | green shirt, red bow tie, spiky hair, freckles, size 0.82 | VALF – Child, Young, Playful & Sarcastic | `loY1uopAz31XyhAEhNSa` |
 | `testA` | Test Puppet A *(rig test only, not series cast)* | peach skin, blue top, yellow scarf, tuft | — | — |
 | `testB` | Test Puppet B *(rig test only, not series cast)* | brown skin, pink dress, bob hair, yellow bow | — | — |
 

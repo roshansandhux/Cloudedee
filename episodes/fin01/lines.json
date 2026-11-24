@@ -1,0 +1,29 @@
+[
+  {
+    "id": "f01",
+    "who": "finn",
+    "voice": "VALF - Child, Young, Playful & Sarcastic",
+    "voice_id": "loY1uopAz31XyhAEhNSa",
+    "text": "[excited, fast] Compound interest! Your money... makes baby money!",
+    "chars": 66,
+    "hasAudio": false
+  },
+  {
+    "id": "f02",
+    "who": "finn",
+    "voice": "VALF - Child, Young, Playful & Sarcastic",
+    "voice_id": "loY1uopAz31XyhAEhNSa",
+    "text": "[giggling, amazed] And the baby money has MORE babies!",
+    "chars": 54,
+    "hasAudio": false
+  },
+  {
+    "id": "f03",
+    "who": "finn",
+    "voice": "VALF - Child, Young, Playful & Sarcastic",
+    "voice_id": "loY1uopAz31XyhAEhNSa",
+    "text": "[deadpan, flat] ...So why is my piggy bank empty?",
+    "chars": 49,
+    "hasAudio": false
+  }
+]
