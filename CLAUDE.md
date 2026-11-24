@@ -25,6 +25,12 @@ Claude is writer, director, animator, editor and sound designer.
 | Key | Name | Look | ElevenLabs voice | voice_id |
 |---|---|---|---|---|
 | `narrator` | Narrator | — (caption strip) | Oliver – Warm British Narrator | `lo1O1Dz1Tu4FWVEPaxuT` |
+| `dex` | Dex (23) – skinny sarcastic leader | blue hoodie, swoop hair, long legs | Zane – Dynamic and Expressive | `GSvNDZsT0i8NKI79rH7K` |
+| `benny` | Benny (22) – big, funny, food-obsessed | yellow tee, curly hair, girth 1.55 | Quibble – Silly & Wacky | `Pc8v3DjQV7T6YEsmz5IE` |
+| `milo` | Milo (21) – nervous genius | glasses, freckles, orange tuft, green sweater + collar | Timmy – Anxious Nerd | `mrQhZWGbb2k9qWJb5qeA` |
+| `crumb` | Dr. Ingrid Crumb – baker-scientist, owns Mama Mozza's | lab coat, white bun, glasses, red scarf | Ilona – Calm & Confident | `SDm2FQORi7Hju7z9CyTa` |
+| `mother` | The Mother – sentient sourdough starter (villain ep01) | giant dough blob, many eyes (`TheMother` in ep01/kit) | Valko – Slow and dark | `90npM2sASZ9XVsdUuUF0` |
+| `anchor` | Chip Hartley – Channel 6 news anchor | navy suit, red tie | Robert – American standard broadcaster | `tNIuvXGG5RnGdTbvfnPR` |
 | `testA` | Test Puppet A *(rig test only, not series cast)* | peach skin, blue top, yellow scarf, tuft | — | — |
 | `testB` | Test Puppet B *(rig test only, not series cast)* | brown skin, pink dress, bob hair, yellow bow | — | — |
 
@@ -43,7 +49,10 @@ add an entry to `src/cast.json` with a `look`, add a row here, then check the mo
 4. **Voices**: `creative_create_flow` once per episode (name "Cloudedee epXX"), then for each line
    `creative_generate_speech` with `model_id: eleven_v4`, `generations_count: 1`, the cast voice_id and that flow_id.
    **Never call generate again to "retry"** (it charges again). Poll `creative_get_flow_run_status` until done.
-   Put each `content_url` into `episodes/epXX/downloads.json` as `{ "lineId": "url" }`.
+   Record `{lineId: session_id}` in `episodes/epXX/sessions.json` after each generate call, and after polling append
+   `session generation_id signature expires` lines to `episodes/epXX/urls.compact`, then `node scripts/lib/compact-urls.mjs epXX`
+   (writes urls.txt; the importer maps URLs → lines via the session id in each URL). Download within ~2 h (URLs expire).
+   Generate in batches of ~20 parallel calls; ~1 credit per character.
 5. `npm run voices:import -- epXX` → downloads with curl, converts to mono 44.1 kHz WAV
    (ffmpeg inside `node_modules/@remotion/compositor-*`), writes `public/voices/epXX/*.wav`
    and `src/generated/voices/epXX.json` (durations + per-frame loudness for lip-sync).
@@ -70,6 +79,10 @@ src/rig/Character.tsx      the rig: moods, arm poses, walk/run, sitting, blink, 
 src/rig/looks.ts           Look options: hair, hat, neckwear, outfit, glasses, mustache, freckles, size, head, girth
 src/sets/sets.tsx          Sky (day/sunset/night, drifting clouds, parallax), Hills, Ground, Room, Buildings, Grade
 src/props/props.tsx        Tree Bush Flower Rock Fence StreetLamp Bench Table Chair Sofa WindowFrame Door PictureFrame Plant Box Sign Car Mug Phone Letter
+src/stage/director.ts      direct(): auto camera per line (wide/medium/close/push/punch/low) + per-line overrides
+src/fx/lighting.tsx        <Light kind="warm|lab|night|sunrise|tv"> grade + <Darkness lights=[…]> world-space light pools
+src/rig/zombies.ts         zombieLook(seed), horde(frame, {...}) – shambling crowds
+src/episodes/ep01/kit.tsx  ep01 sets/props: Apartment, TV, DestroyedCity, Supermarket, Lab, PizzaOven, TheMother, …
 src/fx/fx.tsx              ImpactStars DustPuff SweatDrop MotionLines Sparkles Emote Flash Vignette SpeedLines IrisWipe SoundWord TitleCard FullEpisodeButton
 scripts/generate-audio.mjs SFX + music synthesis  (npm run sfx)
 scripts/import-voices.mjs  voice download/convert/lip-sync data  (npm run voices:import -- epXX)
@@ -86,11 +99,32 @@ scripts/render-episode.mjs final MP4  (npm run render -- <id>)
 - Music: theme curious chase tender tension silly (all seamless loops).
 - Composition props must be JSON – pass ids (`episodeId`), never components.
 - Model sheet per character: `npm run stills -- RigSheet-<key>`.
+- Style: the owner asked for a "stylised 3D cartoon" look; we stay code-drawn (series rule) but push volume: stronger head/body
+  gradients, rim light (`Stage rim=` colour per location), ambient occlusion under the head, lighting grades per scene.
+- Rig extras: moods incl. `scared`; Look flags `zombie`, `eyeBags`, `torn`, `ears`/`earColor`, `armor:'cushions'`, `bandage`, hat `colander`.
+- Stage `speakers={{who: {x,y}}}` anchors bubbles for non-rig speakers (TV, monitor, creature).
 - 9:16 framing: Stage uses `cam` zoomed ×1.5 by default; pass `vcam={{x, y, zoom}}` per shot to reframe.
 - Bubbles place themselves above the speaker's head, move beside it if there's no room, never leave the safe area;
   a speaker who isn't on stage gets a name-tagged bubble at the top.
 
 ## 5. Continuity notes
+
+### ep01 – "Night of the Living Dough" (13:52)
+- Dex, Benny & Milo share an apartment; jobless gamers (Dex missed a 9 AM job interview).
+- Outbreak source: **The Mother**, a sentient sourdough starter made by **Dr. Ingrid Crumb** under **Mama Mozza's Pizzeria**.
+  Anyone who ate the free "Miracle Sourdough" samples became a zombie she controls. The trio never left the apartment → immune.
+- **Benny was bitten** (left/snacking arm, bandage) in the Mega Saver supermarket by a zombie behind the "LAST ONE!" display.
+  He turned green but kept his personality; can understand zombie groans ("brunch"); resisted the Mother's control by thinking of NACHOS.
+- Ending: Benny used the oven's **Turbo Volcano Mode** → vented into the proofing chamber → Mother baked into a loaf → everyone cured.
+  Benny's skin is normal again **except his left ear stays green** (running gag: "I think that's just my thing now").
+- **Mama Mozza's oven is now a crater.** Dr. Crumb hired all three (unlimited pizza, NO sourdough). Next-episode tease: "The Night Shift".
+- Gear (keep consistent while relevant): Milo's colander helmet, Benny's couch-cushion armor (duct tape), Dex's broom+spatula
+  "Flipper of Destiny". Benny still carries the bag of Extreme Flamin' Cheese puffs.
+- Side characters used: Gary (zombie cashier, register 3, bonked with a baguette), a big hoodie zombie fooled at night,
+  news anchor Chip Hartley (zombified live on air, recovered, apologised for the groaning), Mrs. Petrovic + parrot (mentioned only).
+- Running jokes: "eleven minutes", spreadsheets when Milo panics, gaming logic that works in real life (crouching, kiting, dodge roll).
+- Locations used (don't repeat as-is): night apartment w/ TV, day apartment, kitchen/fridge, destroyed city (day/sunset/night/dawn),
+  Mega Saver supermarket, back room, rooftop at sunset, Mama Mozza's exterior + interior, secret lab.
 
 ### ep00 – Pipeline test (not published)
 - Test only. Proves narrator voice, caption fallback for unvoiced lines, sfx, music ducking, rig, camera, Shorts.
@@ -101,4 +135,4 @@ scripts/render-episode.mjs final MP4  (npm run render -- <id>)
 - In the cloud container Remotion can't download its own browser; `scripts/lib/browser.mjs` uses the pre-installed
   headless Chrome under `/opt/pw-browsers` when present (on the owner's computer Remotion downloads its own).
 - Contact sheets need a system `ffmpeg` (the Remotion one has no `tile` filter); skipped gracefully if missing.
-- ElevenLabs plan at setup: Starter, 80,017 credits/month (≈ 66k left on 2026-11-24). Test narrator line cost 73 credits.
+- ElevenLabs plan: Starter, 80,017 credits/month. ep01 used ≈ 11.4k credits (158 lines); ≈ 54.9k left after ep01 (2026-11-24).
