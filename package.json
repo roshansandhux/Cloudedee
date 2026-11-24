@@ -1,0 +1,32 @@
+{
+  "name": "cloudedee",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Cloudedee - animated YouTube series built entirely in code with Remotion",
+  "scripts": {
+    "postinstall": "node scripts/generate-audio.mjs",
+    "studio": "remotion studio",
+    "sfx": "node scripts/generate-audio.mjs",
+    "voices:import": "node scripts/import-voices.mjs",
+    "stills": "node scripts/render-stills.mjs",
+    "render": "node scripts/render-episode.mjs",
+    "typecheck": "tsc --noEmit",
+    "lines": "node scripts/list-lines.mjs"
+  },
+  "type": "module",
+  "dependencies": {
+    "@remotion/bundler": "^4.0.546",
+    "@remotion/cli": "^4.0.546",
+    "@remotion/fonts": "^4.0.546",
+    "@remotion/media-utils": "^4.0.546",
+    "@remotion/renderer": "^4.0.546",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "remotion": "^4.0.546"
+  },
+  "devDependencies": {
+    "@fontsource/fredoka": "^5.2.8",
+    "@types/react": "^19.2.2",
+    "typescript": "^5.9.3"
+  }
+}

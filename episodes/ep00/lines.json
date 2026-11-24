@@ -1,0 +1,56 @@
+[
+  {
+    "id": "n01",
+    "who": "narrator",
+    "voice": "Oliver - Warm British Narrator",
+    "voice_id": "lo1O1Dz1Tu4FWVEPaxuT",
+    "text": "[warm, amused] Every story starts somewhere. This one starts with a test.",
+    "chars": 73,
+    "hasAudio": true
+  },
+  {
+    "id": "a01",
+    "who": "testA",
+    "voice": "(none - rig test only)",
+    "voice_id": "",
+    "text": "[cheerful, eager] Hi! Am I on? Is this thing working?",
+    "chars": 53,
+    "hasAudio": false
+  },
+  {
+    "id": "b01",
+    "who": "testB",
+    "voice": "(none - rig test only)",
+    "voice_id": "",
+    "text": "[deadpan] You are a test puppet. Nothing is working yet.",
+    "chars": 56,
+    "hasAudio": false
+  },
+  {
+    "id": "a02",
+    "who": "testA",
+    "voice": "(none - rig test only)",
+    "voice_id": "",
+    "text": "[shocked] NOTHING?!",
+    "chars": 19,
+    "hasAudio": false
+  },
+  {
+    "id": "b02",
+    "who": "testB",
+    "voice": "(none - rig test only)",
+    "voice_id": "",
+    "text": "[softer] Okay... the bubbles work. That is something.",
+    "chars": 53,
+    "hasAudio": false
+  },
+  {
+    "id": "a03",
+    "who": "testA",
+    "voice": "(none - rig test only)",
+    "voice_id": "",
+    "text": "[whispering] Do you think the real cast will like us?",
+    "chars": 53,
+    "hasAudio": false
+  }
+]
