@@ -326,9 +326,7 @@ export const CoffeeShop: React.FC<{frame: number; evening?: boolean}> = ({frame,
       <rect x={1350} y={170} width={420} height={380} rx={16} fill={evening ? '#ff9a6b' : '#bfe8ff'} />
       {evening && <circle cx={1560} cy={470} r={70} fill="#ffd59e" stroke="none" />}
       <path d="M 1560 170 V 550 M 1350 360 H 1770" stroke="#5a3a2a" strokeWidth={10} />
-      <text x={1560} y={300} textAnchor="middle" fontFamily={FONT} fontWeight={700} fontSize={44} fill="#fff" stroke="none" opacity={0.8} transform="scale(-1 1) translate(-3120 0)">
-        BEAN ME UP
-      </text>
+
       {/* menu board */}
       <rect x={180} y={110} width={620} height={330} rx={14} fill="#2b2b33" />
       <text x={490} y={175} textAnchor="middle" fontFamily={FONT} fontWeight={700} fontSize={46} fill="#f6c945" stroke="none">
@@ -604,10 +602,10 @@ export const Wheel: React.FC<{x: number; y: number; r: number; spin: number}> = 
 
 export const Podium: React.FC<{x: number; label: string; color?: string}> = ({x, label, color = '#4f9dde'}) => (
   <g transform={`translate(${x} 0)`} stroke={INK} strokeWidth={5}>
-    <path d="M -130 640 L 130 640 L 110 900 L -110 900 Z" fill={color} />
-    <rect x={-140} y={620} width={280} height={30} rx={8} fill="#f6c945" />
-    <rect x={-90} y={690} width={180} height={70} rx={10} fill="#2b2333" />
-    <text y={738} textAnchor="middle" fontFamily={FONT} fontWeight={700} fontSize={38} fill="#5fd38a" stroke="none">
+    <path d="M -130 740 L 130 740 L 110 900 L -110 900 Z" fill={color} />
+    <rect x={-140} y={720} width={280} height={30} rx={8} fill="#f6c945" />
+    <rect x={-90} y={775} width={180} height={64} rx={10} fill="#2b2333" />
+    <text y={820} textAnchor="middle" fontFamily={FONT} fontWeight={700} fontSize={38} fill="#5fd38a" stroke="none">
       {label}
     </text>
   </g>

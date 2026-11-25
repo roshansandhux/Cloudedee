@@ -195,7 +195,7 @@ export const Intro: React.FC = () => {
       overlay={
         <>
           <BigStat t={f - s.at('f008') - 6} dur={s.at('f009') - s.at('f008') - 4} text="NOT FINANCIAL ADVICE" sub="(he's literally 14)" x="68%" y="40%" size={80} color="#ff8f73" rot={-6} />
-          <BigStat t={f - s.at('f011') - 10} dur={80} text="FOLLOW THE MONEY 💸" x="66%" y="30%" size={90} />
+          <BigStat t={f - s.at('f011') - 10} dur={80} text="FOLLOW THE MONEY 💸" x="66%" y="16%" size={90} />
           <Vignette amount={0.35} />
         </>
       }
@@ -275,7 +275,7 @@ export const Loan: React.FC = () => {
       front={
         <>
           <Panel {...PANEL} title="A credit card = a LOAN" color="#e8553e" s={pop(f, 12)}>
-            <FlowDiagram t1={f - flow1} t2={f - flow2} f={f} />
+            <FlowDiagram t0={f} t1={f - flow1} t2={f - flow2} f={f} />
           </Panel>
           {scroll > 0 && (
             <g>
@@ -298,7 +298,7 @@ export const Loan: React.FC = () => {
   );
 };
 
-const FlowDiagram: React.FC<{t1: number; t2: number; f: number}> = ({t1, t2, f}) => {
+const FlowDiagram: React.FC<{t0: number; t1: number; t2: number; f: number}> = ({t0, t1, t2, f}) => {
   const nodes = [
     {x: 140, y: 330, label: 'YOU', icon: '🧒'},
     {x: 410, y: 200, label: 'BANK', icon: '🏦'},
@@ -308,7 +308,7 @@ const FlowDiagram: React.FC<{t1: number; t2: number; f: number}> = ({t1, t2, f})
   return (
     <g>
       {nodes.map((n, i) => (
-        <g key={n.label} transform={`translate(${n.x} ${n.y}) scale(${pop(t1 + 10 - i * 5, 10)})`}>
+        <g key={n.label} transform={`translate(${n.x} ${n.y}) scale(${pop(t0 - 12 - i * 6, 10)})`}>
           <circle r={80} fill="#fff" stroke={INK} strokeWidth={5} />
           <text y={22} textAnchor="middle" fontSize={70}>
             {n.icon}
@@ -697,7 +697,7 @@ export const Snow: React.FC = () => {
       vcam={{x: 700, zoom: 1.7}}
       rim="#ffffff"
       set={<SnowHill frame={f} />}
-      speakers={{swipe: {x: sledX, y: slopeY(sledX) - 220}}}
+      speakers={{swipe: {x: sledX, y: slopeY(sledX) - 220}, finn: {x: 360, y: slopeY(360) - 200}}}
       actors={
         buried
           ? []
@@ -754,7 +754,7 @@ export const Snow: React.FC = () => {
         <>
           <ChapterChip t={f} label="WAY #3: INTEREST ❄️" color="#7fd3ff" dur={150} />
           <BigStat t={f - apr} dur={s.at('f027') - apr + 20} text="~22% APR" sub="average U.S. card interest rate" x="62%" y="26%" size={120} color="#e8553e" />
-          {f >= s.at('f027') && f < push && <BigStat t={f - s.at('f027') - 30} dur={push - s.at('f027')} text="interest on interest" x="62%" y="22%" size={70} color="#fff" rot={3} />}
+          {f >= s.at('f027') && f < push && <BigStat t={f - s.at('f027') - 30} dur={push - s.at('f027')} text="interest on interest" x="62%" y="86%" size={70} color="#fff" rot={3} />}
           <SoundWord text="AVALANCHE!!" t={f - aval} x={960} y={300} color="#7fd3ff" size={150} />
           <Vignette amount={0.25} />
         </>
@@ -818,7 +818,7 @@ export const Minimum: React.FC = () => {
         <>
           <ChapterChip t={f} label="THE SNEAKIEST TRICK 🎣" color="#ff8f73" dur={150} />
           {f >= age.start && f < unage + 10 && <Calendar t={f - age.start} back={f >= unage} />}
-          <BigStat t={f - s.at('f033') - 20} dur={age.start - s.at('f033') - 20} text="11.5 YEARS" sub="+ about $2,600 in interest" x="30%" y="22%" size={110} color="#e8553e" />
+          <BigStat t={f - s.at('f033') - 20} dur={age.start - s.at('f033') - 20} text="11.5 YEARS" sub="+ about $2,600 in interest" x="66%" y="86%" size={110} color="#e8553e" />
           <BigStat t={f - bait - 24} dur={140} text="IT'S BAIT 🎣" x="66%" y="84%" size={90} color="#f6c945" />
           <Vignette amount={0.35} />
         </>
