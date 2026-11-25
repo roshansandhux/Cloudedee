@@ -7,6 +7,7 @@ import {RigSheet} from './RigSheet';
 import {ShortOverlay} from './components/ShortOverlay';
 import {ShortCta, ctaFrames} from './components/ShortCta';
 import {Thumbnail, THUMBS} from './episodes/fin02/thumbs';
+import {BRAND_STILLS} from './brand/Brand';
 import {EPISODES} from './episodes/registry';
 import {SHORTS} from './shorts';
 import {CAST} from './cast';
@@ -48,6 +49,9 @@ export const Root: React.FC = () => (
       />
     ))}
     <Composition id="Test3D" component={Test3D} durationInFrames={test3dDuration()} fps={FPS} width={1920} height={1080} />
+    {BRAND_STILLS.map((b) => (
+      <Still key={b.id} id={b.id} component={b.component} width={b.width} height={b.height} />
+    ))}
     {THUMBS.map((t) => (
       <Still key={t.id} id={t.id} component={Thumbnail} defaultProps={{variant: t.variant}} width={1920} height={1080} />
     ))}

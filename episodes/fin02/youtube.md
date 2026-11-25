@@ -34,7 +34,13 @@ Numbers used: average U.S. card APR ≈ 22%; swipe (interchange) fees ≈ 2–3%
 
 ⚠️ For education and entertainment only – not financial advice. (Finn is literally 14.)
 
-#personalfinance #creditcards #moneytips #animation #financeforbeginners
+—
+🎬 Finnomics – money explained by a 14-year-old (with jokes)
+🔔 Subscribe for more animated money lessons
+📸 Instagram: @finnomics · 🎵 TikTok: @finnomics
+📩 Business: finnomics.yt@gmail.com
+
+#finnomics #personalfinance #creditcards #moneytips #animation #financeforbeginners
 
 ## Tags
 credit cards explained, how credit card companies make money, minimum payment trap, credit card interest, APR explained, credit score, personal finance for beginners, money 101, finance animation, cartoon finance, grace period, cash back rewards
@@ -42,8 +48,8 @@ credit cards explained, how credit card companies make money, minimum payment tr
 ## Shorts
 ### fin02-short1 (out/fin02-short1.mp4, ~33 s)
 Title: Your $6 latte really costs $14?! ☕💳 #shorts
-Description: The credit card minimum-payment trap in 30 seconds. Full video on the channel! #creditcards #moneytips #shorts
+Description: The credit card minimum-payment trap in 30 seconds. Full video on the Finnomics channel! #finnomics #creditcards #moneytips #shorts
 
 ### fin02-short2 (out/fin02-short2.mp4, ~58 s)
 Title: Banks call my grandma a DEADBEAT 👵💳 #shorts
-Description: Why the bank's least favourite customer is the smartest one. Full video on the channel! #personalfinance #creditcards #shorts
+Description: Why the bank's least favourite customer is the smartest one. Full video on the Finnomics channel! #finnomics #personalfinance #creditcards #shorts

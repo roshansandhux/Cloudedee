@@ -35,7 +35,7 @@ const Text: React.FC<{children: React.ReactNode; size: number; color: string; st
 
 const Badge: React.FC = () => (
   <div style={{position: 'absolute', left: 50, top: 46, background: '#f6c945', border: `8px solid ${INK}`, borderRadius: 26, padding: '6px 30px', fontFamily: FONT, fontWeight: 700, fontSize: 60, color: INK, transform: 'rotate(-4deg)', boxShadow: '8px 10px 0 rgba(0,0,0,0.35)'}}>
-    MONEY 101
+    FINNOMICS
   </div>
 );
 
