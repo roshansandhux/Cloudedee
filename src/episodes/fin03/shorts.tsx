@@ -21,7 +21,7 @@ const Hook: React.FC<{text: string; f: number; until: number}> = ({text, f, unti
   ) : null;
 
 /** End card driven by the scene schedule (Finn says cta2). */
-const CtaEnd: React.FC<{t: number}> = ({t}) => {
+export const CtaEnd: React.FC<{t: number; look?: import('../../rig/looks').Look}> = ({t, look = FINN_CA}) => {
   const s = useScene();
   const f = s.frame;
   const inn = interpolate(t, [0, 12], [0, 1], {...clamp, easing: Easing.out(Easing.back(1.6))});
@@ -36,7 +36,7 @@ const CtaEnd: React.FC<{t: number}> = ({t}) => {
         </g>
         <rect x={0} y={1720} width={1080} height={300} fill="#3a0d14" />
         <g transform={`translate(540 ${1720 + (1 - inn) * 300}) scale(2.0)`}>
-          <Character uid="cta3-finn" look={FINN_CA} frame={f} mood="happy" talk={s.mouth('finn')} facing={1} pose={['down', 'wave']} />
+          <Character uid="cta3-finn" look={look} frame={f} mood="happy" talk={s.mouth('finn')} facing={1} pose={['down', 'wave']} />
         </g>
       </svg>
       <div style={{position: 'absolute', left: 70, right: 70, top: 120, transform: `scale(${inn})`, background: PAPER, border: `7px solid ${INK}`, borderRadius: 44, padding: '30px 40px', fontFamily: FONT, fontWeight: 700, fontSize: 60, lineHeight: 1.15, color: INK, textAlign: 'center', boxShadow: '10px 14px 0 rgba(0,0,0,0.3)'}}>

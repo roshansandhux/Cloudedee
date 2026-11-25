@@ -28,7 +28,7 @@ export const s1 = [
   wait(1.4),
   say('d502', 'doug', '[defeated] Great. Now everyone knows.'),
   sfx('sadTrombone', {vol: 0.3}),
-  wait(0.8),
+  wait(2.6),
   cue('cta'),
   sfx('pop'),
   say('cta2', 'finn', '[excited, friendly] Want the full video? Watch it on YouTube! The link is in the description and in my bio!', {mood: 'happy'}),

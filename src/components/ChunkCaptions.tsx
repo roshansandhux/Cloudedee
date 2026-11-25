@@ -72,7 +72,8 @@ export const ChunkCaptions: React.FC<{schedule: Schedule}> = ({schedule}) => {
   const f = useCurrentFrame();
   const {width: W, height: H} = useVideoConfig();
   const portrait = H > W;
-  const active = schedule.lines.filter((l) => f >= l.start - 2 && f < l.end + 3);
+  // CTA lines (cta1/cta2) are already written on the Shorts end card
+  const active = schedule.lines.filter((l) => !l.id.startsWith('cta') && f >= l.start - 2 && f < l.end + 3);
   if (!active.length) return null;
   // newest line wins if two overlap
   const l = active[active.length - 1];
@@ -92,7 +93,7 @@ export const ChunkCaptions: React.FC<{schedule: Schedule}> = ({schedule}) => {
         position: 'absolute',
         left: 0,
         right: 0,
-        top: portrait ? H * 0.64 : undefined,
+        top: portrait ? H * 0.71 : undefined,
         bottom: portrait ? undefined : 70,
         display: 'flex',
         justifyContent: 'center',
