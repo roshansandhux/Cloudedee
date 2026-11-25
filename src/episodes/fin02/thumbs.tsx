@@ -15,7 +15,7 @@ export const THUMBS = [
 ];
 
 /** SVG defs: white sticker outline + soft drop shadow. */
-const Defs: React.FC = () => (
+export const Defs: React.FC = () => (
   <defs>
     <filter id="sticker" x="-20%" y="-20%" width="140%" height="140%">
       <feMorphology in="SourceAlpha" operator="dilate" radius="12" result="fat" />
@@ -34,7 +34,7 @@ const Defs: React.FC = () => (
   </defs>
 );
 
-const Bg: React.FC<{inner: string; outer: string; cx: number; cy: number; rays?: boolean}> = ({inner, outer, cx, cy, rays = true}) => (
+export const Bg: React.FC<{inner: string; outer: string; cx: number; cy: number; rays?: boolean}> = ({inner, outer, cx, cy, rays = true}) => (
   <>
     <radialGradient id={`g-${inner}`} cx={cx / 1920} cy={cy / 1080} r="0.85">
       <stop offset="0" stopColor={inner} />
@@ -49,7 +49,7 @@ const Bg: React.FC<{inner: string; outer: string; cx: number; cy: number; rays?:
 );
 
 /** Hand-drawn red arrow from (x1,y1) to (x2,y2). */
-const Arrow: React.FC<{x1: number; y1: number; x2: number; y2: number; bend?: number}> = ({x1, y1, x2, y2, bend = 120}) => {
+export const Arrow: React.FC<{x1: number; y1: number; x2: number; y2: number; bend?: number}> = ({x1, y1, x2, y2, bend = 120}) => {
   const mx = (x1 + x2) / 2 + bend;
   const my = (y1 + y2) / 2 - bend;
   const a = Math.atan2(y2 - my, x2 - mx);
@@ -64,7 +64,7 @@ const Arrow: React.FC<{x1: number; y1: number; x2: number; y2: number; bend?: nu
   );
 };
 
-const Word: React.FC<{children: React.ReactNode; size: number; color: string; rot?: number; style?: React.CSSProperties}> = ({children, size, color, rot = -4, style}) => (
+export const Word: React.FC<{children: React.ReactNode; size: number; color: string; rot?: number; style?: React.CSSProperties}> = ({children, size, color, rot = -4, style}) => (
   <div
     style={{
       fontFamily: FONT,
@@ -84,7 +84,7 @@ const Word: React.FC<{children: React.ReactNode; size: number; color: string; ro
   </div>
 );
 
-const Badge: React.FC = () => (
+export const Badge: React.FC = () => (
   <div style={{position: 'absolute', left: 40, top: 36, background: '#f6c945', border: `7px solid ${INK}`, borderRadius: 22, padding: '2px 22px', fontFamily: FONT, fontWeight: 700, fontSize: 44, color: INK, transform: 'rotate(-3deg)', boxShadow: '6px 8px 0 rgba(0,0,0,0.4)'}}>
     FINNOMICS
   </div>

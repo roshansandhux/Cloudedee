@@ -40,6 +40,11 @@ Claude is writer, director, animator, editor and sound designer.
   `episodes/<ep>/youtube.md` (titles, description + chapters from `node scripts/timings.mjs <ep>`, tags), and **2 Shorts**
   (`src/shorts.ts`, 9:16) – a cropped highlight or a short-only mini-video – each ending with Finn's CTA end card
   ("Want to learn more? Check out the full video on YouTube!", voice `cta1` in `src/generated/voices/finshorts.json`; `cta: 'cta1'`).
+- **Shorts from fin03 on (owner's rule):** make 2 TOTALLY DIFFERENT, original 9:16 mini-videos (not crops), 50–60 s each, as their own
+  EpisodeDefs (`src/episodes/<ep>s1`, `<ep>s2`, voices = own json merged with finshorts.json, render `npm run render -- <ep>s1-vertical`).
+  They end with Finn's `cta2` line: "Want the full video? Watch it on YouTube! The link is in the description and in my bio!"
+  (end card `CtaEnd` in src/episodes/fin03/shorts.tsx – reuse it). Frame low in 9:16 (cam y ≈ 460–540) so bubbles + graphics fit on top.
+- **Thumbnails from fin03 on:** follow fin03/thumbs.tsx (helpers exported from fin02/thumbs.tsx: Defs, Bg, Arrow, Word, Badge).
 
 ## 2. Cast table
 
@@ -57,6 +62,8 @@ Claude is writer, director, animator, editor and sound designer.
 | `ruth` | Grandma Ruth – Finn's grandma, proud "deadbeat" (pays in full) | lavender dress, white bun, glasses, yellow scarf | Dolly – Southern Hospitality | `nyQ6Ftl3gFwx4EgtQvN1` |
 | `rosa` | Rosa – taco truck owner (fin02) | red top, overalls, green cap, pigtails | Hazel – Latino-English Comedic (≈2× credits/char) | `0q9TlrIoQJIdxZP9oZh7` |
 | `chad` | Chad Ledger – bank VP of Lending (fin02) | navy coat, gold tie, blond swoop | Posh Josh | `NXaTw4ifg0LAguvKuIwZ` |
+| `moose` | Gordon the Tax Moose – tax collector, wants his cut (fin03, recurring for Canada topics) | brown moose, tweed vest, green accountant visor, TAX clipboard (`TaxMoose` in fin03/kit, not a rig) | Joe – Deep Voice Evil Villain Final Boss | `RsWhJadjwfxA0DsrtYJe` |
+| `bernie` | Bernie the Beaver – hard worker, "one stick a day" = compounding (fin03) | brown beaver, yellow hard hat, big teeth, flat tail (`Beaver` in fin03/kit) | Chuck – Goblin | `mgZYFBDKPJGhiZEAcf4X` |
 | `testA` | Test Puppet A *(rig test only, not series cast)* | peach skin, blue top, yellow scarf, tuft | — | — |
 | `testB` | Test Puppet B *(rig test only, not series cast)* | brown skin, pink dress, bob hair, yellow bow | — | — |
 
@@ -161,6 +168,16 @@ scripts/beats.py           beat/onset times + frame numbers of any audio  (npm r
   Grandma's kitchen, snowy hill/avalanche, Wheel of Points game show, fee montage cards, mall at night, retro video-game level, chalkboard room.
 - Facts used are listed at the top of src/episodes/fin02/script.ts. Next-episode tease: inflation (candy bar was 35¢ in Ruth's day).
 - fin02 used ≈ 9.5k ElevenLabs credits (94 lines).
+
+### fin03 – "How to Get Rich in Canada (Even If You Start Broke)" (9:07) + Shorts fin03s1, fin03s2
+- Finn's Canada look: red hoodie + white toque (`FINN_CA` in fin03/kit; cap for hockey scenes). Grandma Ruth in purple coat + red scarf (`RUTH_CA`).
+- New recurring-ready characters: **Gordon the Tax Moose** (wants his cut, blocked by TFSA force field, "So I get nothing?") and
+  **Bernie the Beaver** ("One stick a day, bud", lazy cousin who started at 35). Mr. Swipe cameo: froze in Canada, went "back to the mall".
+- Running gags kept: moth hotel piggy bank (now wears a tiny toque), "not financial advice – I'm 14 (and very cold)", poutine principle.
+- Locations used: snowy small-town street (day + sunset sled lot), red studio, ice-fishing lake (day, night outdoor rink, sunset),
+  garage with TFSA race car, curling rink, winter cottage dock in a snowstorm, hockey arena, Toronto-ish house street, beaver pond,
+  sugar shack, arena jumbotron. Facts at top of src/episodes/fin03/script.ts. Next-episode tease: inflation (candy bar 35¢, again).
+- fin03 used ≈ 9.5k ElevenLabs credits (90 lines + 14 Shorts lines + cta2).
 
 ### ep00 – Pipeline test (not published)
 - Test only. Proves narrator voice, caption fallback for unvoiced lines, sfx, music ducking, rig, camera, Shorts.

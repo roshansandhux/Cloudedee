@@ -7,6 +7,7 @@ import {RigSheet} from './RigSheet';
 import {ShortOverlay} from './components/ShortOverlay';
 import {ShortCta, ctaFrames} from './components/ShortCta';
 import {Thumbnail, THUMBS} from './episodes/fin02/thumbs';
+import {Thumbnail3, THUMBS3} from './episodes/fin03/thumbs';
 import {BRAND_STILLS} from './brand/Brand';
 import {EPISODES} from './episodes/registry';
 import {SHORTS} from './shorts';
@@ -54,6 +55,9 @@ export const Root: React.FC = () => (
     ))}
     {THUMBS.map((t) => (
       <Still key={t.id} id={t.id} component={Thumbnail} defaultProps={{variant: t.variant}} width={1920} height={1080} />
+    ))}
+    {THUMBS3.map((t) => (
+      <Still key={t.id} id={t.id} component={Thumbnail3} defaultProps={{variant: t.variant}} width={1920} height={1080} />
     ))}
     {Object.keys(CAST)
       .filter((who) => CAST[who].look)
