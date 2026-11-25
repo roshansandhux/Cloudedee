@@ -41,7 +41,7 @@ Numbers used (2026): TFSA limit $7,000; cumulative room $109,000 if you were 18+
 —
 🎬 Finnomics – money explained by a 14-year-old (with jokes)
 🔔 Subscribe for a new animated money lesson every week
-📸 Instagram: @finnomics_yt · 🎵 TikTok: @finnomics_yt
+📸 Instagram: https://www.instagram.com/finnomics_yt
 📩 Business: finnomics.yt@gmail.com
 ⚠️ Education & entertainment only – not financial advice.
 

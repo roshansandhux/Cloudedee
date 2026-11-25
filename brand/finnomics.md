@@ -40,7 +40,7 @@ finnomics, personal finance, money explained, finance for beginners, credit card
 —
 🎬 Finnomics – money explained by a 14-year-old (with jokes)
 🔔 Subscribe for a new animated money lesson every week
-📸 Instagram: @finnomics_yt · 🎵 TikTok: @finnomics_yt
+📸 Instagram: https://www.instagram.com/finnomics_yt
 📩 Business: finnomics.yt@gmail.com
 ⚠️ Education & entertainment only – not financial advice.
 
