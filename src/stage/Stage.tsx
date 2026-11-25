@@ -5,6 +5,7 @@ import React, {createContext, useContext} from 'react';
 import {AbsoluteFill, useVideoConfig} from 'remotion';
 import {Character, headTop, type ArmPose} from '../rig/Character';
 import {CAST, lookOf} from '../cast';
+import {useCaptionStyle} from '../components/ChunkCaptions';
 import type {Look} from '../rig/looks';
 import type {Mood} from '../engine/timeline';
 import {useScene} from '../engine/SceneContext';
@@ -85,6 +86,7 @@ type StageProps = {
 export const Stage: React.FC<StageProps> = ({set, cam = WIDE, vcam, actors = [], children, front, overlay, bubbles = true, offscreen = {}, background = '#000', speakers = {}, rim}) => {
   const {width: W, height: H} = useVideoConfig();
   const sc = useScene();
+  const chunkMode = useCaptionStyle() === 'chunks';
   const portrait = H > W;
   const c: Cam = portrait ? {...cam, zoom: Math.min(cam.zoom * 1.5, Math.max(cam.zoom, 2.5)), y: cam.y + 70 / Math.max(1, cam.zoom), ...vcam} : cam;
   const base = portrait ? W / 1080 : H / 1080;
@@ -105,7 +107,7 @@ export const Stage: React.FC<StageProps> = ({set, cam = WIDE, vcam, actors = [],
   const bubbleEls: React.ReactNode[] = [];
   let narratorEl: React.ReactNode = null;
   const active = sc.schedule.lines.filter((l) => sc.frame >= l.start - 2 && sc.frame < l.end + 5);
-  for (const l of active) {
+  for (const l of chunkMode ? [] : active) {
     const appear = Math.min(1, (sc.frame - (l.start - 2)) / 6) * Math.min(1, (l.end + 5 - sc.frame) / 5);
     if (l.who === 'narrator') {
       narratorEl = <NarratorCaption key={l.id} text={l.text} appear={appear} portrait={portrait} bottom={bar + (portrait ? 250 : 26)} />;

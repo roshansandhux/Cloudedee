@@ -232,5 +232,31 @@
     "voice": "Chuck - Goblin",
     "voice_id": "mgZYFBDKPJGhiZEAcf4X",
     "note": "Hard-working beaver, compounding = one stick a day (fin03). Drawn custom (Beaver in fin03/kit)."
+  },
+  "inflato": {
+    "name": "Inflato",
+    "voice": "GERALD - Exciting Older Voice",
+    "voice_id": "fGIZlgPQ75MMlvQ6WxgY",
+    "note": "Living balloon villain = inflation, puffs prices up (fin04). Drawn custom (Inflato in fin04/kit), not a rig."
+  },
+  "doug": {
+    "name": "Doug",
+    "voice": "Mister Gruff - Miserable old neighbor",
+    "voice_id": "mSOmKHC6GZcZbSTGlqHO",
+    "look": {
+      "skin": "#e8b48c",
+      "body": "#2f7a5a",
+      "legs": "#3a3f55",
+      "shoes": "#2b2333",
+      "hair": "tuft",
+      "hairColor": "#9aa0a6",
+      "outfit": "shirt",
+      "neck": "none",
+      "mustache": true,
+      "glasses": false,
+      "size": 1.0,
+      "girth": 1.3,
+      "head": 104
+    }
   }
 }

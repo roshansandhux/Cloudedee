@@ -18,6 +18,8 @@ export type EpisodeDef = {
   title: string;
   voices: VoiceManifest;
   scenes: SceneDef[];
+  /** 'chunks' = small 3–4-word captions at the bottom instead of speech bubbles (owner's style from fin04 on) */
+  captions?: 'bubbles' | 'chunks';
 };
 
 export type BuiltScene = SceneDef & {from: number; local: Schedule; global: Schedule};

@@ -5,6 +5,7 @@ import {buildEpisode} from './episode';
 import {getEpisode} from '../episodes/registry';
 import {SceneProvider} from './SceneContext';
 import {Letterbox} from '../components/Letterbox';
+import {CaptionStyleCtx, ChunkCaptions} from '../components/ChunkCaptions';
 
 /** Per-frame music volume multiplier: dips while anyone is talking. */
 function duckCurve(s: Schedule) {
@@ -75,8 +76,10 @@ export const AudioTracks: React.FC<{schedule: Schedule}> = ({schedule}) => {
 export const EpisodePlayer: React.FC<{episodeId: string; letterbox?: boolean}> = ({episodeId, letterbox = true}) => {
   const ep = buildEpisode(getEpisode(episodeId));
   const {width, height} = useVideoConfig();
+  const style = ep.def.captions ?? 'bubbles';
   return (
     <AbsoluteFill style={{backgroundColor: '#000'}}>
+      <CaptionStyleCtx.Provider value={style}>
       {ep.scenes.map((sc) => (
         <Sequence key={sc.id} from={sc.from} durationInFrames={sc.local.duration} name={`scene:${sc.id}`} premountFor={15}>
           <SceneProvider schedule={sc.local}>
@@ -84,6 +87,8 @@ export const EpisodePlayer: React.FC<{episodeId: string; letterbox?: boolean}> =
           </SceneProvider>
         </Sequence>
       ))}
+      </CaptionStyleCtx.Provider>
+      {style === 'chunks' && <ChunkCaptions schedule={ep.global} />}
       <AudioTracks schedule={ep.global} />
       {letterbox && <Letterbox size={width >= height ? 34 : 22} />}
     </AbsoluteFill>
