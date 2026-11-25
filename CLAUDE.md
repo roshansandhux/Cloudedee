@@ -33,6 +33,9 @@ Claude is writer, director, animator, editor and sound designer.
 - Comedy every 20–30 s; motion graphics everywhere (panels, charts that draw themselves, big kinetic numbers, receipts,
   counters, stamps, confetti). Recurring: Mr. Swipe (villain), Grandma Ruth (smart one), "not financial advice – I'm 14", moth in the piggy bank.
 - All money facts must be correct – check the maths (python) and list sources at the top of script.ts.
+- **Thumbnail rules (high CTR, see src/episodes/fin02/thumbs.tsx):** one giant emotional face (≥35% of frame), ≤3 big words that
+  DON'T repeat the title, complementary colours, white sticker outline (`#sticker` filter), red arrow/circle on the key object,
+  curiosity gap, small FINNOMICS badge top-left, nothing important bottom-right (video length box). Check at 360 px wide.
 - **Every episode ships with:** the video, 3 thumbnails (`<ep>-thumb1..3` Stills → `deliverables/<ep>/thumbnail-N.jpg`),
   `episodes/<ep>/youtube.md` (titles, description + chapters from `node scripts/timings.mjs <ep>`, tags), and **2 Shorts**
   (`src/shorts.ts`, 9:16) – a cropped highlight or a short-only mini-video – each ending with Finn's CTA end card

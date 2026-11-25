@@ -11,7 +11,7 @@ export const pop = (t: number, dur = 10) => interpolate(t, [0, dur], [0, 1], {..
 export const ramp = (t: number, a: number, b: number) => interpolate(t, [a, b], [0, 1], {...clamp, easing: Easing.inOut(Easing.cubic)});
 
 // ============================================================== MR. SWIPE (talking credit card)
-export type SwipeMood = 'sly' | 'happy' | 'shock' | 'sad' | 'cry';
+export type SwipeMood = 'sly' | 'happy' | 'shock' | 'sad' | 'cry' | 'evil';
 export const SwipeCard: React.FC<{
   x: number;
   y: number;
@@ -30,7 +30,7 @@ export const SwipeCard: React.FC<{
   const w = 260;
   const h = 168;
   const mouthOpen = 6 + talk * 34;
-  const brow = mood === 'sly' ? 1 : mood === 'shock' ? -1.4 : mood === 'sad' || mood === 'cry' ? -0.8 : 0;
+  const brow = mood === 'evil' ? -1.6 : mood === 'sly' ? 1 : mood === 'shock' ? -1.4 : mood === 'sad' || mood === 'cry' ? -0.8 : 0;
   const armY = -h * 0.1;
   const armPath = (side: 1 | -1) => {
     const sx = (w / 2 - 6) * side;
@@ -116,7 +116,7 @@ export const SwipeCard: React.FC<{
       {mood === 'sad' || mood === 'cry' ? (
         <path d={`M 4 ${40 + mouthOpen * 0.3} Q 30 ${22} 56 ${40 + mouthOpen * 0.3}`} stroke={INK} strokeWidth={6} fill="none" strokeLinecap="round" />
       ) : (
-        <path d={`M 2 26 Q 30 ${26 + mouthOpen + (mood === 'happy' ? 10 : 0)} 58 26 Z`} fill="#7a2d3a" stroke={INK} strokeWidth={4} strokeLinejoin="round" />
+        <path d={mood === 'evil' ? `M -20 22 Q 30 ${70 + mouthOpen} 80 22 Q 30 40 -20 22 Z` : `M 2 26 Q 30 ${26 + mouthOpen + (mood === 'happy' ? 10 : 0)} 58 26 Z`} fill="#7a2d3a" stroke={INK} strokeWidth={4} strokeLinejoin="round" />
       )}
       {mood === 'cry' &&
         [0, 1].map((i) => {

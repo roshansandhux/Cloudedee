@@ -8,6 +8,11 @@
 5. Credit Cards Explained in 10 Minutes (Funny Animation)
 
 ## Thumbnails
+Best pairings (thumbnail text should add to the title, not repeat it):
+- thumbnail-1 ("$6 LATTE?! → $14")  +  title 1 "How Credit Cards Secretly Make Money Off You"
+- thumbnail-2 ("IT'S A TRAP!")       +  title 4 "The Credit Card Trick Banks Don't Want You to Know"
+- thumbnail-3 ("BANKS HATE HER")     +  title 3 "Banks Call My Grandma a 'Deadbeat' – Here's Why She's Winning"
+Tip: YouTube Studio → video → Thumbnail → "Test & Compare" – upload all 3 and YouTube picks the one with the best watch time.
 deliverables/fin02/thumbnail-1.jpg ($6 latte = $14?!), thumbnail-2.jpg (credit cards are tricking you), thumbnail-3.jpg (banks call her a deadbeat)
 
 ## Description
