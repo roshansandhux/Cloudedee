@@ -10,7 +10,7 @@ export const ShortOverlay: React.FC<{hook?: string}> = ({hook}) => {
   return (
     <>
       {hook && (
-        <div style={{position: 'absolute', top: 120, left: 60, right: 60, textAlign: 'center', opacity: hookOp, fontFamily: FONT, fontWeight: 700, fontSize: 64, lineHeight: 1.15, color: '#fff', WebkitTextStroke: `10px ${INK}`, paintOrder: 'stroke fill'}}>
+        <div style={{position: 'absolute', top: 190, left: 60, right: 60, textAlign: 'center', opacity: hookOp, fontFamily: FONT, fontWeight: 700, fontSize: 64, lineHeight: 1.15, color: '#fff', WebkitTextStroke: `10px ${INK}`, paintOrder: 'stroke fill'}}>
           {hook}
         </div>
       )}

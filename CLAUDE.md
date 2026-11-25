@@ -20,6 +20,21 @@ Claude is writer, director, animator, editor and sound designer.
 7. **Continuity** is tracked in section 5 below – update it after every episode.
 8. **Commit to git after every milestone** (library change, voices imported, scene built, episode rendered).
 
+## 1b. Money 101 – the owner's approved format (fin02 = the reference. Make every finance video like this)
+
+- Host is always **Finn** (key `finn`, voice VALF `loY1uopAz31XyhAEhNSa`). Keep his name and voice forever; outfits, hair,
+  glasses, accessories may change per episode (pass `look` overrides – don't edit his base look in cast.json).
+- ~10 min, 1920×1080. Structure: cold-open gag with a money hook → title card → studio intro (Finn on office chair + panel)
+  → 8–10 chapters, each a NEW location/gag (cutaways, game shows, montages, video-game levels…) → simple rules recap →
+  callback ending → subscribe button → next-episode tease. A chapter chip in the top-left names each chapter.
+- Comedy every 20–30 s; motion graphics everywhere (panels, charts that draw themselves, big kinetic numbers, receipts,
+  counters, stamps, confetti). Recurring: Mr. Swipe (villain), Grandma Ruth (smart one), "not financial advice – I'm 14", moth in the piggy bank.
+- All money facts must be correct – check the maths (python) and list sources at the top of script.ts.
+- **Every episode ships with:** the video, 3 thumbnails (`<ep>-thumb1..3` Stills → `deliverables/<ep>/thumbnail-N.jpg`),
+  `episodes/<ep>/youtube.md` (titles, description + chapters from `node scripts/timings.mjs <ep>`, tags), and **2 Shorts**
+  (`src/shorts.ts`, 9:16) – a cropped highlight or a short-only mini-video – each ending with Finn's CTA end card
+  ("Want to learn more? Check out the full video on YouTube!", voice `cta1` in `src/generated/voices/finshorts.json`; `cta: 'cta1'`).
+
 ## 2. Cast table
 
 | Key | Name | Look | ElevenLabs voice | voice_id |
@@ -31,7 +46,7 @@ Claude is writer, director, animator, editor and sound designer.
 | `crumb` | Dr. Ingrid Crumb – baker-scientist, owns Mama Mozza's | lab coat, white bun, glasses, red scarf | Ilona – Calm & Confident | `SDm2FQORi7Hju7z9CyTa` |
 | `mother` | The Mother – sentient sourdough starter (villain ep01) | giant dough blob, many eyes (`TheMother` in ep01/kit) | Valko – Slow and dark | `90npM2sASZ9XVsdUuUF0` |
 | `anchor` | Chip Hartley – Channel 6 news anchor | navy suit, red tie | Robert – American standard broadcaster | `tNIuvXGG5RnGdTbvfnPR` |
-| `finn` | Finn (≈14) – finance-explainer kid (fin01 sample, not series cast yet) | green shirt, red bow tie, spiky hair, freckles, size 0.82 | VALF – Child, Young, Playful & Sarcastic | `loY1uopAz31XyhAEhNSa` |
+| `finn` | Finn (≈14) – HOST of Money 101 (always this name + voice; clothes/hair/glasses may change per episode) | green shirt, red bow tie, spiky hair, freckles, size 0.82 | VALF – Child, Young, Playful & Sarcastic | `loY1uopAz31XyhAEhNSa` |
 | `swipe` | Mr. Swipe – talking credit card, smarmy salesman / game-show host (fin02) | gold card body, mustache, white gloves, top hat (`SwipeCard` in fin02/kit, not a rig) | Inferno – Arrogant Male Villain | `zYcjlYFOd3taleS0gkk3` |
 | `ruth` | Grandma Ruth – Finn's grandma, proud "deadbeat" (pays in full) | lavender dress, white bun, glasses, yellow scarf | Dolly – Southern Hospitality | `nyQ6Ftl3gFwx4EgtQvN1` |
 | `rosa` | Rosa – taco truck owner (fin02) | red top, overalls, green cap, pigtails | Hazel – Latino-English Comedic (≈2× credits/char) | `0q9TlrIoQJIdxZP9oZh7` |
@@ -94,6 +109,7 @@ scripts/import-voices.mjs  voice download/convert/lip-sync data  (npm run voices
 scripts/list-lines.mjs     dialogue list + cost estimate  (npm run lines -- epXX)
 scripts/render-stills.mjs  check frames + contact sheet  (npm run stills -- <id>)
 scripts/render-episode.mjs final MP4  (npm run render -- <id>)
+scripts/timings.mjs        chapters (YouTube timestamps) + every line's start/end  (node scripts/timings.mjs fin02 lines)
 scripts/beats.py           beat/onset times + frame numbers of any audio  (npm run beats -- public/music/theme.wav --out x.json)
 ```
 
