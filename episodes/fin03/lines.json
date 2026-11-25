@@ -1,0 +1,812 @@
+[
+  {
+    "id": "f101",
+    "who": "finn",
+    "voice": "VALF - Child, Young, Playful & Sarcastic",
+    "voice_id": "loY1uopAz31XyhAEhNSa",
+    "text": "[cheerful, proud] Canada. Free healthcare. Maple syrup. Moose crossing the road like they pay rent.",
+    "chars": 99,
+    "hasAudio": false
+  },
+  {
+    "id": "m101",
+    "who": "moose",
+    "voice": "Joe - Deep Voice Evil Villain Final Boss",
+    "voice_id": "RsWhJadjwfxA0DsrtYJe",
+    "text": "[deep, slow, dead serious] I do not pay rent. I collect it.",
+    "chars": 59,
+    "hasAudio": false
+  },
+  {
+    "id": "f102",
+    "who": "finn",
+    "voice": "VALF - Child, Young, Playful & Sarcastic",
+    "voice_id": "loY1uopAz31XyhAEhNSa",
+    "text": "[startled] Okay, that moose is terrifying.",
+    "chars": 42,
+    "hasAudio": false
+  },
+  {
+    "id": "f103",
+    "who": "finn",
+    "voice": "VALF - Child, Young, Playful & Sarcastic",
+    "voice_id": "loY1uopAz31XyhAEhNSa",
+    "text": "[excited, to camera] But here’s the thing. Canada also gives you three money cheat codes. And most people never press the buttons.",
+    "chars": 130,
+    "hasAudio": false
+  },
+  {
+    "id": "f104",
+    "who": "finn",
+    "voice": "VALF - Child, Young, Playful & Sarcastic",
+    "voice_id": "loY1uopAz31XyhAEhNSa",
+    "text": "[hyped] Use them right, and a regular person could retire a millionaire. Seriously.",
+    "chars": 83,
+    "hasAudio": false
+  },
+  {
+    "id": "f105",
+    "who": "finn",
+    "voice": "VALF - Child, Young, Playful & Sarcastic",
+    "voice_id": "loY1uopAz31XyhAEhNSa",
+    "text": "[friendly] Welcome to Finnomics! I’m Finn, I’m fourteen, and yes, this toque is new. My piggy bank is still a moth hotel.",
+    "chars": 121,
+    "hasAudio": false
+  },
+  {
+    "id": "f106",
+    "who": "finn",
+    "voice": "VALF - Child, Young, Playful & Sarcastic",
+    "voice_id": "loY1uopAz31XyhAEhNSa",
+    "text": "[quick aside] Not financial advice. I’m fourteen. And very cold.",
+    "chars": 64,
+    "hasAudio": false
+  },
+  {
+    "id": "f107",
+    "who": "finn",
+    "voice": "VALF - Child, Young, Playful & Sarcastic",
+    "voice_id": "loY1uopAz31XyhAEhNSa",
+    "text": "[explaining] So, the three cheat codes. The T F S A. The R R S P. And the F H S A.",
+    "chars": 82,
+    "hasAudio": false
+  },
+  {
+    "id": "f108",
+    "who": "finn",
+    "voice": "VALF - Child, Young, Playful & Sarcastic",
+    "voice_id": "loY1uopAz31XyhAEhNSa",
+    "text": "[playful] They sound like Wi-Fi passwords. But they are basically shields that block the Tax Moose.",
+    "chars": 99,
+    "hasAudio": false
+  },
+  {
+    "id": "m102",
+    "who": "moose",
+    "voice": "Joe - Deep Voice Evil Villain Final Boss",
+    "voice_id": "RsWhJadjwfxA0DsrtYJe",
+    "text": "[deep, offended] I heard that.",
+    "chars": 30,
+    "hasAudio": false
+  },
+  {
+    "id": "f109",
+    "who": "finn",
+    "voice": "VALF - Child, Young, Playful & Sarcastic",
+    "voice_id": "loY1uopAz31XyhAEhNSa",
+    "text": "[explaining] Cheat code number one. The Tax-Free Savings Account. Grandma explains it best.",
+    "chars": 91,
+    "hasAudio": false
+  },
+  {
+    "id": "u101",
+    "who": "ruth",
+    "voice": "Dolly - Southern Hospitality",
+    "voice_id": "nyQ6Ftl3gFwx4EgtQvN1",
+    "text": "[sweet, southern] Every fish you catch through this hole, you keep. All of it. No moose gets a bite.",
+    "chars": 100,
+    "hasAudio": false
+  },
+  {
+    "id": "f110",
+    "who": "finn",
+    "voice": "VALF - Child, Young, Playful & Sarcastic",
+    "voice_id": "loY1uopAz31XyhAEhNSa",
+    "text": "[explaining] Money you put in a TFSA can grow, and when you take it out, you pay zero tax on the growth. Zero!",
+    "chars": 110,
+    "hasAudio": false
+  },
+  {
+    "id": "f111",
+    "who": "finn",
+    "voice": "VALF - Child, Young, Playful & Sarcastic",
+    "voice_id": "loY1uopAz31XyhAEhNSa",
+    "text": "[explaining] For 2026, you can add seven thousand dollars. And unused room piles up. If you’ve been an adult since 2009 and never used it, you could have a hundred and nine thousand dollars of room!",
+    "chars": 198,
+    "hasAudio": false
+  },
+  {
+    "id": "m103",
+    "who": "moose",
+    "voice": "Joe - Deep Voice Evil Villain Final Boss",
+    "voice_id": "RsWhJadjwfxA0DsrtYJe",
+    "text": "[deep, frustrated] Why is there a force field around this hole?",
+    "chars": 63,
+    "hasAudio": false
+  },
+  {
+    "id": "u102",
+    "who": "ruth",
+    "voice": "Dolly - Southern Hospitality",
+    "voice_id": "nyQ6Ftl3gFwx4EgtQvN1",
+    "text": "[proud] Because it’s a TFSA, honey. Shoo.",
+    "chars": 41,
+    "hasAudio": false
+  },
+  {
+    "id": "f112",
+    "who": "finn",
+    "voice": "VALF - Child, Young, Playful & Sarcastic",
+    "voice_id": "loY1uopAz31XyhAEhNSa",
+    "text": "[explaining] And if you take money out, you get that room back next year. It’s flexible. Like a hockey player. Or Grandma.",
+    "chars": 122,
+    "hasAudio": false
+  },
+  {
+    "id": "f113",
+    "who": "finn",
+    "voice": "VALF - Child, Young, Playful & Sarcastic",
+    "voice_id": "loY1uopAz31XyhAEhNSa",
+    "text": "[proud] So I opened a TFSA! And I put my money in it! And it earned... half a percent.",
+    "chars": 86,
+    "hasAudio": false
+  },
+  {
+    "id": "u103",
+    "who": "ruth",
+    "voice": "Dolly - Southern Hospitality",
+    "voice_id": "nyQ6Ftl3gFwx4EgtQvN1",
+    "text": "[gentle, teasing] Sugar, you bought a race car and left it in the garage.",
+    "chars": 73,
+    "hasAudio": false
+  },
+  {
+    "id": "f114",
+    "who": "finn",
+    "voice": "VALF - Child, Young, Playful & Sarcastic",
+    "voice_id": "loY1uopAz31XyhAEhNSa",
+    "text": "[realising] The biggest TFSA mistake. It’s not a savings account. It’s a basket. You choose what goes inside.",
+    "chars": 109,
+    "hasAudio": false
+  },
+  {
+    "id": "f115",
+    "who": "finn",
+    "voice": "VALF - Child, Young, Playful & Sarcastic",
+    "voice_id": "loY1uopAz31XyhAEhNSa",
+    "text": "[explaining] Cash, sure. But many long-term investors fill it with low-cost index funds. Tiny pieces of hundreds of companies, all in one bucket.",
+    "chars": 145,
+    "hasAudio": false
+  },
+  {
+    "id": "f116",
+    "who": "finn",
+    "voice": "VALF - Child, Young, Playful & Sarcastic",
+    "voice_id": "loY1uopAz31XyhAEhNSa",
+    "text": "[hyped] Now the race car is actually racing!",
+    "chars": 44,
+    "hasAudio": false
+  },
+  {
+    "id": "u106",
+    "who": "ruth",
+    "voice": "Dolly - Southern Hospitality",
+    "voice_id": "nyQ6Ftl3gFwx4EgtQvN1",
+    "text": "[wise] And don’t put all your eggs in one basket, sugar. Unless the basket holds a thousand companies.",
+    "chars": 102,
+    "hasAudio": false
+  },
+  {
+    "id": "f151",
+    "who": "finn",
+    "voice": "VALF - Child, Young, Playful & Sarcastic",
+    "voice_id": "loY1uopAz31XyhAEhNSa",
+    "text": "[explaining] That’s the magic. One index fund can own pieces of thousands of companies. If one company flops, you barely notice.",
+    "chars": 128,
+    "hasAudio": false
+  },
+  {
+    "id": "f152",
+    "who": "finn",
+    "voice": "VALF - Child, Young, Playful & Sarcastic",
+    "voice_id": "loY1uopAz31XyhAEhNSa",
+    "text": "[playful] It’s like a poutine. If one fry is soggy, the poutine still slaps.",
+    "chars": 76,
+    "hasAudio": false
+  },
+  {
+    "id": "f161",
+    "who": "finn",
+    "voice": "VALF - Child, Young, Playful & Sarcastic",
+    "voice_id": "loY1uopAz31XyhAEhNSa",
+    "text": "[serious] Two TFSA traps. Trap one: putting in too much. The CRA charges one percent per month on the extra.",
+    "chars": 108,
+    "hasAudio": false
+  },
+  {
+    "id": "m107",
+    "who": "moose",
+    "voice": "Joe - Deep Voice Evil Villain Final Boss",
+    "voice_id": "RsWhJadjwfxA0DsrtYJe",
+    "text": "[deep, delighted] One percent. Every. Month.",
+    "chars": 44,
+    "hasAudio": false
+  },
+  {
+    "id": "f162",
+    "who": "finn",
+    "voice": "VALF - Child, Young, Playful & Sarcastic",
+    "voice_id": "loY1uopAz31XyhAEhNSa",
+    "text": "[explaining] Your room shows in your CRA account, but it can lag behind. So keep your own records too.",
+    "chars": 102,
+    "hasAudio": false
+  },
+  {
+    "id": "f163",
+    "who": "finn",
+    "voice": "VALF - Child, Young, Playful & Sarcastic",
+    "voice_id": "loY1uopAz31XyhAEhNSa",
+    "text": "[explaining] Trap two: treating your TFSA like a casino. If you day-trade a lot inside it, the CRA can decide it’s a business, and tax it.",
+    "chars": 138,
+    "hasAudio": false
+  },
+  {
+    "id": "u109",
+    "who": "ruth",
+    "voice": "Dolly - Southern Hospitality",
+    "voice_id": "nyQ6Ftl3gFwx4EgtQvN1",
+    "text": "[calm] Slow and steady, sugar. Like curling.",
+    "chars": 44,
+    "hasAudio": false
+  },
+  {
+    "id": "f164",
+    "who": "finn",
+    "voice": "VALF - Child, Young, Playful & Sarcastic",
+    "voice_id": "loY1uopAz31XyhAEhNSa",
+    "text": "[confused] Grandma, curling is literally sweeping ice really fast.",
+    "chars": 66,
+    "hasAudio": false
+  },
+  {
+    "id": "u110",
+    "who": "ruth",
+    "voice": "Dolly - Southern Hospitality",
+    "voice_id": "nyQ6Ftl3gFwx4EgtQvN1",
+    "text": "[dry] Hush.",
+    "chars": 11,
+    "hasAudio": false
+  },
+  {
+    "id": "f153",
+    "who": "finn",
+    "voice": "VALF - Child, Young, Playful & Sarcastic",
+    "voice_id": "loY1uopAz31XyhAEhNSa",
+    "text": "[explaining] Before we invest a single loonie, we need a snow shovel. An emergency fund.",
+    "chars": 88,
+    "hasAudio": false
+  },
+  {
+    "id": "u107",
+    "who": "ruth",
+    "voice": "Dolly - Southern Hospitality",
+    "voice_id": "nyQ6Ftl3gFwx4EgtQvN1",
+    "text": "[calm] Life always sends a snowstorm, sugar. The car breaks. The furnace quits. The dog eats a mitten.",
+    "chars": 102,
+    "hasAudio": false
+  },
+  {
+    "id": "f154",
+    "who": "finn",
+    "voice": "VALF - Child, Young, Playful & Sarcastic",
+    "voice_id": "loY1uopAz31XyhAEhNSa",
+    "text": "[explaining] Without savings, that surprise goes on a credit card at around twenty percent interest. Ouch.",
+    "chars": 106,
+    "hasAudio": false
+  },
+  {
+    "id": "f155",
+    "who": "finn",
+    "voice": "VALF - Child, Young, Playful & Sarcastic",
+    "voice_id": "loY1uopAz31XyhAEhNSa",
+    "text": "[explaining] A common goal is three to six months of your basic expenses, kept somewhere safe and easy to reach. Start small. Even five hundred dollars helps.",
+    "chars": 158,
+    "hasAudio": false
+  },
+  {
+    "id": "u108",
+    "who": "ruth",
+    "voice": "Dolly - Southern Hospitality",
+    "voice_id": "nyQ6Ftl3gFwx4EgtQvN1",
+    "text": "[proud] Mine’s in a high-interest savings account. And a little in a coffee can. Old habits.",
+    "chars": 92,
+    "hasAudio": false
+  },
+  {
+    "id": "f117",
+    "who": "finn",
+    "voice": "VALF - Child, Young, Playful & Sarcastic",
+    "voice_id": "loY1uopAz31XyhAEhNSa",
+    "text": "[sporty announcer] Cheat code number two! The Registered Retirement Savings Plan!",
+    "chars": 81,
+    "hasAudio": false
+  },
+  {
+    "id": "f118",
+    "who": "finn",
+    "voice": "VALF - Child, Young, Playful & Sarcastic",
+    "voice_id": "loY1uopAz31XyhAEhNSa",
+    "text": "[explaining] Here’s the trick. Money you put in lowers your taxable income today. So the government can send you a refund.",
+    "chars": 122,
+    "hasAudio": false
+  },
+  {
+    "id": "f119",
+    "who": "finn",
+    "voice": "VALF - Child, Young, Playful & Sarcastic",
+    "voice_id": "loY1uopAz31XyhAEhNSa",
+    "text": "[explaining] Put in a thousand dollars, and depending on your tax bracket, you might get a few hundred back. Like scoring a goal and getting the puck returned with a bonus.",
+    "chars": 172,
+    "hasAudio": false
+  },
+  {
+    "id": "m104",
+    "who": "moose",
+    "voice": "Joe - Deep Voice Evil Villain Final Boss",
+    "voice_id": "RsWhJadjwfxA0DsrtYJe",
+    "text": "[deep, patient, menacing] Enjoy it. I will be waiting at retirement.",
+    "chars": 68,
+    "hasAudio": false
+  },
+  {
+    "id": "f120",
+    "who": "finn",
+    "voice": "VALF - Child, Young, Playful & Sarcastic",
+    "voice_id": "loY1uopAz31XyhAEhNSa",
+    "text": "[explaining] He’s right. RRSP money gets taxed when you take it out. The hope is you’re in a lower tax bracket when you’re retired.",
+    "chars": 131,
+    "hasAudio": false
+  },
+  {
+    "id": "f121",
+    "who": "finn",
+    "voice": "VALF - Child, Young, Playful & Sarcastic",
+    "voice_id": "loY1uopAz31XyhAEhNSa",
+    "text": "[explaining] Your room is eighteen percent of last year’s income, up to thirty-three thousand eight hundred and ten dollars for 2026.",
+    "chars": 133,
+    "hasAudio": false
+  },
+  {
+    "id": "f122",
+    "who": "finn",
+    "voice": "VALF - Child, Young, Playful & Sarcastic",
+    "voice_id": "loY1uopAz31XyhAEhNSa",
+    "text": "[excited] And if your job matches your RRSP contributions? That’s free money. That’s an assist. Never skip an assist!",
+    "chars": 117,
+    "hasAudio": false
+  },
+  {
+    "id": "f123",
+    "who": "finn",
+    "voice": "VALF - Child, Young, Playful & Sarcastic",
+    "voice_id": "loY1uopAz31XyhAEhNSa",
+    "text": "[explaining] Cheat code number three is for future home buyers. The First Home Savings Account.",
+    "chars": 95,
+    "hasAudio": false
+  },
+  {
+    "id": "f124",
+    "who": "finn",
+    "voice": "VALF - Child, Young, Playful & Sarcastic",
+    "voice_id": "loY1uopAz31XyhAEhNSa",
+    "text": "[explaining] It’s like the TFSA and the RRSP had a baby. Money going in can lower your taxes, and money coming out for your first home is tax-free.",
+    "chars": 147,
+    "hasAudio": false
+  },
+  {
+    "id": "m105",
+    "who": "moose",
+    "voice": "Joe - Deep Voice Evil Villain Final Boss",
+    "voice_id": "RsWhJadjwfxA0DsrtYJe",
+    "text": "[deep, horrified] Tax-free on the way in AND the way out? That is illegal.",
+    "chars": 74,
+    "hasAudio": false
+  },
+  {
+    "id": "f125",
+    "who": "finn",
+    "voice": "VALF - Child, Young, Playful & Sarcastic",
+    "voice_id": "loY1uopAz31XyhAEhNSa",
+    "text": "[smug] It’s literally the law, buddy.",
+    "chars": 37,
+    "hasAudio": false
+  },
+  {
+    "id": "f126",
+    "who": "finn",
+    "voice": "VALF - Child, Young, Playful & Sarcastic",
+    "voice_id": "loY1uopAz31XyhAEhNSa",
+    "text": "[explaining] You can add eight thousand dollars a year, up to forty thousand total. If you might buy a home one day, look into it early.",
+    "chars": 136,
+    "hasAudio": false
+  },
+  {
+    "id": "f127",
+    "who": "finn",
+    "voice": "VALF - Child, Young, Playful & Sarcastic",
+    "voice_id": "loY1uopAz31XyhAEhNSa",
+    "text": "[deflated] Forty thousand won’t buy a house in Toronto. But it might buy the front door.",
+    "chars": 88,
+    "hasAudio": false
+  },
+  {
+    "id": "f128",
+    "who": "finn",
+    "voice": "VALF - Child, Young, Playful & Sarcastic",
+    "voice_id": "loY1uopAz31XyhAEhNSa",
+    "text": "[curious] But how does a normal person get to a million? I asked the hardest-working guy in Canada.",
+    "chars": 99,
+    "hasAudio": false
+  },
+  {
+    "id": "b101",
+    "who": "bernie",
+    "voice": "Chuck - Goblin",
+    "voice_id": "mgZYFBDKPJGhiZEAcf4X",
+    "text": "[cheerful, fast] One stick a day, bud. Every day. That’s how you build a dam!",
+    "chars": 77,
+    "hasAudio": false
+  },
+  {
+    "id": "f129",
+    "who": "finn",
+    "voice": "VALF - Child, Young, Playful & Sarcastic",
+    "voice_id": "loY1uopAz31XyhAEhNSa",
+    "text": "[explaining] That’s compounding. Your money earns money, then that money earns money too. Boring at first, then huge.",
+    "chars": 117,
+    "hasAudio": false
+  },
+  {
+    "id": "f130",
+    "who": "finn",
+    "voice": "VALF - Child, Young, Playful & Sarcastic",
+    "voice_id": "loY1uopAz31XyhAEhNSa",
+    "text": "[explaining] Say you invest seven thousand a year in your TFSA from age twenty-five to sixty-five, and it grows seven percent a year. You’d put in two hundred eighty thousand.",
+    "chars": 175,
+    "hasAudio": false
+  },
+  {
+    "id": "f131",
+    "who": "finn",
+    "voice": "VALF - Child, Young, Playful & Sarcastic",
+    "voice_id": "loY1uopAz31XyhAEhNSa",
+    "text": "[amazed] And end up with about one point four million dollars. Tax-free!",
+    "chars": 72,
+    "hasAudio": false
+  },
+  {
+    "id": "f132",
+    "who": "finn",
+    "voice": "VALF - Child, Young, Playful & Sarcastic",
+    "voice_id": "loY1uopAz31XyhAEhNSa",
+    "text": "[serious] Start ten years later, at thirty-five? About six hundred sixty thousand. Less than half!",
+    "chars": 98,
+    "hasAudio": false
+  },
+  {
+    "id": "b102",
+    "who": "bernie",
+    "voice": "Chuck - Goblin",
+    "voice_id": "mgZYFBDKPJGhiZEAcf4X",
+    "text": "[wise, chill] Ya can’t build a dam in the last week of summer, eh.",
+    "chars": 66,
+    "hasAudio": false
+  },
+  {
+    "id": "f133",
+    "who": "finn",
+    "voice": "VALF - Child, Young, Playful & Sarcastic",
+    "voice_id": "loY1uopAz31XyhAEhNSa",
+    "text": "[quick] Seven percent isn’t guaranteed, by the way. Some years go up, some go down. But time is your best friend.",
+    "chars": 113,
+    "hasAudio": false
+  },
+  {
+    "id": "f156",
+    "who": "finn",
+    "voice": "VALF - Child, Young, Playful & Sarcastic",
+    "voice_id": "loY1uopAz31XyhAEhNSa",
+    "text": "[encouraging] Can’t do seven thousand a year? Nobody starts there. Even a hundred dollars a month for forty years, at seven percent, could grow to around two hundred sixty thousand.",
+    "chars": 181,
+    "hasAudio": false
+  },
+  {
+    "id": "b104",
+    "who": "bernie",
+    "voice": "Chuck - Goblin",
+    "voice_id": "mgZYFBDKPJGhiZEAcf4X",
+    "text": "[cheerful] Small sticks still make a dam, bud!",
+    "chars": 46,
+    "hasAudio": false
+  },
+  {
+    "id": "f134",
+    "who": "finn",
+    "voice": "VALF - Child, Young, Playful & Sarcastic",
+    "voice_id": "loY1uopAz31XyhAEhNSa",
+    "text": "[explaining] Now, the sneaky leak. Fees.",
+    "chars": 40,
+    "hasAudio": false
+  },
+  {
+    "id": "f135",
+    "who": "finn",
+    "voice": "VALF - Child, Young, Playful & Sarcastic",
+    "voice_id": "loY1uopAz31XyhAEhNSa",
+    "text": "[explaining] Some investment funds charge around two percent a year. Low-cost index funds can charge a quarter of a percent or less.",
+    "chars": 132,
+    "hasAudio": false
+  },
+  {
+    "id": "f136",
+    "who": "finn",
+    "voice": "VALF - Child, Young, Playful & Sarcastic",
+    "voice_id": "loY1uopAz31XyhAEhNSa",
+    "text": "[explaining] Two percent sounds tiny. But on a hundred thousand dollars over thirty years, it could cost you more than two hundred and fifty thousand dollars!",
+    "chars": 158,
+    "hasAudio": false
+  },
+  {
+    "id": "b103",
+    "who": "bernie",
+    "voice": "Chuck - Goblin",
+    "voice_id": "mgZYFBDKPJGhiZEAcf4X",
+    "text": "[shocked] That’s a lot of syrup, bud!",
+    "chars": 37,
+    "hasAudio": false
+  },
+  {
+    "id": "f137",
+    "who": "finn",
+    "voice": "VALF - Child, Young, Playful & Sarcastic",
+    "voice_id": "loY1uopAz31XyhAEhNSa",
+    "text": "[firm] Always check the fee. It’s called the M E R. Lower is usually better.",
+    "chars": 76,
+    "hasAudio": false
+  },
+  {
+    "id": "s101",
+    "who": "swipe",
+    "voice": "Inferno - Arrogant Male Villain",
+    "voice_id": "zYcjlYFOd3taleS0gkk3",
+    "text": "[smooth, sneaky] Psst. Why invest when you could buy a snowmobile on credit?",
+    "chars": 76,
+    "hasAudio": false
+  },
+  {
+    "id": "f138",
+    "who": "finn",
+    "voice": "VALF - Child, Young, Playful & Sarcastic",
+    "voice_id": "loY1uopAz31XyhAEhNSa",
+    "text": "[annoyed] Mister Swipe! What are you doing in Canada?",
+    "chars": 53,
+    "hasAudio": false
+  },
+  {
+    "id": "s102",
+    "who": "swipe",
+    "voice": "Inferno - Arrogant Male Villain",
+    "voice_id": "zYcjlYFOd3taleS0gkk3",
+    "text": "[proud] Card interest here is around twenty percent. I LOVE it here.",
+    "chars": 68,
+    "hasAudio": false
+  },
+  {
+    "id": "f139",
+    "who": "finn",
+    "voice": "VALF - Child, Young, Playful & Sarcastic",
+    "voice_id": "loY1uopAz31XyhAEhNSa",
+    "text": "[explaining] And that’s the point. If your card charges twenty percent and your investments might earn seven, pay off the card first. That’s a guaranteed win.",
+    "chars": 158,
+    "hasAudio": false
+  },
+  {
+    "id": "s103",
+    "who": "swipe",
+    "voice": "Inferno - Arrogant Male Villain",
+    "voice_id": "zYcjlYFOd3taleS0gkk3",
+    "text": "[shivering, chattering] I’m f-f-freezing. I’m going back to the mall.",
+    "chars": 69,
+    "hasAudio": false
+  },
+  {
+    "id": "f157",
+    "who": "finn",
+    "voice": "VALF - Child, Young, Playful & Sarcastic",
+    "voice_id": "loY1uopAz31XyhAEhNSa",
+    "text": "[explaining] Here’s the laziest trick that works. Automate it.",
+    "chars": 62,
+    "hasAudio": false
+  },
+  {
+    "id": "f158",
+    "who": "finn",
+    "voice": "VALF - Child, Young, Playful & Sarcastic",
+    "voice_id": "loY1uopAz31XyhAEhNSa",
+    "text": "[explaining] Set an automatic transfer for payday. The money moves into your TFSA before you even see it.",
+    "chars": 105,
+    "hasAudio": false
+  },
+  {
+    "id": "f159",
+    "who": "finn",
+    "voice": "VALF - Child, Young, Playful & Sarcastic",
+    "voice_id": "loY1uopAz31XyhAEhNSa",
+    "text": "[playful] It’s called paying yourself first. You can’t spend money that already left the building.",
+    "chars": 98,
+    "hasAudio": false
+  },
+  {
+    "id": "s104",
+    "who": "swipe",
+    "voice": "Inferno - Arrogant Male Villain",
+    "voice_id": "zYcjlYFOd3taleS0gkk3",
+    "text": "[distant, outraged] Hey! I was going to spend that!",
+    "chars": 51,
+    "hasAudio": false
+  },
+  {
+    "id": "f160",
+    "who": "finn",
+    "voice": "VALF - Child, Young, Playful & Sarcastic",
+    "voice_id": "loY1uopAz31XyhAEhNSa",
+    "text": "[explaining] Then every time you get a raise, bump the transfer up a little. Future you will send a thank-you card.",
+    "chars": 115,
+    "hasAudio": false
+  },
+  {
+    "id": "b105",
+    "who": "bernie",
+    "voice": "Chuck - Goblin",
+    "voice_id": "mgZYFBDKPJGhiZEAcf4X",
+    "text": "[cheerful] Robots building dams? I love it, eh!",
+    "chars": 47,
+    "hasAudio": false
+  },
+  {
+    "id": "f140",
+    "who": "finn",
+    "voice": "VALF - Child, Young, Playful & Sarcastic",
+    "voice_id": "loY1uopAz31XyhAEhNSa",
+    "text": "[coach voice] Okay team, here’s the game plan. A common order lots of people use.",
+    "chars": 81,
+    "hasAudio": false
+  },
+  {
+    "id": "f141",
+    "who": "finn",
+    "voice": "VALF - Child, Young, Playful & Sarcastic",
+    "voice_id": "loY1uopAz31XyhAEhNSa",
+    "text": "[counting] One. Build a small emergency fund, so surprises don’t go on a credit card.",
+    "chars": 85,
+    "hasAudio": false
+  },
+  {
+    "id": "f142",
+    "who": "finn",
+    "voice": "VALF - Child, Young, Playful & Sarcastic",
+    "voice_id": "loY1uopAz31XyhAEhNSa",
+    "text": "[counting] Two. Pay off high-interest debt.",
+    "chars": 43,
+    "hasAudio": false
+  },
+  {
+    "id": "f143",
+    "who": "finn",
+    "voice": "VALF - Child, Young, Playful & Sarcastic",
+    "voice_id": "loY1uopAz31XyhAEhNSa",
+    "text": "[counting] Three. Grab any employer match. Never skip an assist.",
+    "chars": 64,
+    "hasAudio": false
+  },
+  {
+    "id": "f144",
+    "who": "finn",
+    "voice": "VALF - Child, Young, Playful & Sarcastic",
+    "voice_id": "loY1uopAz31XyhAEhNSa",
+    "text": "[counting] Four. Fill your TFSA, and your FHSA if you want a first home.",
+    "chars": 72,
+    "hasAudio": false
+  },
+  {
+    "id": "f145",
+    "who": "finn",
+    "voice": "VALF - Child, Young, Playful & Sarcastic",
+    "voice_id": "loY1uopAz31XyhAEhNSa",
+    "text": "[counting] Five. Use your RRSP, especially as your income grows.",
+    "chars": 64,
+    "hasAudio": false
+  },
+  {
+    "id": "f146",
+    "who": "finn",
+    "voice": "VALF - Child, Young, Playful & Sarcastic",
+    "voice_id": "loY1uopAz31XyhAEhNSa",
+    "text": "[counting] Six. Pick low-fee investments, automate it, and let time do the work.",
+    "chars": 80,
+    "hasAudio": false
+  },
+  {
+    "id": "u104",
+    "who": "ruth",
+    "voice": "Dolly - Southern Hospitality",
+    "voice_id": "nyQ6Ftl3gFwx4EgtQvN1",
+    "text": "[cheering] And never feed the moose more than you have to!",
+    "chars": 58,
+    "hasAudio": false
+  },
+  {
+    "id": "f147",
+    "who": "finn",
+    "voice": "VALF - Child, Young, Playful & Sarcastic",
+    "voice_id": "loY1uopAz31XyhAEhNSa",
+    "text": "[warm, sincere] Getting rich in Canada isn’t about one big win. It’s one stick a day. Use the cheat codes, keep fees low, and start early.",
+    "chars": 138,
+    "hasAudio": false
+  },
+  {
+    "id": "m106",
+    "who": "moose",
+    "voice": "Joe - Deep Voice Evil Villain Final Boss",
+    "voice_id": "RsWhJadjwfxA0DsrtYJe",
+    "text": "[deep, sad] So I get nothing?",
+    "chars": 29,
+    "hasAudio": false
+  },
+  {
+    "id": "f148",
+    "who": "finn",
+    "voice": "VALF - Child, Young, Playful & Sarcastic",
+    "voice_id": "loY1uopAz31XyhAEhNSa",
+    "text": "[kind] You still get some. Just less. Now go eat a pine cone.",
+    "chars": 61,
+    "hasAudio": false
+  },
+  {
+    "id": "f149",
+    "who": "finn",
+    "voice": "VALF - Child, Young, Playful & Sarcastic",
+    "voice_id": "loY1uopAz31XyhAEhNSa",
+    "text": "[upbeat] If this helped, subscribe to Finnomics. It’s free. Even the moose subscribed.",
+    "chars": 86,
+    "hasAudio": false
+  },
+  {
+    "id": "f150",
+    "who": "finn",
+    "voice": "VALF - Child, Young, Playful & Sarcastic",
+    "voice_id": "loY1uopAz31XyhAEhNSa",
+    "text": "[whispering, teasing] Next time: inflation. Why a candy bar costs way more than it did for Grandma.",
+    "chars": 99,
+    "hasAudio": false
+  },
+  {
+    "id": "u105",
+    "who": "ruth",
+    "voice": "Dolly - Southern Hospitality",
+    "voice_id": "nyQ6Ftl3gFwx4EgtQvN1",
+    "text": "[offscreen, proud] Thirty-five cents, sugar!",
+    "chars": 44,
+    "hasAudio": false
+  }
+]

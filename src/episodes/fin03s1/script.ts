@@ -1,0 +1,26 @@
+// fin03s1 – Short (9:16, ~55 s): "The TFSA cheat code in 60 seconds". Ends with the shared CTA line cta2 (finshorts).
+import {cue, music, say, sfx, wait, beat} from '../../engine/timeline';
+
+export const s1 = [
+  music('silly', {vol: 0.3}),
+  wait(0.3),
+  say('f201', 'finn', '[hyped, fast] Canadians! You’re sitting on a money cheat code. It’s called the TFSA.', {mood: 'surprised', loud: true}),
+  cue('moose'),
+  sfx('thud'),
+  say('m201', 'moose', '[deep, serious] Do not tell them.'),
+  say('f202', 'finn', '[explaining] Put money in, let it grow, and when you take it out, you pay zero tax on the growth.', {mood: 'happy'}),
+  cue('limit'),
+  sfx('ding', {vol: 0.5}),
+  say('f203', 'finn', '[explaining] For 2026 you can add seven thousand dollars. Never used it, and an adult since 2009? You could have a hundred and nine thousand dollars of room!', {mood: 'determined'}),
+  cue('mistake'),
+  sfx('sting', {vol: 0.4}),
+  say('f204', 'finn', '[serious] But here’s the mistake. It’s not just a savings account, it’s a basket. If it only holds cash at half a percent, your race car is parked in the garage.', {mood: 'worried'}),
+  cue('vroom'),
+  sfx('whoosh'),
+  say('f205', 'finn', '[upbeat] Lots of long-term investors put low-cost index funds inside. Now the car actually races.', {mood: 'happy'}),
+  say('m202', 'moose', '[deep, defeated] My one weakness.'),
+  cue('cta'),
+  sfx('pop'),
+  say('cta2', 'finn', '[excited, friendly] Want the full video? Watch it on YouTube! The link is in the description and in my bio!', {mood: 'happy'}),
+  beat('end', 1.0),
+];

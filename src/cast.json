@@ -220,5 +220,17 @@
       "size": 1.0,
       "girth": 1.2
     }
+  },
+  "moose": {
+    "name": "Gordon the Tax Moose",
+    "voice": "Joe - Deep Voice Evil Villain Final Boss",
+    "voice_id": "RsWhJadjwfxA0DsrtYJe",
+    "note": "Tax collector moose (fin03). Drawn custom (TaxMoose in fin03/kit), not a rig."
+  },
+  "bernie": {
+    "name": "Bernie the Beaver",
+    "voice": "Chuck - Goblin",
+    "voice_id": "mgZYFBDKPJGhiZEAcf4X",
+    "note": "Hard-working beaver, compounding = one stick a day (fin03). Drawn custom (Beaver in fin03/kit)."
   }
 }
