@@ -156,5 +156,69 @@
       "size": 0.82,
       "head": 110
     }
+  },
+  "swipe": {
+    "name": "Mr. Swipe",
+    "voice": "Inferno - Arrogant Male Villain",
+    "voice_id": "zYcjlYFOd3taleS0gkk3",
+    "note": "Talking credit card, smarmy salesman/game-show host (fin02). Drawn custom (SwipeCard in fin02/kit), not a rig."
+  },
+  "ruth": {
+    "name": "Grandma Ruth",
+    "voice": "Dolly - Southern Hospitality",
+    "voice_id": "nyQ6Ftl3gFwx4EgtQvN1",
+    "note": "Finn's grandma, proud 'deadbeat' who pays in full (fin02).",
+    "look": {
+      "skin": "#f0c8a8",
+      "body": "#a77bd1",
+      "legs": "#5b4a8a",
+      "shoes": "#8a5a3c",
+      "hair": "bun",
+      "hairColor": "#e9e4ef",
+      "outfit": "dress",
+      "glasses": true,
+      "neck": "scarf",
+      "neckColor": "#f6c945",
+      "blush": true,
+      "size": 0.88
+    }
+  },
+  "rosa": {
+    "name": "Rosa",
+    "voice": "Hazel - Authentic Latino-English for Comedic Commercials",
+    "voice_id": "0q9TlrIoQJIdxZP9oZh7",
+    "note": "Taco truck owner (fin02).",
+    "look": {
+      "skin": "#c68a5e",
+      "body": "#e8553e",
+      "legs": "#2f3a5a",
+      "shoes": "#2b2333",
+      "hair": "pigtails",
+      "hairColor": "#2a1712",
+      "outfit": "overalls",
+      "hat": "cap",
+      "hatColor": "#2fbf71",
+      "size": 0.95,
+      "girth": 1.15
+    }
+  },
+  "chad": {
+    "name": "Chad Ledger",
+    "voice": "Posh Josh",
+    "voice_id": "NXaTw4ifg0LAguvKuIwZ",
+    "note": "Bank VP of Lending (fin02), smug.",
+    "look": {
+      "skin": "#f2c9a4",
+      "body": "#2c3e66",
+      "legs": "#1f2a44",
+      "shoes": "#2b2333",
+      "hair": "swoop",
+      "hairColor": "#d9a441",
+      "outfit": "coat",
+      "neck": "tie",
+      "neckColor": "#d4af37",
+      "size": 1.0,
+      "girth": 1.2
+    }
   }
 }

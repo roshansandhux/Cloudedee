@@ -1,0 +1,848 @@
+[
+  {
+    "id": "f001",
+    "who": "finn",
+    "voice": "VALF - Child, Young, Playful & Sarcastic",
+    "voice_id": "loY1uopAz31XyhAEhNSa",
+    "text": "[cheerful, upbeat] One large oat-milk caramel latte, please! I’ll pay with card.",
+    "chars": 80,
+    "hasAudio": false
+  },
+  {
+    "id": "f002",
+    "who": "finn",
+    "voice": "VALF - Child, Young, Playful & Sarcastic",
+    "voice_id": "loY1uopAz31XyhAEhNSa",
+    "text": "[smug, to camera] Six dollars. Totally worth it. Easy. Painless.",
+    "chars": 64,
+    "hasAudio": false
+  },
+  {
+    "id": "s001",
+    "who": "swipe",
+    "voice": "Inferno - Arrogant Male Villain",
+    "voice_id": "zYcjlYFOd3taleS0gkk3",
+    "text": "[sly, whispering] Oh, it’s not six dollars, kid.",
+    "chars": 48,
+    "hasAudio": false
+  },
+  {
+    "id": "f003",
+    "who": "finn",
+    "voice": "VALF - Child, Young, Playful & Sarcastic",
+    "voice_id": "loY1uopAz31XyhAEhNSa",
+    "text": "[startled] Who said that?!",
+    "chars": 26,
+    "hasAudio": false
+  },
+  {
+    "id": "f004",
+    "who": "finn",
+    "voice": "VALF - Child, Young, Playful & Sarcastic",
+    "voice_id": "loY1uopAz31XyhAEhNSa",
+    "text": "[to camera, explaining] Okay, pause. If I only pay the minimum on my card, this latte doesn’t cost six dollars. It costs almost fourteen.",
+    "chars": 137,
+    "hasAudio": false
+  },
+  {
+    "id": "f005",
+    "who": "finn",
+    "voice": "VALF - Child, Young, Playful & Sarcastic",
+    "voice_id": "loY1uopAz31XyhAEhNSa",
+    "text": "[outraged] Fourteen dollars! For milk that came out of an OAT!",
+    "chars": 62,
+    "hasAudio": false
+  },
+  {
+    "id": "f006",
+    "who": "finn",
+    "voice": "VALF - Child, Young, Playful & Sarcastic",
+    "voice_id": "loY1uopAz31XyhAEhNSa",
+    "text": "[excited, fast] Today: how credit card companies secretly make money off you. And how to make them make ZERO dollars off you. Let’s go!",
+    "chars": 135,
+    "hasAudio": false
+  },
+  {
+    "id": "f007",
+    "who": "finn",
+    "voice": "VALF - Child, Young, Playful & Sarcastic",
+    "voice_id": "loY1uopAz31XyhAEhNSa",
+    "text": "[friendly, warm] Welcome to Money 101. I’m Finn, I’m fourteen, and my piggy bank has a moth in it. So you know you can trust me.",
+    "chars": 128,
+    "hasAudio": false
+  },
+  {
+    "id": "f008",
+    "who": "finn",
+    "voice": "VALF - Child, Young, Playful & Sarcastic",
+    "voice_id": "loY1uopAz31XyhAEhNSa",
+    "text": "[quick aside] Not financial advice, by the way. I’m literally fourteen.",
+    "chars": 71,
+    "hasAudio": false
+  },
+  {
+    "id": "f009",
+    "who": "finn",
+    "voice": "VALF - Child, Young, Playful & Sarcastic",
+    "voice_id": "loY1uopAz31XyhAEhNSa",
+    "text": "[curious] Credit cards. Shiny. Plastic. Feels like free money. Right?",
+    "chars": 69,
+    "hasAudio": false
+  },
+  {
+    "id": "s002",
+    "who": "swipe",
+    "voice": "Inferno - Arrogant Male Villain",
+    "voice_id": "zYcjlYFOd3taleS0gkk3",
+    "text": "[smooth, theatrical salesman] Right! Totally free! I’m Mister Swipe, and I’m your best friend!",
+    "chars": 94,
+    "hasAudio": false
+  },
+  {
+    "id": "f010",
+    "who": "finn",
+    "voice": "VALF - Child, Young, Playful & Sarcastic",
+    "voice_id": "loY1uopAz31XyhAEhNSa",
+    "text": "[suspicious] Mister Swipe... if the money is free, how does a card company get rich?",
+    "chars": 84,
+    "hasAudio": false
+  },
+  {
+    "id": "s003",
+    "who": "swipe",
+    "voice": "Inferno - Arrogant Male Villain",
+    "voice_id": "zYcjlYFOd3taleS0gkk3",
+    "text": "[nervous laugh] Ha ha... great question... hey, look, a shiny thing!",
+    "chars": 68,
+    "hasAudio": false
+  },
+  {
+    "id": "f011",
+    "who": "finn",
+    "voice": "VALF - Child, Young, Playful & Sarcastic",
+    "voice_id": "loY1uopAz31XyhAEhNSa",
+    "text": "[determined] Nope. We’re doing this. Follow the money.",
+    "chars": 54,
+    "hasAudio": false
+  },
+  {
+    "id": "f012",
+    "who": "finn",
+    "voice": "VALF - Child, Young, Playful & Sarcastic",
+    "voice_id": "loY1uopAz31XyhAEhNSa",
+    "text": "[explaining, clear] First thing. A credit card is not your money. It’s a loan.",
+    "chars": 78,
+    "hasAudio": false
+  },
+  {
+    "id": "f013",
+    "who": "finn",
+    "voice": "VALF - Child, Young, Playful & Sarcastic",
+    "voice_id": "loY1uopAz31XyhAEhNSa",
+    "text": "[explaining] Every time you swipe, the bank pays the store for you. And now you owe the bank.",
+    "chars": 93,
+    "hasAudio": false
+  },
+  {
+    "id": "f014",
+    "who": "finn",
+    "voice": "VALF - Child, Young, Playful & Sarcastic",
+    "voice_id": "loY1uopAz31XyhAEhNSa",
+    "text": "[playful] It’s like borrowing money from a friend. A very rich friend. Who made you sign a forty-page contract.",
+    "chars": 111,
+    "hasAudio": false
+  },
+  {
+    "id": "c001",
+    "who": "chad",
+    "voice": "Posh Josh",
+    "voice_id": "NXaTw4ifg0LAguvKuIwZ",
+    "text": "[smug, posh] Hello! Chad Ledger, Vice President of Lending. We simply LOVE lending you money.",
+    "chars": 93,
+    "hasAudio": false
+  },
+  {
+    "id": "f015",
+    "who": "finn",
+    "voice": "VALF - Child, Young, Playful & Sarcastic",
+    "voice_id": "loY1uopAz31XyhAEhNSa",
+    "text": "[suspicious] Why do you love it so much, Chad?",
+    "chars": 46,
+    "hasAudio": false
+  },
+  {
+    "id": "c002",
+    "who": "chad",
+    "voice": "Posh Josh",
+    "voice_id": "NXaTw4ifg0LAguvKuIwZ",
+    "text": "[smug, rubbing hands] Because we get paid in three different ways. Sometimes four. On a good day, six.",
+    "chars": 102,
+    "hasAudio": false
+  },
+  {
+    "id": "f016",
+    "who": "finn",
+    "voice": "VALF - Child, Young, Playful & Sarcastic",
+    "voice_id": "loY1uopAz31XyhAEhNSa",
+    "text": "[to camera, counting] Three ways! Let’s count them. Way number one: the store pays.",
+    "chars": 83,
+    "hasAudio": false
+  },
+  {
+    "id": "r001",
+    "who": "rosa",
+    "voice": "Hazel - Authentic Latino-English for Comedic Commercials",
+    "voice_id": "0q9TlrIoQJIdxZP9oZh7",
+    "text": "[cheerful, loud] Two carnitas tacos, ten dollars! Card or cash, mijo?",
+    "chars": 69,
+    "hasAudio": false
+  },
+  {
+    "id": "f017",
+    "who": "finn",
+    "voice": "VALF - Child, Young, Playful & Sarcastic",
+    "voice_id": "loY1uopAz31XyhAEhNSa",
+    "text": "[proud] Card, obviously. I’m a grown-up.",
+    "chars": 40,
+    "hasAudio": false
+  },
+  {
+    "id": "r002",
+    "who": "rosa",
+    "voice": "Hazel - Authentic Latino-English for Comedic Commercials",
+    "voice_id": "0q9TlrIoQJIdxZP9oZh7",
+    "text": "[sighs, tired] Then I only keep about nine dollars and seventy cents.",
+    "chars": 69,
+    "hasAudio": false
+  },
+  {
+    "id": "f018",
+    "who": "finn",
+    "voice": "VALF - Child, Young, Playful & Sarcastic",
+    "voice_id": "loY1uopAz31XyhAEhNSa",
+    "text": "[confused] Where did the thirty cents go?",
+    "chars": 41,
+    "hasAudio": false
+  },
+  {
+    "id": "r003",
+    "who": "rosa",
+    "voice": "Hazel - Authentic Latino-English for Comedic Commercials",
+    "voice_id": "0q9TlrIoQJIdxZP9oZh7",
+    "text": "[frustrated, fast] Swipe fees! Every time you tap a card, the store pays around two or three percent to the card network and the banks.",
+    "chars": 135,
+    "hasAudio": false
+  },
+  {
+    "id": "f019",
+    "who": "finn",
+    "voice": "VALF - Child, Young, Playful & Sarcastic",
+    "voice_id": "loY1uopAz31XyhAEhNSa",
+    "text": "[to camera, explaining] They’re called interchange fees. Tiny on one taco. But add up every swipe in America, and stores pay well over a hundred billion dollars a year.",
+    "chars": 168,
+    "hasAudio": false
+  },
+  {
+    "id": "r004",
+    "who": "rosa",
+    "voice": "Hazel - Authentic Latino-English for Comedic Commercials",
+    "voice_id": "0q9TlrIoQJIdxZP9oZh7",
+    "text": "[dry, deadpan] That’s why I’ve got a little sign. Cash is king. Also why my tacos cost ten dollars.",
+    "chars": 99,
+    "hasAudio": false
+  },
+  {
+    "id": "f020",
+    "who": "finn",
+    "voice": "VALF - Child, Young, Playful & Sarcastic",
+    "voice_id": "loY1uopAz31XyhAEhNSa",
+    "text": "[realising] So prices go up a little for everyone. Even people paying cash. Sneaky!",
+    "chars": 83,
+    "hasAudio": false
+  },
+  {
+    "id": "f021",
+    "who": "finn",
+    "voice": "VALF - Child, Young, Playful & Sarcastic",
+    "voice_id": "loY1uopAz31XyhAEhNSa",
+    "text": "[explaining, warm] Way number two is where it gets interesting. Meet my grandma.",
+    "chars": 80,
+    "hasAudio": false
+  },
+  {
+    "id": "u001",
+    "who": "ruth",
+    "voice": "Dolly - Southern Hospitality",
+    "voice_id": "nyQ6Ftl3gFwx4EgtQvN1",
+    "text": "[sweet, proud, southern] Hello, sugar. I’ve had a credit card since nineteen seventy-eight, and I’ve never paid one cent of interest.",
+    "chars": 133,
+    "hasAudio": false
+  },
+  {
+    "id": "f022",
+    "who": "finn",
+    "voice": "VALF - Child, Young, Playful & Sarcastic",
+    "voice_id": "loY1uopAz31XyhAEhNSa",
+    "text": "[amazed] How?!",
+    "chars": 14,
+    "hasAudio": false
+  },
+  {
+    "id": "u002",
+    "who": "ruth",
+    "voice": "Dolly - Southern Hospitality",
+    "voice_id": "nyQ6Ftl3gFwx4EgtQvN1",
+    "text": "[matter-of-fact] Every month, I pay the whole statement balance. In full. On time. Then they can’t charge me a dime.",
+    "chars": 116,
+    "hasAudio": false
+  },
+  {
+    "id": "f023",
+    "who": "finn",
+    "voice": "VALF - Child, Young, Playful & Sarcastic",
+    "voice_id": "loY1uopAz31XyhAEhNSa",
+    "text": "[to camera, explaining] That’s called the grace period. Pay the full statement balance by the due date, and on most cards, your purchases cost zero interest.",
+    "chars": 157,
+    "hasAudio": false
+  },
+  {
+    "id": "c003",
+    "who": "chad",
+    "voice": "Posh Josh",
+    "voice_id": "NXaTw4ifg0LAguvKuIwZ",
+    "text": "[annoyed, posh, over the phone] We have a name for people like your grandmother. We call them... deadbeats.",
+    "chars": 107,
+    "hasAudio": false
+  },
+  {
+    "id": "u003",
+    "who": "ruth",
+    "voice": "Dolly - Southern Hospitality",
+    "voice_id": "nyQ6Ftl3gFwx4EgtQvN1",
+    "text": "[offended, then proud] Deadbeat?! Well, I’ll take it. Put it on my tombstone. Here lies Ruth. Never paid interest.",
+    "chars": 114,
+    "hasAudio": false
+  },
+  {
+    "id": "f024",
+    "who": "finn",
+    "voice": "VALF - Child, Young, Playful & Sarcastic",
+    "voice_id": "loY1uopAz31XyhAEhNSa",
+    "text": "[explaining] That’s real! Deadbeat is actual industry slang for people who pay in full, because the bank barely makes money on them. Which means the real money comes from...",
+    "chars": 173,
+    "hasAudio": false
+  },
+  {
+    "id": "f025",
+    "who": "finn",
+    "voice": "VALF - Child, Young, Playful & Sarcastic",
+    "voice_id": "loY1uopAz31XyhAEhNSa",
+    "text": "[nervous] Everyone else. Way number three: interest.",
+    "chars": 52,
+    "hasAudio": false
+  },
+  {
+    "id": "f026",
+    "who": "finn",
+    "voice": "VALF - Child, Young, Playful & Sarcastic",
+    "voice_id": "loY1uopAz31XyhAEhNSa",
+    "text": "[explaining] If you don’t pay the full balance, whatever is left gets charged interest. The average card rate in America is around twenty-two percent a year.",
+    "chars": 157,
+    "hasAudio": false
+  },
+  {
+    "id": "f027",
+    "who": "finn",
+    "voice": "VALF - Child, Young, Playful & Sarcastic",
+    "voice_id": "loY1uopAz31XyhAEhNSa",
+    "text": "[explaining] And it compounds. The interest gets added to your balance, and then you pay interest on the interest. Remember baby money? This is baby DEBT.",
+    "chars": 154,
+    "hasAudio": false
+  },
+  {
+    "id": "f028",
+    "who": "finn",
+    "voice": "VALF - Child, Young, Playful & Sarcastic",
+    "voice_id": "loY1uopAz31XyhAEhNSa",
+    "text": "[panicking, rising] It starts as a cute little snowball... and then... and then...",
+    "chars": 82,
+    "hasAudio": false
+  },
+  {
+    "id": "f029",
+    "who": "finn",
+    "voice": "VALF - Child, Young, Playful & Sarcastic",
+    "voice_id": "loY1uopAz31XyhAEhNSa",
+    "text": "[screaming] AVALANCHE!",
+    "chars": 22,
+    "hasAudio": false
+  },
+  {
+    "id": "s004",
+    "who": "swipe",
+    "voice": "Inferno - Arrogant Male Villain",
+    "voice_id": "zYcjlYFOd3taleS0gkk3",
+    "text": "[gleeful, theatrical] Wheee! Look at it grow! Isn’t compounding beautiful?",
+    "chars": 74,
+    "hasAudio": false
+  },
+  {
+    "id": "f030",
+    "who": "finn",
+    "voice": "VALF - Child, Young, Playful & Sarcastic",
+    "voice_id": "loY1uopAz31XyhAEhNSa",
+    "text": "[muffled, annoyed] It’s beautiful when it’s YOUR money growing. Not your debt.",
+    "chars": 78,
+    "hasAudio": false
+  },
+  {
+    "id": "f031",
+    "who": "finn",
+    "voice": "VALF - Child, Young, Playful & Sarcastic",
+    "voice_id": "loY1uopAz31XyhAEhNSa",
+    "text": "[serious, explaining] Which brings us to the sneakiest trick of all. The minimum payment.",
+    "chars": 89,
+    "hasAudio": false
+  },
+  {
+    "id": "s005",
+    "who": "swipe",
+    "voice": "Inferno - Arrogant Male Villain",
+    "voice_id": "zYcjlYFOd3taleS0gkk3",
+    "text": "[fake kind, soothing] Only twenty-five dollars due this month! Don’t worry about the rest. Relax!",
+    "chars": 97,
+    "hasAudio": false
+  },
+  {
+    "id": "f032",
+    "who": "finn",
+    "voice": "VALF - Child, Young, Playful & Sarcastic",
+    "voice_id": "loY1uopAz31XyhAEhNSa",
+    "text": "[explaining] Here’s the math. Say you owe two thousand dollars at twenty-two percent, and you only ever pay the minimum.",
+    "chars": 120,
+    "hasAudio": false
+  },
+  {
+    "id": "f033",
+    "who": "finn",
+    "voice": "VALF - Child, Young, Playful & Sarcastic",
+    "voice_id": "loY1uopAz31XyhAEhNSa",
+    "text": "[shocked] It would take about eleven and a half YEARS to pay off. And you’d pay around two thousand six hundred dollars in interest. More than the thing cost!",
+    "chars": 158,
+    "hasAudio": false
+  },
+  {
+    "id": "f034",
+    "who": "finn",
+    "voice": "VALF - Child, Young, Playful & Sarcastic",
+    "voice_id": "loY1uopAz31XyhAEhNSa",
+    "text": "[old, wheezy, grumpy] Eleven years later. I’ve got a beard. I’ve got a bad back. And I’m STILL paying for a TV that broke in year three.",
+    "chars": 136,
+    "hasAudio": false
+  },
+  {
+    "id": "f035",
+    "who": "finn",
+    "voice": "VALF - Child, Young, Playful & Sarcastic",
+    "voice_id": "loY1uopAz31XyhAEhNSa",
+    "text": "[normal, upbeat, explaining] But pay one hundred dollars a month instead? Done in about two years, with only around five hundred in interest.",
+    "chars": 141,
+    "hasAudio": false
+  },
+  {
+    "id": "f036",
+    "who": "finn",
+    "voice": "VALF - Child, Young, Playful & Sarcastic",
+    "voice_id": "loY1uopAz31XyhAEhNSa",
+    "text": "[firm, to camera] The minimum payment is not a suggestion. It’s bait.",
+    "chars": 69,
+    "hasAudio": false
+  },
+  {
+    "id": "s006",
+    "who": "swipe",
+    "voice": "Inferno - Arrogant Male Villain",
+    "voice_id": "zYcjlYFOd3taleS0gkk3",
+    "text": "[booming game-show host] Welcome to... WHEEL! OF! POINTS! Spend money, earn points! Spend MORE money, earn MORE points!",
+    "chars": 119,
+    "hasAudio": false
+  },
+  {
+    "id": "f037",
+    "who": "finn",
+    "voice": "VALF - Child, Young, Playful & Sarcastic",
+    "voice_id": "loY1uopAz31XyhAEhNSa",
+    "text": "[excited] Ooh! Two percent cash back! I’m basically making money by spending money!",
+    "chars": 83,
+    "hasAudio": false
+  },
+  {
+    "id": "s007",
+    "who": "swipe",
+    "voice": "Inferno - Arrogant Male Villain",
+    "voice_id": "zYcjlYFOd3taleS0gkk3",
+    "text": "[sly, encouraging] Exactly! The more you spend, the more you save!",
+    "chars": 66,
+    "hasAudio": false
+  },
+  {
+    "id": "f038",
+    "who": "finn",
+    "voice": "VALF - Child, Young, Playful & Sarcastic",
+    "voice_id": "loY1uopAz31XyhAEhNSa",
+    "text": "[slowly, suspicious] Wait. If I spend a hundred dollars to get two dollars back... I still spent a hundred dollars.",
+    "chars": 115,
+    "hasAudio": false
+  },
+  {
+    "id": "f039",
+    "who": "finn",
+    "voice": "VALF - Child, Young, Playful & Sarcastic",
+    "voice_id": "loY1uopAz31XyhAEhNSa",
+    "text": "[explaining] And who pays for those rewards? Partly those swipe fees from Rosa. And partly the interest from people who carry a balance.",
+    "chars": 136,
+    "hasAudio": false
+  },
+  {
+    "id": "f040",
+    "who": "finn",
+    "voice": "VALF - Child, Young, Playful & Sarcastic",
+    "voice_id": "loY1uopAz31XyhAEhNSa",
+    "text": "[explaining, punchy] Rewards are great if you pay in full. But if you carry a balance, twenty-two percent interest eats two percent cash back for breakfast.",
+    "chars": 156,
+    "hasAudio": false
+  },
+  {
+    "id": "s008",
+    "who": "swipe",
+    "voice": "Inferno - Arrogant Male Villain",
+    "voice_id": "zYcjlYFOd3taleS0gkk3",
+    "text": "[deflated] Okay, but the confetti is nice, right?",
+    "chars": 49,
+    "hasAudio": false
+  },
+  {
+    "id": "f041",
+    "who": "finn",
+    "voice": "VALF - Child, Young, Playful & Sarcastic",
+    "voice_id": "loY1uopAz31XyhAEhNSa",
+    "text": "[fast, energetic] And then there are the fees! Rapid fire, let’s go!",
+    "chars": 68,
+    "hasAudio": false
+  },
+  {
+    "id": "f042",
+    "who": "finn",
+    "voice": "VALF - Child, Young, Playful & Sarcastic",
+    "voice_id": "loY1uopAz31XyhAEhNSa",
+    "text": "[fast] Late fee! Miss a due date and you can get charged thirty or forty dollars. And your interest rate can jump.",
+    "chars": 114,
+    "hasAudio": false
+  },
+  {
+    "id": "f043",
+    "who": "finn",
+    "voice": "VALF - Child, Young, Playful & Sarcastic",
+    "voice_id": "loY1uopAz31XyhAEhNSa",
+    "text": "[fast] Annual fee! Some cards charge you every year just for owning them.",
+    "chars": 73,
+    "hasAudio": false
+  },
+  {
+    "id": "f044",
+    "who": "finn",
+    "voice": "VALF - Child, Young, Playful & Sarcastic",
+    "voice_id": "loY1uopAz31XyhAEhNSa",
+    "text": "[fast] Cash advance! Pull cash from an ATM with your card, and it usually costs about five percent, plus interest starts immediately.",
+    "chars": 133,
+    "hasAudio": false
+  },
+  {
+    "id": "f045",
+    "who": "finn",
+    "voice": "VALF - Child, Young, Playful & Sarcastic",
+    "voice_id": "loY1uopAz31XyhAEhNSa",
+    "text": "[fast] Foreign transaction fee! Buy a croissant in Paris, and some cards add about three percent.",
+    "chars": 97,
+    "hasAudio": false
+  },
+  {
+    "id": "f046",
+    "who": "finn",
+    "voice": "VALF - Child, Young, Playful & Sarcastic",
+    "voice_id": "loY1uopAz31XyhAEhNSa",
+    "text": "[out of breath, panting] Fees... are... a workout.",
+    "chars": 50,
+    "hasAudio": false
+  },
+  {
+    "id": "s009",
+    "who": "swipe",
+    "voice": "Inferno - Arrogant Male Villain",
+    "voice_id": "zYcjlYFOd3taleS0gkk3",
+    "text": "[gleeful, counting money] Ka-ching, ka-ching, ka-ching, ka-ching!",
+    "chars": 65,
+    "hasAudio": false
+  },
+  {
+    "id": "f047",
+    "who": "finn",
+    "voice": "VALF - Child, Young, Playful & Sarcastic",
+    "voice_id": "loY1uopAz31XyhAEhNSa",
+    "text": "[mysterious, low] Here’s the part nobody talks about. Cards change how your brain feels about spending.",
+    "chars": 103,
+    "hasAudio": false
+  },
+  {
+    "id": "f048",
+    "who": "finn",
+    "voice": "VALF - Child, Young, Playful & Sarcastic",
+    "voice_id": "loY1uopAz31XyhAEhNSa",
+    "text": "[explaining] When you pay with cash, you watch it leave. It kind of hurts. Scientists actually call this the pain of paying.",
+    "chars": 124,
+    "hasAudio": false
+  },
+  {
+    "id": "f049",
+    "who": "finn",
+    "voice": "VALF - Child, Young, Playful & Sarcastic",
+    "voice_id": "loY1uopAz31XyhAEhNSa",
+    "text": "[explaining, light] With a card? Tap. Beep. Done. No pain. So we spend more.",
+    "chars": 76,
+    "hasAudio": false
+  },
+  {
+    "id": "f050",
+    "who": "finn",
+    "voice": "VALF - Child, Young, Playful & Sarcastic",
+    "voice_id": "loY1uopAz31XyhAEhNSa",
+    "text": "[storytelling] In one famous M.I.T. experiment, people bidding on basketball tickets offered about twice as much when they were told they’d pay by card.",
+    "chars": 152,
+    "hasAudio": false
+  },
+  {
+    "id": "f051",
+    "who": "finn",
+    "voice": "VALF - Child, Young, Playful & Sarcastic",
+    "voice_id": "loY1uopAz31XyhAEhNSa",
+    "text": "[horrified] Same tickets. Same game. Double the money. My brain is a scammer!",
+    "chars": 77,
+    "hasAudio": false
+  },
+  {
+    "id": "s010",
+    "who": "swipe",
+    "voice": "Inferno - Arrogant Male Villain",
+    "voice_id": "zYcjlYFOd3taleS0gkk3",
+    "text": "[whispering, tempting] Psst... that hoodie is on sale... buy two...",
+    "chars": 67,
+    "hasAudio": false
+  },
+  {
+    "id": "f052",
+    "who": "finn",
+    "voice": "VALF - Child, Young, Playful & Sarcastic",
+    "voice_id": "loY1uopAz31XyhAEhNSa",
+    "text": "[firm, annoyed] Get out of my head, Mister Swipe.",
+    "chars": 49,
+    "hasAudio": false
+  },
+  {
+    "id": "f053",
+    "who": "finn",
+    "voice": "VALF - Child, Young, Playful & Sarcastic",
+    "voice_id": "loY1uopAz31XyhAEhNSa",
+    "text": "[upbeat] Okay, okay. Are credit cards evil? No! Used right, they’re a power-up.",
+    "chars": 79,
+    "hasAudio": false
+  },
+  {
+    "id": "f054",
+    "who": "finn",
+    "voice": "VALF - Child, Young, Playful & Sarcastic",
+    "voice_id": "loY1uopAz31XyhAEhNSa",
+    "text": "[explaining] They help build your credit score. That’s a number lenders use to decide if they trust you. It matters for car loans, apartments, even some phone plans.",
+    "chars": 165,
+    "hasAudio": false
+  },
+  {
+    "id": "f055",
+    "who": "finn",
+    "voice": "VALF - Child, Young, Playful & Sarcastic",
+    "voice_id": "loY1uopAz31XyhAEhNSa",
+    "text": "[explaining] The biggest piece is payment history. Pay on time, every time. Next is how much of your limit you use. Try to stay under thirty percent. Under ten is even better.",
+    "chars": 175,
+    "hasAudio": false
+  },
+  {
+    "id": "f056",
+    "who": "finn",
+    "voice": "VALF - Child, Young, Playful & Sarcastic",
+    "voice_id": "loY1uopAz31XyhAEhNSa",
+    "text": "[gamer announcer voice] Pay on time: plus ten XP! Max out your card: minus fifty health!",
+    "chars": 88,
+    "hasAudio": false
+  },
+  {
+    "id": "u004",
+    "who": "ruth",
+    "voice": "Dolly - Southern Hospitality",
+    "voice_id": "nyQ6Ftl3gFwx4EgtQvN1",
+    "text": "[proud, sweet] I’ve got an eight hundred and twenty credit score, sugar.",
+    "chars": 72,
+    "hasAudio": false
+  },
+  {
+    "id": "f057",
+    "who": "finn",
+    "voice": "VALF - Child, Young, Playful & Sarcastic",
+    "voice_id": "loY1uopAz31XyhAEhNSa",
+    "text": "[stunned, whispering] Grandma is the final boss.",
+    "chars": 48,
+    "hasAudio": false
+  },
+  {
+    "id": "f058",
+    "who": "finn",
+    "voice": "VALF - Child, Young, Playful & Sarcastic",
+    "voice_id": "loY1uopAz31XyhAEhNSa",
+    "text": "[confident] So here’s how to make the card company earn zero dollars off you. Five rules.",
+    "chars": 89,
+    "hasAudio": false
+  },
+  {
+    "id": "f059",
+    "who": "finn",
+    "voice": "VALF - Child, Young, Playful & Sarcastic",
+    "voice_id": "loY1uopAz31XyhAEhNSa",
+    "text": "[counting] Rule one. Pay the full statement balance. Every month. Be a deadbeat!",
+    "chars": 80,
+    "hasAudio": false
+  },
+  {
+    "id": "u005",
+    "who": "ruth",
+    "voice": "Dolly - Southern Hospitality",
+    "voice_id": "nyQ6Ftl3gFwx4EgtQvN1",
+    "text": "[cheering] Deadbeats unite!",
+    "chars": 27,
+    "hasAudio": false
+  },
+  {
+    "id": "f060",
+    "who": "finn",
+    "voice": "VALF - Child, Young, Playful & Sarcastic",
+    "voice_id": "loY1uopAz31XyhAEhNSa",
+    "text": "[counting] Rule two. Turn on autopay for the full balance, so you never get a late fee.",
+    "chars": 87,
+    "hasAudio": false
+  },
+  {
+    "id": "f061",
+    "who": "finn",
+    "voice": "VALF - Child, Young, Playful & Sarcastic",
+    "voice_id": "loY1uopAz31XyhAEhNSa",
+    "text": "[counting] Rule three. Only buy what you could buy with cash today. If you can’t afford it in cash, you can’t afford it on credit.",
+    "chars": 130,
+    "hasAudio": false
+  },
+  {
+    "id": "f062",
+    "who": "finn",
+    "voice": "VALF - Child, Young, Playful & Sarcastic",
+    "voice_id": "loY1uopAz31XyhAEhNSa",
+    "text": "[counting] Rule four. Keep your balance way below your limit.",
+    "chars": 61,
+    "hasAudio": false
+  },
+  {
+    "id": "f063",
+    "who": "finn",
+    "voice": "VALF - Child, Young, Playful & Sarcastic",
+    "voice_id": "loY1uopAz31XyhAEhNSa",
+    "text": "[counting, playful] Rule five. Don’t chase points. Rewards are the sprinkles, not the cake.",
+    "chars": 91,
+    "hasAudio": false
+  },
+  {
+    "id": "s011",
+    "who": "swipe",
+    "voice": "Inferno - Arrogant Male Villain",
+    "voice_id": "zYcjlYFOd3taleS0gkk3",
+    "text": "[crying, dramatic] Stop it! You’re ruining my business model!",
+    "chars": 61,
+    "hasAudio": false
+  },
+  {
+    "id": "f064",
+    "who": "finn",
+    "voice": "VALF - Child, Young, Playful & Sarcastic",
+    "voice_id": "loY1uopAz31XyhAEhNSa",
+    "text": "[cheerful] Back at the coffee shop. One latte, on the card. And this time, I pay it off in full.",
+    "chars": 96,
+    "hasAudio": false
+  },
+  {
+    "id": "f065",
+    "who": "finn",
+    "voice": "VALF - Child, Young, Playful & Sarcastic",
+    "voice_id": "loY1uopAz31XyhAEhNSa",
+    "text": "[smug] Six dollars. Actually six dollars.",
+    "chars": 41,
+    "hasAudio": false
+  },
+  {
+    "id": "s012",
+    "who": "swipe",
+    "voice": "Inferno - Arrogant Male Villain",
+    "voice_id": "zYcjlYFOd3taleS0gkk3",
+    "text": "[defeated, sniffling] Not even a little interest? Not even one tiny late fee?",
+    "chars": 77,
+    "hasAudio": false
+  },
+  {
+    "id": "f066",
+    "who": "finn",
+    "voice": "VALF - Child, Young, Playful & Sarcastic",
+    "voice_id": "loY1uopAz31XyhAEhNSa",
+    "text": "[kind] Nope. Sorry, buddy.",
+    "chars": 26,
+    "hasAudio": false
+  },
+  {
+    "id": "f067",
+    "who": "finn",
+    "voice": "VALF - Child, Young, Playful & Sarcastic",
+    "voice_id": "loY1uopAz31XyhAEhNSa",
+    "text": "[warm, sincere, to camera] Credit cards aren’t free money. They’re a tool. Use them like a tool, and they work for you. Use them like free money, and you work for them.",
+    "chars": 168,
+    "hasAudio": false
+  },
+  {
+    "id": "f068",
+    "who": "finn",
+    "voice": "VALF - Child, Young, Playful & Sarcastic",
+    "voice_id": "loY1uopAz31XyhAEhNSa",
+    "text": "[upbeat] If this helped, subscribe. It’s free. Actually free. I checked.",
+    "chars": 72,
+    "hasAudio": false
+  },
+  {
+    "id": "f069",
+    "who": "finn",
+    "voice": "VALF - Child, Young, Playful & Sarcastic",
+    "voice_id": "loY1uopAz31XyhAEhNSa",
+    "text": "[whispering, teasing] Next time: inflation. Or, why a candy bar costs three times what it did for Grandma.",
+    "chars": 106,
+    "hasAudio": false
+  },
+  {
+    "id": "u006",
+    "who": "ruth",
+    "voice": "Dolly - Southern Hospitality",
+    "voice_id": "nyQ6Ftl3gFwx4EgtQvN1",
+    "text": "[offscreen, proud] Thirty-five cents, sugar! In my day!",
+    "chars": 55,
+    "hasAudio": false
+  }
+]
