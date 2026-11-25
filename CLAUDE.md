@@ -45,6 +45,10 @@ Claude is writer, director, animator, editor and sound designer.
   They end with Finn's `cta2` line: "Want the full video? Watch it on YouTube! The link is in the description and in my bio!"
   (end card `CtaEnd` in src/episodes/fin03/shorts.tsx – reuse it). Frame low in 9:16 (cam y ≈ 460–540) so bubbles + graphics fit on top.
 - **Thumbnails from fin03 on:** follow fin03/thumbs.tsx (helpers exported from fin02/thumbs.tsx: Defs, Bg, Arrow, Word, Badge).
+  **fin04: owner said NO thumbnails** – only make them when asked.
+- **Captions from fin04 on (owner's rule): NO speech bubbles over characters.** Set `captions: 'chunks'` on the EpisodeDef
+  (also on Shorts): spoken lines appear as small 3–4-word chunks at the bottom, one after another, current word in yellow
+  (`src/components/ChunkCaptions.tsx`, speaker colours there). Keep big graphics out of the bottom ~12% (9:16: below ~68%).
 
 ## 2. Cast table
 
@@ -64,6 +68,8 @@ Claude is writer, director, animator, editor and sound designer.
 | `chad` | Chad Ledger – bank VP of Lending (fin02) | navy coat, gold tie, blond swoop | Posh Josh | `NXaTw4ifg0LAguvKuIwZ` |
 | `moose` | Gordon the Tax Moose – tax collector, wants his cut (fin03, recurring for Canada topics) | brown moose, tweed vest, green accountant visor, TAX clipboard (`TaxMoose` in fin03/kit, not a rig) | Joe – Deep Voice Evil Villain Final Boss | `RsWhJadjwfxA0DsrtYJe` |
 | `bernie` | Bernie the Beaver – hard worker, "one stick a day" = compounding (fin03) | brown beaver, yellow hard hat, big teeth, flat tail (`Beaver` in fin03/kit) | Chuck – Goblin | `mgZYFBDKPJGhiZEAcf4X` |
+| `inflato` | Inflato – smug talking balloon = inflation, puffs prices up (fin04) | red balloon, monocle, curly mustache, bow tie, hand pump (`Inflato` in fin04/kit) | GERALD – Exciting Older Voice | `fGIZlgPQ75MMlvQ6WxgY` |
+| `doug` | Doug – grumpy corner-store owner (fin04) | green shirt, grey tuft, mustache, girth 1.3 | Mister Gruff – Miserable old neighbor | `mSOmKHC6GZcZbSTGlqHO` |
 | `testA` | Test Puppet A *(rig test only, not series cast)* | peach skin, blue top, yellow scarf, tuft | — | — |
 | `testB` | Test Puppet B *(rig test only, not series cast)* | brown skin, pink dress, bob hair, yellow bow | — | — |
 
@@ -178,6 +184,16 @@ scripts/beats.py           beat/onset times + frame numbers of any audio  (npm r
   garage with TFSA race car, curling rink, winter cottage dock in a snowstorm, hockey arena, Toronto-ish house street, beaver pond,
   sugar shack, arena jumbotron. Facts at top of src/episodes/fin03/script.ts. Next-episode tease: inflation (candy bar 35¢, again).
 - fin03 used ≈ 9.5k ElevenLabs credits (90 lines + 14 Shorts lines + cta2).
+
+### fin04 – "Why Everything Costs More Now (Inflation Explained)" (8:50) + Shorts fin04s1 (melting $100), fin04s2 (shrinkflation)
+- First episode with chunk captions (no bubbles) and no thumbnails. Finn's look: teal hoodie, round glasses, yellow cap (`FINN_04`).
+- New characters: **Inflato** (balloon villain; pinned and deflated at the end – "I'll be back… next year") and **Doug** (Doug's Corner store,
+  sells candy at $2.29, gave himself a 3% raise and got poorer, keeps savings in the cash register). Mr. Swipe cameo ("put it on the card").
+- Callbacks: Ruth's 35¢ candy bar (her 1985: roller rink, $3.35/h), moth piggy bank, "not financial advice – I'm 14".
+- Locations used: Doug's Corner (day + night), teal/yellow studio, Inflato's workshop, boardwalk + ice cream stand (day + sunset),
+  1985 roller rink, park lemonade stand, CPI roller coaster, grocery aisle 7, Museum of Money Gone Wrong, central bank control room,
+  department-store down escalator, bowling alley. Next-episode tease: how a teen can make their first $1,000 (Ruth: "I'll knit things!").
+- fin04 used ≈ 9k ElevenLabs credits (90 + 14 lines).
 
 ### ep00 – Pipeline test (not published)
 - Test only. Proves narrator voice, caption fallback for unvoiced lines, sfx, music ducking, rig, camera, Shorts.
