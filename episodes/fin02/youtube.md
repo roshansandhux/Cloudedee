@@ -37,7 +37,7 @@ Numbers used: average U.S. card APR ≈ 22%; swipe (interchange) fees ≈ 2–3%
 —
 🎬 Finnomics – money explained by a 14-year-old (with jokes)
 🔔 Subscribe for more animated money lessons
-📸 Instagram: @finnomics · 🎵 TikTok: @finnomics
+📸 Instagram: @finnomics_yt · 🎵 TikTok: @finnomics_yt
 📩 Business: finnomics.yt@gmail.com
 
 #finnomics #personalfinance #creditcards #moneytips #animation #financeforbeginners

@@ -22,7 +22,7 @@ Claude is writer, director, animator, editor and sound designer.
 
 ## 1b. FINNOMICS (channel name; show segment badge may say MONEY 101) – the owner's approved format (fin02 = the reference. Make every finance video like this)
 
-- Channel: **Finnomics** (@finnomics on YouTube/Instagram/TikTok, business email finnomics.yt@gmail.com). Brand kit:
+- Channel: **Finnomics** (@finnomics_yt – youtube.com/@finnomics_yt, instagram.com/finnomics_yt, business email finnomics.yt@gmail.com). Brand kit:
   `src/brand/Brand.tsx` (Stills brand-logo/banner/watermark/wordmark → deliverables/brand/), texts in `brand/finnomics.md`.
   Use the FINNOMICS badge on thumbnails and the standard description footer from brand/finnomics.md on every upload.
 - Host is always **Finn** (key `finn`, voice VALF `loY1uopAz31XyhAEhNSa`). Keep his name and voice forever; outfits, hair,

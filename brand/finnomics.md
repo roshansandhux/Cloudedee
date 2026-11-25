@@ -1,7 +1,7 @@
 # FINNOMICS – channel kit
 
 Business / promotion email: **finnomics.yt@gmail.com**
-Suggested handle everywhere: **@finnomics** (fallbacks: @finnomicsyt, @finnomics.money, @finnomics_official)
+Handles: **@finnomics_yt** – YouTube https://youtube.com/@finnomics_yt · Instagram https://instagram.com/finnomics_yt · TikTok: use @finnomics_yt too if free
 
 ## Image files (deliverables/brand/)
 | File | Use | Size |
@@ -16,7 +16,7 @@ Suggested handle everywhere: **@finnomics** (fallbacks: @finnomicsyt, @finnomics
 ## YouTube
 
 **Channel name:** Finnomics
-**Handle:** @finnomics
+**Handle:** @finnomics_yt
 
 **Description (About):**
 Money is confusing. Finn is 14. Somehow, that works. 💸
@@ -34,13 +34,13 @@ Expect: a very shady talking credit card called Mr. Swipe, Grandma Ruth (who has
 **Channel keywords (Settings → Channel → Keywords):**
 finnomics, personal finance, money explained, finance for beginners, credit cards explained, how money works, financial literacy, budgeting, saving money, investing for beginners, money tips, animated finance, cartoon explainer, economics explained, money 101
 
-**Links section:** Instagram → instagram.com/finnomics · TikTok → tiktok.com/@finnomics · Email → finnomics.yt@gmail.com
+**Links section:** Instagram → instagram.com/finnomics_yt · TikTok → tiktok.com/@finnomics_yt · Email → finnomics.yt@gmail.com
 
 **Default upload description footer** (paste under every video description):
 —
 🎬 Finnomics – money explained by a 14-year-old (with jokes)
 🔔 Subscribe for a new animated money lesson every week
-📸 Instagram: @finnomics · 🎵 TikTok: @finnomics
+📸 Instagram: @finnomics_yt · 🎵 TikTok: @finnomics_yt
 📩 Business: finnomics.yt@gmail.com
 ⚠️ Education & entertainment only – not financial advice.
 
@@ -49,7 +49,7 @@ finnomics, personal finance, money explained, finance for beginners, credit card
 ## Instagram
 
 **Name field:** Finnomics | Money Cartoons 💸   (the name field is searchable – keep "Money" in it)
-**Username:** @finnomics
+**Username:** @finnomics_yt
 **Category:** Education (or "Digital creator")
 **Bio (150 characters max):**
 Money explained by a 14-year-old 🧒💸
@@ -58,7 +58,7 @@ Not financial advice 😅
 📩 finnomics.yt@gmail.com
 ⬇️ Full videos on YouTube
 
-**Link:** your YouTube channel link
+**Link:** https://youtube.com/@finnomics_yt
 **Story highlights (covers = logo coin):** Credit Cards · Saving · Investing · Shorts · Behind the scenes
 
 **Post caption template:**
@@ -72,7 +72,7 @@ Full video on YouTube → link in bio 🎬
 ## TikTok
 
 **Name:** Finnomics 💸
-**Username:** @finnomics
+**Username:** @finnomics_yt
 **Bio (80 characters max):**
 Money explained by a 14yo 🧒💸 Funny + real facts
 📩 finnomics.yt@gmail.com
@@ -104,7 +104,7 @@ Happy to send audience stats and a sample storyboard.
 
 Best,
 [Your name]
-Finnomics · finnomics.yt@gmail.com · youtube.com/@finnomics
+Finnomics · finnomics.yt@gmail.com · youtube.com/@finnomics_yt
 
 ### 2. Collab with another creator
 Subject: Collab idea – [Their channel] x Finnomics
