@@ -32,6 +32,10 @@ Claude is writer, director, animator, editor and sound designer.
 | `mother` | The Mother – sentient sourdough starter (villain ep01) | giant dough blob, many eyes (`TheMother` in ep01/kit) | Valko – Slow and dark | `90npM2sASZ9XVsdUuUF0` |
 | `anchor` | Chip Hartley – Channel 6 news anchor | navy suit, red tie | Robert – American standard broadcaster | `tNIuvXGG5RnGdTbvfnPR` |
 | `finn` | Finn (≈14) – finance-explainer kid (fin01 sample, not series cast yet) | green shirt, red bow tie, spiky hair, freckles, size 0.82 | VALF – Child, Young, Playful & Sarcastic | `loY1uopAz31XyhAEhNSa` |
+| `swipe` | Mr. Swipe – talking credit card, smarmy salesman / game-show host (fin02) | gold card body, mustache, white gloves, top hat (`SwipeCard` in fin02/kit, not a rig) | Inferno – Arrogant Male Villain | `zYcjlYFOd3taleS0gkk3` |
+| `ruth` | Grandma Ruth – Finn's grandma, proud "deadbeat" (pays in full) | lavender dress, white bun, glasses, yellow scarf | Dolly – Southern Hospitality | `nyQ6Ftl3gFwx4EgtQvN1` |
+| `rosa` | Rosa – taco truck owner (fin02) | red top, overalls, green cap, pigtails | Hazel – Latino-English Comedic (≈2× credits/char) | `0q9TlrIoQJIdxZP9oZh7` |
+| `chad` | Chad Ledger – bank VP of Lending (fin02) | navy coat, gold tie, blond swoop | Posh Josh | `NXaTw4ifg0LAguvKuIwZ` |
 | `testA` | Test Puppet A *(rig test only, not series cast)* | peach skin, blue top, yellow scarf, tuft | — | — |
 | `testB` | Test Puppet B *(rig test only, not series cast)* | brown skin, pink dress, bob hair, yellow bow | — | — |
 
@@ -127,6 +131,14 @@ scripts/beats.py           beat/onset times + frame numbers of any audio  (npm r
 - Running jokes: "eleven minutes", spreadsheets when Milo panics, gaming logic that works in real life (crouching, kiting, dodge roll).
 - Locations used (don't repeat as-is): night apartment w/ TV, day apartment, kitchen/fridge, destroyed city (day/sunset/night/dawn),
   Mega Saver supermarket, back room, rooftop at sunset, Mama Mozza's exterior + interior, secret lab.
+
+### Money 101 (finance spin-off, host Finn) – fin01 sample, fin02 "How Credit Cards Secretly Make Money Off You" (~10 min)
+- Format: Finn (14) explains one money topic with cut-away comedy gags; recurring villain Mr. Swipe (talking card); Grandma Ruth = the smart one.
+- Running gags: Finn's piggy bank has a moth / $0.00; "Not financial advice, I'm literally 14"; "deadbeat" (pay in full) is a compliment.
+- fin02 locations: Bean Me Up coffee shop (day + sunset), studio desk (3 colourways), First National Bank of More, Rosa's taco truck,
+  Grandma's kitchen, snowy hill/avalanche, Wheel of Points game show, fee montage cards, mall at night, retro video-game level, chalkboard room.
+- Facts used are listed at the top of src/episodes/fin02/script.ts. Next-episode tease: inflation (candy bar was 35¢ in Ruth's day).
+- fin02 used ≈ 9.5k ElevenLabs credits (94 lines).
 
 ### ep00 – Pipeline test (not published)
 - Test only. Proves narrator voice, caption fallback for unvoiced lines, sfx, music ducking, rig, camera, Shorts.
