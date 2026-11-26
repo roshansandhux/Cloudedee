@@ -29,7 +29,10 @@ Claude is writer, director, animator, editor and sound designer.
   glasses, accessories may change per episode (pass `look` overrides – don't edit his base look in cast.json).
 - ~10 min, 1920×1080. Structure: cold-open gag with a money hook → title card → studio intro (Finn on office chair + panel)
   → 8–10 chapters, each a NEW location/gag (cutaways, game shows, montages, video-game levels…) → simple rules recap →
-  callback ending → subscribe button → next-episode tease. A chapter chip in the top-left names each chapter.
+  callback ending → subscribe button. **NO next-episode tease at the end (owner's rule from fin05 on).**
+- **Length: 10:00 MINIMUM (owner's rule from fin05 on).** fin03 had 8.2k dialogue chars → 9:07, fin04 7.6k → 8:50, so write
+  ≥ 9,500 characters of dialogue (≈ 100–110 lines) plus visual beats, and check `node scripts/timings.mjs <ep>` shows ≥ 10:00
+  BEFORE generating voices (it estimates unvoiced lines); add lines/chapters if short. A chapter chip in the top-left names each chapter.
 - Comedy every 20–30 s; motion graphics everywhere (panels, charts that draw themselves, big kinetic numbers, receipts,
   counters, stamps, confetti). Recurring: Mr. Swipe (villain), Grandma Ruth (smart one), "not financial advice – I'm 14", moth in the piggy bank.
 - All money facts must be correct – check the maths (python) and list sources at the top of script.ts.
