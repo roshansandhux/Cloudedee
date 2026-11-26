@@ -29,11 +29,12 @@ export const ColdOpen: React.FC = () => {
   const inflatoIn = pop(f - puff - 10, 16);
   let cam = camKeys(f, [
     {f: 0, cam: {x: 1000, y: 560, zoom: 1.15}},
-    {f: coins, cam: {x: 1100, y: 600, zoom: 1.45}, ease: Easing.out(Easing.cubic)},
+    {f: coins, cam: {x: 900, y: 580, zoom: 1.35}, ease: Easing.out(Easing.cubic)},
     {f: s.at('d401'), cam: {x: 1300, y: 560, zoom: 1.55}},
-    {f: s.at('u402'), cam: {x: 820, y: 560, zoom: 1.5}, ease: Easing.out(Easing.back(1.5))},
-    {f: s.at('d402'), cam: {x: 1300, y: 540, zoom: 1.6}},
-    {f: s.at('f401'), cam: {x: 600, y: 540, zoom: 1.7}, ease: Easing.out(Easing.cubic)},
+    {f: s.at('u402'), cam: {x: 620, y: 560, zoom: 1.5}, ease: Easing.out(Easing.back(1.5))},
+    {f: s.at('d402') - 4, cam: {x: 620, y: 560, zoom: 1.5}},
+    {f: s.at('d402') + 4, cam: {x: 1300, y: 540, zoom: 1.6}, ease: Easing.out(Easing.cubic)},
+    {f: s.at('f401'), cam: {x: 380, y: 540, zoom: 1.7}, ease: Easing.out(Easing.cubic)},
     {f: puff, cam: {x: 1100, y: 500, zoom: 1.1}, ease: Easing.out(Easing.cubic)},
     {f: s.at('f402'), cam: {x: 760, y: 540, zoom: 1.6}, ease: Easing.out(Easing.back(1.6))},
   ]);
@@ -47,8 +48,8 @@ export const ColdOpen: React.FC = () => {
       set={<CornerStore frame={f} />}
       actors={[
         {who: 'doug', look: DOUG, x: 1340, y: 650, facing: -1, pose: f < s.at('d402') ? 'cross' : 'hips', scale: 0.95},
-        {who: 'ruth', look: RUTH_04, x: 900, y: 900, facing: 1, pose: f < coins ? 'hold' : f < s.at('u402') ? 'reach' : 'up', holding: f < coins + 10 ? <Coin x={0} y={0} r={14} /> : undefined, mood: s.after('u402') && !s.after('f401') ? 'surprised' : undefined},
-        {who: 'finn', look: FINN_04, x: 600, y: 900, facing: f < s.at('f401') ? 1 : 1, pose: f < s.at('f401') ? 'down' : f < puff ? 'point' : 'shrug'},
+        {who: 'ruth', look: RUTH_04, x: 610, y: 900, facing: 1, pose: f < coins ? 'hold' : f < s.at('u402') ? 'reach' : 'up', holding: f < coins + 10 ? <Coin x={0} y={0} r={14} /> : undefined, mood: s.after('u402') && !s.after('f401') ? 'surprised' : undefined},
+        {who: 'finn', look: FINN_04, x: 360, y: 900, facing: 1, pose: f < s.at('f401') ? 'down' : f < puff ? 'point' : 'shrug'},
       ]}
       front={
         <>
@@ -56,7 +57,7 @@ export const ColdOpen: React.FC = () => {
           {f >= s.at('d401') && f < puff + 30 && <PriceTag x={1330} y={460 - (tagPuff - 1) * 40} s={tagPuff} text="$2.29" />}
           {f >= puff + 10 && <Inflato x={1360} y={360} s={0.9 * inflatoIn + 0.01} frame={f} talk={s.mouth('inflato')} puff={1.1} mood={f < s.at('f402') ? 'smug' : 'happy'} />}
           <Sparkles x={1360} y={360} t={f - puff - 10} r={180} />
-          <Emote x={900} y={420} t={f - s.at('u402')} kind="!" dur={34} />
+          <Emote x={610} y={420} t={f - s.at('u402')} kind="!" dur={34} />
         </>
       }
       overlay={

@@ -113,7 +113,7 @@ export const ShortShrink: React.FC = () => {
       rim={inStore ? '#ffe0b0' : '#e0f0ff'}
       set={inStore ? <CornerStore frame={f} /> : <Grocery frame={f} />}
       actors={[
-        {who: 'finn', look: FINN_04, x: inStore ? 760 : 700, y: 900, facing: 1, pose: f < chips ? 'think' : f < tag ? 'point' : 'hold'},
+        {who: 'finn', look: FINN_04, x: inStore ? 600 : 700, y: 900, facing: 1, pose: f < chips ? 'think' : f < tag ? 'point' : 'hold'},
         ...(inStore ? [{who: 'doug', look: lookOf('doug'), x: 1340, y: 650, facing: -1 as const, pose: 'cross' as const, scale: 0.95}] : []),
       ]}
       front={

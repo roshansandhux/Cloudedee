@@ -250,8 +250,8 @@ export const Raise: React.FC = () => {
       set={<CornerStore frame={f} night />}
       actors={[
         {who: 'doug', look: DOUG, x: 1340, y: 650, facing: -1, pose: f < shrinkDoug ? 'hips' : f < s.at('f440') ? 'up' : 'cross', scale: dougScale},
-        {who: 'finn', look: FINN_04, x: 760, y: 900, facing: f >= s.at('f460') && f < swipe ? -1 : 1, pose: f < s.at('f460') ? 'point' : f < swipe ? 'hold' : 'fist'},
-        {who: 'ruth', look: RUTH_04, x: 420, y: 900, facing: 1, pose: f >= s.at('u410') && f < swipe ? 'cross' : 'hips'},
+        {who: 'finn', look: FINN_04, x: 600, y: 900, facing: f >= s.at('f460') && f < swipe ? -1 : 1, pose: f < s.at('f460') ? 'point' : f < swipe ? 'hold' : 'fist'},
+        {who: 'ruth', look: RUTH_04, x: 330, y: 900, facing: 1, pose: f >= s.at('u410') && f < swipe ? 'cross' : 'hips'},
       ]}
       front={
         <>
