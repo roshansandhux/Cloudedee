@@ -66,7 +66,7 @@ export const sMonthly = [
   say('v503', 'vinny', '[nervous laugh] Heh. Who taught this kid math?'),
   say('f512', 'finn', '[smug] My grandma.', {mood: 'smug'}),
   sfx('boing'),
-  wait(0.3),
+  wait(1.2),
 ];
 
 // 4 – The stretch: longer loans (stretch limo on the highway)
@@ -85,7 +85,7 @@ export const sStretch = [
   say('f516', 'finn', '[shocked] Seven years? Six hundred and four a month… and almost eleven thousand dollars in interest.', {mood: 'surprised', loud: true}),
   say('v504', 'vinny', '[proud] And the limo just keeps getting longer! Isn’t it beautiful?'),
   say('f517', 'finn', '[firm] A lower payment doesn’t mean a cheaper car. It usually means you pay more, for longer. And seven years is a long time to pay for something that’s getting older every day.', {mood: 'determined'}),
-  wait(0.3),
+  wait(1.2),
 ];
 
 // 5 – The rate menu: interest by credit (loan drive-thru)
@@ -104,7 +104,7 @@ export const sRates = [
   say('f521', 'finn', '[explaining] On a twenty-thousand-dollar used car over six years, eleven percent costs about seven thousand four hundred in interest. At twenty-one percent? Over fifteen thousand. Almost the price of a second car.', {mood: 'surprised'}),
   say('f522', 'finn', '[explaining] Pro tip: get pre-approved at a bank or credit union before you shop. Then the dealer has to beat that rate, not invent one.', {mood: 'determined'}),
   say('f562', 'finn', '[explaining] And your credit score is the key to a better rate. Pay bills on time, keep card balances low, and your next car loan could cost you thousands less.', {mood: 'happy'}),
-  wait(0.3),
+  wait(1.2),
 ];
 
 // 6 – The depreciation gremlin (driving off the lot)
@@ -122,7 +122,7 @@ export const sGremlin = [
   say('g502', 'gremlin', '[chewing, satisfied] The leather seats are my favorite. Very chewy.'),
   say('f563', 'finn', '[explaining] Used cars lose value too, but usually slower. The gremlin already took the biggest bite before you showed up.', {mood: 'neutral'}),
   say('f526', 'finn', '[explaining] That’s why a car is not an investment. It’s a tool that gets cheaper every year. Your loan, though? Your loan doesn’t care.', {mood: 'determined'}),
-  wait(0.3),
+  wait(1.2),
 ];
 
 // 7 – Underwater: negative equity (car literally underwater)
@@ -140,7 +140,7 @@ export const sUnderwater = [
   say('f529', 'finn', '[explaining] And that’s how the snowball starts. About one in four trade-ins comes with negative equity. People roll the old debt into the new car, and start the new loan already underwater.', {mood: 'worried'}),
   say('t506', 'tyler', '[gurgling] So I’m paying for… two trucks? And I only have one?'),
   say('f530', 'finn', '[sympathetic] Yeah, buddy. Swim up. We’ll fix this.', {mood: 'sad'}),
-  wait(0.3),
+  wait(1.2),
 ];
 
 // 8 – True cost of owning: the gas station at sunset
@@ -159,7 +159,7 @@ export const sTrueCost = [
   say('f534', 'finn', '[amazed] The AAA estimates owning a new car costs around eleven to twelve thousand dollars a year when you add everything up. That’s close to a thousand a month.', {mood: 'surprised', loud: true}),
   say('t507', 'tyler', '[quietly] I think the truck owns me, bro.'),
   sfx('sadTrombone', {vol: 0.3}),
-  wait(0.3),
+  wait(1.2),
 ];
 
 // 9 – The future: what that payment could become (observatory at night)
@@ -177,7 +177,7 @@ export const sFuture = [
   say('f538', 'finn', '[facepalm] Tyler. No.', {mood: 'confused'}),
   say('f539', 'finn', '[honest] Seven percent isn’t guaranteed. Markets go up and down. But the point is real: a car payment you keep for life can quietly cost you a fortune.', {mood: 'neutral'}),
   say('f540', 'finn', '[explaining] People don’t usually have just one car payment. They pay one off, trade it in, and start a new one. Forever.', {mood: 'worried'}),
-  wait(0.3),
+  wait(1.2),
 ];
 
 // 10 – Grandma Ruth's driveway: Old Betsy
@@ -196,7 +196,7 @@ export const sRuth = [
   say('v506', 'vinny', '[from far away, desperate] Ma’am! Ma’am! We have zero percent financing on a brand-new SUV!'),
   say('u504', 'ruth', '[firm] Betsy can hear you, young man.'),
   sfx('boing'),
-  wait(0.3),
+  wait(1.2),
 ];
 
 // 11 – The smart-buyer playbook (driving school with cones)
@@ -218,7 +218,7 @@ export const sPlaybook = [
   cue('r4'),
   sfx('pop'),
   say('f548', 'finn', '[explaining] Rule four: be ready to walk away. There are thousands of cars. You only have one bank account.', {mood: 'smug'}),
-  wait(0.3),
+  wait(1.2),
 ];
 
 // 12 – Leasing: the carousel
@@ -233,7 +233,7 @@ export const sLease = [
   say('f551', 'finn', '[explaining] For some people, leasing can make sense, like some business owners. But for most of us, a lease that never ends means a payment that never ends.', {mood: 'determined'}),
   say('t509', 'tyler', '[dizzy] I’ve been on this ride for nine years, bro.'),
   sfx('boing'),
-  wait(0.3),
+  wait(1.2),
 ];
 
 // 13 – Recap: the car wash of rules

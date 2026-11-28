@@ -17,6 +17,9 @@ const COLORS: Record<string, string> = {
   swipe: '#ffd84a',
   inflato: '#ff9b9b',
   doug: '#9fe0ff',
+  tyler: '#9fd0ff',
+  vinny: '#ffc98a',
+  gremlin: '#b6f08a',
   narrator: '#fff3c4',
 };
 

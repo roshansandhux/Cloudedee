@@ -10,9 +10,11 @@ import {fin03s2} from './fin03s2';
 import {fin04} from './fin04';
 import {fin04s1} from './fin04s1';
 import {fin04s2} from './fin04s2';
+import {fin05s1} from './fin05s1';
+import {fin05s2} from './fin05s2';
 import {fin05} from './fin05';
 
-export const EPISODES: EpisodeDef[] = [ep00, ep01, fin01, fin02, fin03, fin03s1, fin03s2, fin04, fin04s1, fin04s2, fin05];
+export const EPISODES: EpisodeDef[] = [ep00, ep01, fin01, fin02, fin03, fin03s1, fin03s2, fin04, fin04s1, fin04s2, fin05, fin05s1, fin05s2];
 
 export const getEpisode = (id: string) => {
   const ep = EPISODES.find((e) => e.id === id);
