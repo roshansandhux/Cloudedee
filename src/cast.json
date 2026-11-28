@@ -138,8 +138,8 @@
   },
   "finn": {
     "name": "Finn",
-    "voice": "VALF - Child, Young, Playful & Sarcastic",
-    "voice_id": "loY1uopAz31XyhAEhNSa",
+    "voice": "My voice (owner clone, from fin05)",
+    "voice_id": "VmEB0oGgcfxcTMNZwQ3X",
     "note": "Finance explainer boy (fin01 sample). Bow tie, big ideas, empty piggy bank.",
     "look": {
       "skin": "#f3c49c",
@@ -155,7 +155,8 @@
       "blush": true,
       "size": 0.82,
       "head": 110
-    }
+    },
+    "voice_before_fin05": "VALF - loY1uopAz31XyhAEhNSa"
   },
   "swipe": {
     "name": "Mr. Swipe",
@@ -258,5 +259,49 @@
       "girth": 1.3,
       "head": 104
     }
+  },
+  "tyler": {
+    "name": "Tyler",
+    "voice": "Chadwitch — The Ultimate Bro",
+    "voice_id": "eadgjmk4R4uojdsheG9t",
+    "look": {
+      "skin": "#e8b48c",
+      "body": "#3a7bd5",
+      "legs": "#2b2333",
+      "shoes": "#f4f1ea",
+      "hair": "swoop",
+      "hairColor": "#c98f3a",
+      "hat": "cap",
+      "hatColor": "#e5302f",
+      "outfit": "hoodie",
+      "neck": "none",
+      "size": 1.0,
+      "girth": 1.15
+    }
+  },
+  "vinny": {
+    "name": "Vinny",
+    "voice": "Money Mike",
+    "voice_id": "0CMJAmlZa2gMxKuJObfG",
+    "look": {
+      "skin": "#e0a37c",
+      "body": "#f4f1ea",
+      "legs": "#2b2333",
+      "shoes": "#7a3b1e",
+      "hair": "swoop",
+      "hairColor": "#1c1c28",
+      "outfit": "coat",
+      "neck": "tie",
+      "neckColor": "#e5302f",
+      "mustache": true,
+      "size": 1.0,
+      "girth": 1.1
+    }
+  },
+  "gremlin": {
+    "name": "Depreciation Gremlin",
+    "voice": "Wendell - Grizzley troll character",
+    "voice_id": "m2FyY53BxwLLDu7VNDFb",
+    "note": "Small green gremlin that eats car value (fin05). Drawn custom (Gremlin in fin05/kit)."
   }
 }

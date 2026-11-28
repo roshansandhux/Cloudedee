@@ -1,0 +1,30 @@
+// fin05s2 – Short (9:16): "Grandma's car payment trick" – pay yourself. Ends with cta3.
+import {beat, cue, music, say, sfx, wait} from '../../engine/timeline';
+
+export const s1 = [
+  music('silly', {vol: 0.3}),
+  wait(0.3),
+  say('u601', 'ruth', '[proud, sweet] I haven’t had a car loan in thirty years, sugar. Want to know my trick?'),
+  cue('betsy'),
+  sfx('honk'),
+  wait(0.8),
+  say('f611', 'finn', '[curious] Grandma’s car is from two thousand nine. And she still makes a car payment every month.', {mood: 'confused'}),
+  say('u602', 'ruth', '[wise] To myself, sugar. Into savings.'),
+  cue('jar'),
+  sfx('ding', {vol: 0.5}),
+  wait(1.2),
+  say('f612', 'finn', '[explaining] When your car is paid off, keep sending that same payment into a savings account. When it’s time for a new car, you pay cash. No loan. No interest.', {mood: 'happy'}),
+  cue('grow'),
+  sfx('slideUp'),
+  wait(1.2),
+  say('f613', 'finn', '[amazed] And if that money is invested instead, seven hundred fifty a month for ten years, at around seven percent, could grow to about one hundred thirty thousand dollars.', {mood: 'surprised'}),
+  wait(1.0),
+  say('f614', 'finn', '[quick] Not guaranteed. But way better than handing it to a lender.', {mood: 'neutral'}),
+  say('u603', 'ruth', '[sweet] The bank pays me now. I like it better that way.'),
+  sfx('tada', {vol: 0.4}),
+  wait(1.4),
+  cue('cta'),
+  sfx('pop'),
+  say('cta3', 'finn', '[excited, friendly] Want the full video? Watch it on YouTube! The link is in the description and in my bio!', {mood: 'happy'}),
+  beat('end', 1.0),
+];

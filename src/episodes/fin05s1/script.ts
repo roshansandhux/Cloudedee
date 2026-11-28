@@ -1,0 +1,33 @@
+// fin05s1 – Short (9:16): "The dealer's favorite question" – loan stretching. Ends with cta3 (Finn's new voice, finshorts).
+import {beat, cue, music, say, sfx, wait} from '../../engine/timeline';
+
+export const s1 = [
+  music('tension', {vol: 0.28}),
+  wait(0.3),
+  say('v601', 'vinny', '[smooth, salesman] So, my friend… what monthly payment works for you?'),
+  wait(0.6),
+  say('f601', 'finn', '[whisper, to camera] Never answer that question. Here’s why.', {mood: 'smug'}),
+  cue('car'),
+  sfx('pop'),
+  wait(0.8),
+  say('f602', 'finn', '[explaining] A forty-thousand-dollar car at seven percent. Four-year loan: about nine fifty-eight a month, and around six thousand in interest.', {mood: 'neutral'}),
+  cue('stretch'),
+  sfx('slideUp'),
+  wait(1.2),
+  say('f603', 'finn', '[explaining] Stretch it to seven years: six hundred and four a month. Sounds cheaper, right? But now you pay almost eleven thousand in interest.', {mood: 'surprised'}),
+  cue('limo'),
+  sfx('whoosh'),
+  wait(1.2),
+  say('v602', 'vinny', '[proud] Lower payment! Everybody wins!'),
+  say('f604', 'finn', '[firm] Everybody except you. Negotiate the total price first, keep the loan short, and get pre-approved before you walk in.', {mood: 'determined'}),
+  cue('rules'),
+  sfx('ding', {vol: 0.5}),
+  wait(1.6),
+  say('v603', 'vinny', '[defeated] Kid’s ruining my whole business model.'),
+  sfx('sadTrombone', {vol: 0.3}),
+  wait(1.0),
+  cue('cta'),
+  sfx('pop'),
+  say('cta3', 'finn', '[excited, friendly] Want the full video? Watch it on YouTube! The link is in the description and in my bio!', {mood: 'happy'}),
+  beat('end', 1.0),
+];
