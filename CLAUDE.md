@@ -25,7 +25,7 @@ Claude is writer, director, animator, editor and sound designer.
 - Channel: **Finnomics** (@finnomics_yt – youtube.com/@finnomics_yt, instagram.com/finnomics_yt, business email finnomics.yt@gmail.com). Brand kit:
   `src/brand/Brand.tsx` (Stills brand-logo/banner/watermark/wordmark → deliverables/brand/), texts in `brand/finnomics.md`.
   Use the FINNOMICS badge on thumbnails and the standard description footer from brand/finnomics.md on every upload.
-- Host is always **Finn** (key `finn`, voice VALF `loY1uopAz31XyhAEhNSa`). Keep his name and voice forever; outfits, hair,
+- Host is always **Finn** (key `finn`). **From fin05 on Finn speaks with the OWNER'S CLONED VOICE ("My voice", `VmEB0oGgcfxcTMNZwQ3X`)** – fin01–fin04 used VALF `loY1uopAz31XyhAEhNSa`. Keep his name and this voice forever; outfits, hair,
   glasses, accessories may change per episode (pass `look` overrides – don't edit his base look in cast.json).
 - ~10 min, 1920×1080. Structure: cold-open gag with a money hook → title card → studio intro (Finn on office chair + panel)
   → 8–10 chapters, each a NEW location/gag (cutaways, game shows, montages, video-game levels…) → simple rules recap →
@@ -64,7 +64,7 @@ Claude is writer, director, animator, editor and sound designer.
 | `crumb` | Dr. Ingrid Crumb – baker-scientist, owns Mama Mozza's | lab coat, white bun, glasses, red scarf | Ilona – Calm & Confident | `SDm2FQORi7Hju7z9CyTa` |
 | `mother` | The Mother – sentient sourdough starter (villain ep01) | giant dough blob, many eyes (`TheMother` in ep01/kit) | Valko – Slow and dark | `90npM2sASZ9XVsdUuUF0` |
 | `anchor` | Chip Hartley – Channel 6 news anchor | navy suit, red tie | Robert – American standard broadcaster | `tNIuvXGG5RnGdTbvfnPR` |
-| `finn` | Finn (≈14) – HOST of Money 101 (always this name + voice; clothes/hair/glasses may change per episode) | green shirt, red bow tie, spiky hair, freckles, size 0.82 | VALF – Child, Young, Playful & Sarcastic | `loY1uopAz31XyhAEhNSa` |
+| `finn` | Finn (≈14) – HOST of Money 101 (always this name + voice; clothes/hair/glasses may change per episode) | green shirt, red bow tie, spiky hair, freckles, size 0.82 | **My voice (owner clone, from fin05)** – before: VALF `loY1uopAz31XyhAEhNSa` | `VmEB0oGgcfxcTMNZwQ3X` |
 | `swipe` | Mr. Swipe – talking credit card, smarmy salesman / game-show host (fin02) | gold card body, mustache, white gloves, top hat (`SwipeCard` in fin02/kit, not a rig) | Inferno – Arrogant Male Villain | `zYcjlYFOd3taleS0gkk3` |
 | `ruth` | Grandma Ruth – Finn's grandma, proud "deadbeat" (pays in full) | lavender dress, white bun, glasses, yellow scarf | Dolly – Southern Hospitality | `nyQ6Ftl3gFwx4EgtQvN1` |
 | `rosa` | Rosa – taco truck owner (fin02) | red top, overalls, green cap, pigtails | Hazel – Latino-English Comedic (≈2× credits/char) | `0q9TlrIoQJIdxZP9oZh7` |
@@ -73,6 +73,9 @@ Claude is writer, director, animator, editor and sound designer.
 | `bernie` | Bernie the Beaver – hard worker, "one stick a day" = compounding (fin03) | brown beaver, yellow hard hat, big teeth, flat tail (`Beaver` in fin03/kit) | Chuck – Goblin | `mgZYFBDKPJGhiZEAcf4X` |
 | `inflato` | Inflato – smug talking balloon = inflation, puffs prices up (fin04) | red balloon, monocle, curly mustache, bow tie, hand pump (`Inflato` in fin04/kit) | GERALD – Exciting Older Voice | `fGIZlgPQ75MMlvQ6WxgY` |
 | `doug` | Doug – grumpy corner-store owner (fin04) | green shirt, grey tuft, mustache, girth 1.3 | Mister Gruff – Miserable old neighbor | `mSOmKHC6GZcZbSTGlqHO` |
+| `tyler` | Tyler – bro with the $1,000/mo truck "The Beast" (fin05) | blue hoodie, red cap, swoop hair, girth 1.15 | Chadwitch – The Ultimate Bro | `eadgjmk4R4uojdsheG9t` |
+| `vinny` | Vinny – smooth car salesman, Vinny's Value Motors (fin05) | cream coat, red tie, mustache, black swoop | Money Mike | `0CMJAmlZa2gMxKuJObfG` |
+| `gremlin` | The Depreciation Gremlin – eats car value (fin05) | small green creature, huge teeth (`Gremlin` in fin05/kit, not a rig) | Wendell – Grizzly troll | `m2FyY53BxwLLDu7VNDFb` |
 | `testA` | Test Puppet A *(rig test only, not series cast)* | peach skin, blue top, yellow scarf, tuft | — | — |
 | `testB` | Test Puppet B *(rig test only, not series cast)* | brown skin, pink dress, bob hair, yellow bow | — | — |
 
@@ -197,6 +200,18 @@ scripts/beats.py           beat/onset times + frame numbers of any audio  (npm r
   1985 roller rink, park lemonade stand, CPI roller coaster, grocery aisle 7, Museum of Money Gone Wrong, central bank control room,
   department-store down escalator, bowling alley. Next-episode tease: how a teen can make their first $1,000 (Ruth: "I'll knit things!").
 - fin04 used ≈ 9k ElevenLabs credits (90 + 14 lines).
+
+### fin05 – "Why Car Payments Are Keeping You Poor" (10:10) + Shorts fin05s1 (dealer's question), fin05s2 (Grandma's trick)
+- **NEW LOOK from fin05 (owner's request):** "neon garage" style – dark glass cards with neon frames (`GlassCard`, `NeonStat`, `NeonChip`,
+  `NeonTag`, `BarRow`, `NeonTitle`, `NeonGrade` in fin05/kit), neon-garage studio (`NeonGarage` + `GarageScreen`). Keep using this graphics style.
+- **Finn's voice is now the owner's clone** ("My voice"). Finn's fin05 look: orange bomber jacket, swoop hair, white sneakers (`FINN_05`).
+  Grandma Ruth in teal dress (`RUTH_05`). Shorts CTA line is `cta3` (owner's voice), stored in fin05s1.json/fin05s2.json.
+- New characters: **Tyler** (sold "The Beast", bought a used hatchback in cash, invests $500/mo, upgraded ramen → tacos),
+  **Vinny** (Vinny's Value Motors, "what monthly payment works for you?"), **the Depreciation Gremlin** ("Very chewy."). Mr. Swipe cameo in a drive-thru speaker.
+- Ruth's car **Betsy** (2009 station wagon, bought used, paid cash, "purrs like a kitten that smokes"); Ruth pays herself a car payment.
+- Locations used: Tyler's driveway (night + morning), neon garage studio, Vinny's showroom, sunset highway + stretch limo, LOAN-A-RAMA drive-thru,
+  car lot at dusk, underwater, gas station at sunset, observatory, Ruth's street, driving school lot, lease-go-round carousel, car wash. No tease.
+- fin05 used ≈ 11k ElevenLabs credits (95 + 14 Shorts lines + cta3).
 
 ### ep00 – Pipeline test (not published)
 - Test only. Proves narrator voice, caption fallback for unvoiced lines, sfx, music ducking, rig, camera, Shorts.
