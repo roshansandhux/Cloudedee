@@ -45,11 +45,11 @@ inflation explained, what is inflation, why is everything so expensive, inflatio
 ## Shorts (original 9:16 mini-videos, each ends with "watch the full video on YouTube – link in the description and bio")
 ### fin04s1 (short1-melting.mp4, ~55 s)
 Title: Your $100 is melting right now 🍦 #shorts
-Description: Inflation + the Rule of 72 in under a minute. Full video on YouTube: link in the description & in my bio! 👉 youtube.com/@finnomics_yt
+Description: Inflation + the Rule of 72 in under a minute. Full video on YouTube: link in the description & in my bio! 👉 https://youtu.be/VhmAt8-LfA4
 #finnomics #inflation #moneytips #shorts
 
 ### fin04s2 (short2-shrinkflation.mp4, ~52 s)
 Title: The sneaky price hike nobody notices 🕵️ #shorts
-Description: Shrinkflation is real. Here's how to catch it. Full video on YouTube: link in the description & in my bio! 👉 youtube.com/@finnomics_yt
+Description: Shrinkflation is real. Here's how to catch it. Full video on YouTube: link in the description & in my bio! 👉 https://youtu.be/VhmAt8-LfA4
 #finnomics #shrinkflation #inflation #shorts
 (Instagram caption: same text + "Full video: link in bio 🔗")
